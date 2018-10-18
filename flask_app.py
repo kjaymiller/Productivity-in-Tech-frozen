@@ -9,6 +9,7 @@ def index():
     return render_template('index.html')
 
 
+"""
 @app.route("/blog/<path>.html")
 def blog(path):
     with open('pages/' + path + '.md') as f:
@@ -16,7 +17,7 @@ def blog(path):
         metadata = content[0]
         post_content = Markup(markdown(content[1]))
     return render_template('blog.html', content=post_content)
-
+"""
 
 if __name__ == '__main__':
     app.run(port=8000)
