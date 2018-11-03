@@ -7,6 +7,7 @@ name = "pypi"
 flask = "*"
 frozen-flask = "*"
 markdown = "*"
+flask-scss = "*"
 
 [dev-packages]
 
