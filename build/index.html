@@ -12,75 +12,87 @@
   <body>
     
 <!--Start Jumbotron  -->
-<div class="container" >
-    <div class="jumbotron row wrap bg-transparent"> 
+<div class="container">
+    <div class="jumbotron row wrap bg-transparent border-bottom">
         <div class="col-sm-12 col-lg-7"> <img class="w-100" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg"></div>
-        <div class="text-sm-center text-md-center align-self-center col-xs-5 col-sm-12 col-lg-5" >
+        <div class="text-sm-center text-md-center align-self-center col-xs-5 col-sm-12 col-lg-5">
             <h2 class=" text-primary display-3">Live, Code, Work, Be</h2>
-            <h1 class="">More Productive</h1>
+            <h1 class="text-muted">More Productive</h1>
         </div>
     </div>
-    <div class="container text-center">
-        <h1 class="p-3 text-secondary display-3">Coming Soon</h1>
-        <p>We're Working on getting everything ready for you. Get a notification when things go <span class=text-primary>LIVE!i</span></p>
-        <div class="jumbotron text-center card-deck bg-transparent">
-            <div class="card border-0">
-                <div class="text-primary card-header bg-transparent no-border"><h3>Blog</h3></div>
-                <div class="card-img-bottom p-3"><i class="text-secondary fas fa-file-code fa-10x"></i></i></div>
-
+    <div class="row justify-content-center">
+        <h1 class="col-sm-8 py-3 text-primary display-3">Coming Back <span class="font-weight-normal font-italic text-secondary">Soon...</span></h1>
+        <p class="col py-3 align-self-end font-italic">We're Working on getting everything ready for you.</p>
+    </div>
+    <div class="container row text-center">
+        <div class="card border-0 col-md-12 col-lg-4 pb-5">
+            <div class="text-primary card-header bg-transparent no-border">
+                <h3>Blog</h3>
             </div>
-                <div class="card border-0 bg-transparent">    
-                    <div class="card-header text-primary bg-transparent"><h3>Podcast</h3></div>
-                    <div class="card-img-bottom"><i class="text-secondary fas fa-microphone-alt fa-10x"></i></div>
+            <div class="card-img-bottom p-3"><i class="text-secondary fas fa-file-code fa-10x"></i></i></div>
+        </div>
+        <div class="card border-0 col-md-12 col-lg-4 pb-5">
+            <div class="card-header text-primary bg-transparent">
+                <h3>Podcast</h3>
+            </div>
+            <div class="card-img-bottom p-3"><i class="text-secondary fas fa-microphone-alt fa-10x"></i></div>
+        </div>
+        <div class="card border-0 col-md-12 col-lg-4 pb-5">
+            <div class="card-header bg-transparent text-primary">
+                <h3>Youtube</h3>
+            </div>
+            <div class="card-img-bottom p-3"><i class="text-secondary fab fa-youtube fa-10x"></i></div>
+        </div>
+
+        <form class="col-lg-12 row align-items-center">
+            <div class="col-12 form-row">
+            <h4 class="">Get Notified About New Things <span class="font-italic text-black-50"> (Plus productivity and automation tips and tricks)</span></h4>
+                <div class="col">
+                    <input type="text" placeholder="Enter First Name">
                 </div>
-            <div class="card bg-transparent border-0">
-                <div class="card-header bg-transparent text-primary"><h3>Youtube</h3></div>
-                <div class="card-img-bottom"><i class="text-secondary fab fa-youtube fa-10x"></i></div>
+                <div class="col">
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="col">
+                    <button type="submit" class="w-75 btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="border-top">
+    <div class="card-deck">
+        <div class="card text-center">
+            <div class="card-header text-white bg-primary">
+                <h2>Coaching</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-title">Simple Effective Coaching with a Simple Effective Model</p>
+            </div>
+            <div class="card-body">
+                <h3 class= "card-title text-primary border-bottom">Click to Learn More About</h3>
+                <button class="btn btn-lg btn-block btn-outline-primary border-0" href="#">Individual Coaching</button>
+                    <button class="btn btn-lg btn-block btn-outline-primary border-0" href="#">Group Workshops</button>
+                    <button class="btn btn-lg btn-block btn-outline-primary border-0" href="#">Team Sessions</button>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="card-header bg-primary text-white">
+                <h2 class="card-title">Community</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Because working together is just more fun!</p>
+            </div>
+            <div class="card-body row justify-content-center">
+                <div class="col-sm-4">
+                        <img src="https://cdn.brandfolder.io/5H442O3W/as/osogig-6gybeo-d2hu58/Slack_AppIcon.png" class="img-fluid">
+                </div>
+                <div class="col-sm-4">
+                    <i class="fab fa-twitter fa-10x" style="color:#1DA1F2;"></i>
+                </div>
             </div>
         </div>
     </div>
-
-<div class="card-deck">
-    <div class="card text-center">
-      <div class="card-header">
-            <h4 class="card-title">Coaching</h4>
-     </div >
-        <div class="card-body">
-            <p class="card-text">Simple Effective Coaching with a Simple Effective Model</p>
-        </div>
-        <div class="card-body">
-      <ul class="list-group">
-       <li class="list-group-item">
-           <a class="card-link" href="#">Individual Coaching</a>
-       </li>
-       <li class="list-group-item">
-           <a class="nav-link" href="#">Group Workshops</a>
-       </li>
-       <li class="list-group-item">
-           <a class="nav-link" href="#">Team Sessions</a>
-       </li>
-      </ul>  
-    </div>
-    </div>
-    <div class="card text-center">
-      <div class="card-header">
-            <h4 class="card-title">Community</h4>
-     </div >
-        <div class="card-body">
-            <p class="card-text">Working together is just more fun!</p>
-        </div>
-        <div class="card-body">
-      <ul class="list-inline">
-       <li class="list-inline-item">
-           <a class="card-link" href="#">Slack</a>
-       </li>
-       <li class="list-inline-item">
-           <a class="nav-link" href="#">Social</a>
-       </li>
-      </ul>  
-    </div>
-    </div>
-</div>
 </div>
 </div>
 
