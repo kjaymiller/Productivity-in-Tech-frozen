@@ -1,6 +1,9 @@
+from pathlib import Path
+from datetime import datetime
 from flask import Flask, render_template, Markup
 from flask_scss import Scss
-from markdown import markdown
+from blog_engine.parse_markdown import render_post
+import json
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -9,15 +12,29 @@ app.config.from_object('config')
 def index():
     return render_template('index.html')
 
-"""
-@app.route("/blog/<path>.html")
-def blog(path):
-    with open('pages/' + path + '.md') as f:
-        content = f.read().split('\n\n', 1)
-        metadata = content[0]
-        post_content = Markup(markdown(content[1]))
-    return render_template('blog.html', content=post_content)
-"""
+
+@app.route("/blog/<name>.html")
+def posts(name):
+    filename = f'content/{name}.md'
+
+    with open(filename) as f:
+        metadata = render_post(f.read())
+        post_content = Markup(metadata['content'])
+        title = metadata['title']
+        created_time = metadata.get('date', datetime.fromtimestamp(Path(filename).stat().st_ctime).strftime("%Y-%m-%d"))
+        
+    return render_template('blog.html', 
+            content = post_content,
+            title = title,
+            created = created_time)
+
+
+@app.route("/posts.html")
+def blog():
+    with open('title_list.json') as j:
+        title_list = json.loads(j.read())
+    return render_template('blog_list.html', title_list=title_list)
+
 
 if __name__ == '__main__':
     Scss(app, static_dir='static', asset_dir='assets')
