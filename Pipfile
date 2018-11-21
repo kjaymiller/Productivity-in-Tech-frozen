@@ -8,6 +8,7 @@ flask = "*"
 frozen-flask = "*"
 markdown = "*"
 flask-scss = "*"
+pipfile = "*"
 
 [dev-packages]
 
