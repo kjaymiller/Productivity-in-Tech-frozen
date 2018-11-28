@@ -11,31 +11,58 @@ from markdown import markdown
 from pathlib import Path
 import json
 
-content_libraries = ['podcasts', 'microblog']
-
 def render_post(md_content):
-    with open(md_content):
-        post = md_content.split('\n\n', 2)
-        metadata_string = post[0]
-    
+    post = md_content.split('\n\n', 1)
+    print(post)
+    metadata_string = post[0]
     metadata = {}
 
     for line in metadata_string.split('\n'): 
-        line_data = line.split(': ',2 )
-        metadata[line_data[0].lower()] = line_data[1]
+        line_data = line.split(': ', 1)
+        metadata[line_data[0].lower()] = line_data[-1]
 
     metadata['content'] = markdown(post[-1])
     return metadata     
-    
 
-def check_for_json_file(json_file):
-    if not Path(json_file).exists():
+class JSON_Feed():
+    def __init__(self, json_file, content_path, new=False):    
+        self.json_file = json_file
+        self.content_path = content_path.glob('*.md')
+            
+        if new:  
+            self.slug_table = {}
+            self.json_object = self.load_new_json_file(json_file, self.content_path)
+        else:
+            self.json_object = self.load_json_file(json_file)
+
+    def add_json_content(self, json_object, content_path):
+        for md_file in content_path:
+            with open(md_file) as f:
+                metadata = render_post(f.read())
+                slug = metadata.get('slug', metadata['title'])
+                metadata['slug'] = slug     
+                self.slug_table[slug] = md_file.name
+                json_object['items'].append(metadata)
+        return json_object
+
+    def load_json_file(self, json_file):
         with open(json_file) as f:
-            return f.write('')
+             return json.loads(f.read())
 
-
-def add_json_content(json_object, metadata):
-    return json_objects['items'].append(metadata)
-    
-    
+    def purge_json_items(self, json_object):
+        new_object = json_object
+        new_object['items'] = []
+        return new_object
+             
+    def load_new_json_file(self, json_file, content_path):
+        json_object = self.load_json_file(json_file)
+        json_object_no_items = self.purge_json_items(json_object)
+        return self.add_json_content(json_object_no_items, content_path)
+            
+        
+class Blog(JSON_Feed):
+     def check_for_json_file(json_file):
+         if not Path(json_file).exists():
+            with open(json_file) as f:
+                return f.write('')
     

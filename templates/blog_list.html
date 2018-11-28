@@ -10,7 +10,9 @@
         <div class="card">
             <a href="blog/{{post['slug']}}.html">
                 <div style="overflow:hidden; height: 15em;">
+            {% if 'featured_image' in post %}
                     <img class="card-img-top" src="{{post['featured_image']}}">
+            {% endif %}
                 </div>
                 <div class="card-body">
                     <h2>{{post['title']}}</h2>
