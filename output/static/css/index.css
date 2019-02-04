@@ -1,0 +1,18 @@
+.card-body img {
+    max-width: 100%;
+}
+
+.card img {
+    max-height: 100%;
+}
+
+#podcasts img {
+}
+
+#what-im img {
+    max-height: 50px;
+}
+
+.jumbotron img {
+	max-width: 100%;
+}
