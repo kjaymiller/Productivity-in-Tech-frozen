@@ -1,4 +1,5 @@
 title: [Podcast] What Companies AND Candidates can do Better in the Hiring Process with John Knox
+image: https://kjaymiller.s3-us-west-2.amazonaws.com/images/pit-podcast.png
 
 This week on the Productivity In Tech Podcast, We have John Knox.
 
