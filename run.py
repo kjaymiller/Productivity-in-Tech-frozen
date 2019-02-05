@@ -36,7 +36,7 @@ def index():
                     image='fa-microphone-alt'),
                 Link(name='Youtube',
                     url='https://www.youtube.com/productivityintech',
-                    image='fa-youtube-play')
+                    image='fa-youtube')
                 ]
     return Page(template='index.html', services=services).html 
 
