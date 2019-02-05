@@ -38,6 +38,8 @@ def index():
                     url='https://www.youtube.com/productivityintech',
                     image='fa-video')
                 ]
+    featured_post = blog.pages[0]
+
     return Page(template='index.html', services=services).html 
 
 def pagination():
