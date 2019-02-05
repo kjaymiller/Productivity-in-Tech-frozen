@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}config.SITE_TITLE{% endblock %}
+{% block title %}{{config.SITE_TITLE}}{% endblock %}
 {% block head %}<link href="/static/css/index.css" rel="stylesheet"> {% endblock %}
 
 {% block content %}
@@ -45,7 +45,7 @@
         </div>
         {% endfor %}
     </div>
-    <div class="jumbotron col-md-5">
+    <div class="jumbotron col-md-5 text-center">
         <h2 class="">Community</h2>
         <p class="">Because working together is just more fun!</p>
         <div class="row justify-content-around">
