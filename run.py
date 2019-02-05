@@ -40,7 +40,7 @@ def index():
                 ]
     featured_post = blog.pages[0]
 
-    return Page(template='index.html', services=services).html 
+    return Page(template='index.html', services=services, featured_post=featured_post).html 
 
 def pagination():
     page_groups = blog, microblog
