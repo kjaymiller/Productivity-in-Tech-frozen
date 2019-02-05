@@ -14,24 +14,24 @@
         </div>
     </div>
 
-      <div class="jumbotron row">
+    <div class="jumbotron row">
         <div class="col-sm-4">
             <a href="{{featured_post._url}}">
-          <img src="{{featured_post.image}}">
+                <img src="{{featured_post.image}}">
             </a>
         </div>
 
         <div class="col-sm-7">
             <a href="{{featured_post._url}}">
-          <h2>{{featured_post.title}}</h2>
+                <h2>{{featured_post.title}}</h2>
             </a>
-          <p>{{featured_post.summary}}</p>
-          <p class="text-right">
-          <a href="{{featured_post._url}}">Read More</a>
-          </p>
+            <p>{{featured_post.summary}}</p>
+            <p class="text-right">
+            <a href="{{featured_post._url}}">Read More</a>
+            </p>
         </div>
 
-      </div>
+    </div>
     <div class="container row text-center">
         {% for link in services %}
         <div class="card border-0 col-md-12 col-lg-4 pb-5">
@@ -45,13 +45,14 @@
         </div>
         {% endfor %}
     </div>
-        <div class="jumbotron col-md-5">
-            <h2 class="">Community</h2>
-            <p class="">Because working together is just more fun!</p>
-                <a href="https://join.slack.com/t/productivedevs/shared_invite/enQtNDcxNDE5NjAzMjM1LTQ1ZWVjNThhNDE4OTY5YmQ1NzQ0ZWM4NDg2MDIyODZhZjg2Yzk4YzMyNmQzMTI2MTRhYTBlMDI4YzkxZTQwYTk"><i class="img-fluid fab fa-slack fa-5x px-2"" style="color:#1DA1F2;"></i></a>
-                <a href="https://twitter.com/prod_in_tech"><i class="img-fluid fab fa-twitter fa-5x px-2" style="color:#1DA1F2;"></i></a>
-            </div>
+    <div class="jumbotron col-md-5">
+        <h2 class="">Community</h2>
+        <p class="">Because working together is just more fun!</p>
+        <div class="row justify-content-around">
+            <a href="https://join.slack.com/t/productivedevs/shared_invite/enQtNDcxNDE5NjAzMjM1LTQ1ZWVjNThhNDE4OTY5YmQ1NzQ0ZWM4NDg2MDIyODZhZjg2Yzk4YzMyNmQzMTI2MTRhYTBlMDI4YzkxZTQwYTk"><i class="img-fluid fab fa-slack fa-5x px-2"" style="color:#1DA1F2;"></i></a>
+            <a href="https://twitter.com/prod_in_tech"><i class="img-fluid fab fa-twitter fa-5x px-2" style="color:#1DA1F2;"></i></a>
         </div>
     </div>
+</div>
 </div>
 {% endblock %}
