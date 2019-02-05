@@ -35,8 +35,8 @@ def index():
                     url='https://productivityintech.transistor.fm', 
                     image='fa-microphone-alt'),
                 Link(name='Youtube',
-                url='https://www.youtube.com/productivityintech',
-                image='fa-youtube')
+                    url='https://www.youtube.com/productivityintech',
+                    image='fa-youtube')
                 ]
     return Page(template='index.html', services=services).html 
 
