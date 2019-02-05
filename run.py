@@ -38,7 +38,7 @@ def index():
                 url='https://www.youtube.com/productivityintech',
                 image='fa-youtube')
                 ]
-    return Page(template='index.html') 
+    return Page(template='index.html', services=services).html 
 
 def pagination():
     page_groups = blog, microblog
