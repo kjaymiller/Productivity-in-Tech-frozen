@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Productivity in Tech{% endblock %}
+{% block title %}config.SITE_TITLE{% endblock %}
 {% block head %}<link href="/static/css/index.css" rel="stylesheet"> {% endblock %}
 
 {% block content %}
@@ -25,7 +25,7 @@
             </a>
           <p>{{featured_post.summary}}</p>
           <p class="text-right">
-          <a href="{{featured_post.id}}">Read More</a>
+          <a href="{{featured_post._url}}">Read More</a>
           </p>
         </div>
 
