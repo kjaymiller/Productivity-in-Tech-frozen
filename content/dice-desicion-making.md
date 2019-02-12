@@ -36,7 +36,6 @@ A Disdyakis Tracontahedron is a 120 sided die. I do not own one nor have I ever 
 
 We often treat our lives like a 120-sided die. There are so many different things that we can be doing. Usually in our panic, we just go "YOLO" and roll the dice on doing something hoping that we picked the right one.
 
-<hr> 
 So how can we increase our odds of picking the right number?
 
 ### Reduce the Number of Options
@@ -46,7 +45,7 @@ When my wife and I have to choose where to eat we take a large list of options a
 
 
 > **Dinner Choices**
-<hr>
+
 > 1. Panera Bread
 > 2. Chipotle
 > 3. In-and-Out
