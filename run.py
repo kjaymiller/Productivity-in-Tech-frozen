@@ -17,7 +17,7 @@ blog = Collection(name='blog', content_type=BlogPost, output_path='blog')
 
 shutil.rmtree(Path(config.OUTPUT_PATH))
 
-# build static pagesj
+# build static pages
 gen_static()
  
 page_collections = pages, blog
@@ -36,7 +36,7 @@ def index():
                     url='https://www.youtube.com/productivityintech',
                     image='fa-video')
                 ]
-    featured_post = blog.pages[0]
+    featured_post = blog.pages[-1]
 
     return Page(template='index.html', services=services, featured_post=featured_post).html 
 
