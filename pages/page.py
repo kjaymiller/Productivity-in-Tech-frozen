@@ -24,6 +24,7 @@ class Page():
         self._date_modified = None
         self._category = 'Uncategorized'
         self._image = None
+        self.summary = ''
 
         # self.date_published looks for us
         self._date = None
