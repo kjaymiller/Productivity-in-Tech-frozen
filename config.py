@@ -1,7 +1,7 @@
 from links import Link
 
 SITE_TITLE = "Productivity in Tech"
-SITE_SUBTITLE = ""
+SITE_SUBTITLE = "Achieve, Code, and Be MORE"
 SITE_URL = "https://productivityintech.com"
 AUTHOR = 'Jay Miller'
 AUTHOR_EMAIL = 'jay@productivityintech.com'
