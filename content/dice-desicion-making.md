@@ -11,11 +11,20 @@ Now take a 6 sided die and do the same thing.
 
 Now (if you have one) do this with a 20 sided die
 
-| Number of Sides | Correct Guesses |
-|---|---|
-| Coin | 4 |
-| 6-Sided Die | 3 |
-| 20 sided die | 0 |
+<table>
+<tr> 
+<td>Number of Sides </td> <td>Correct Guesses </td>
+</tr>
+<tr>
+<td>Coin</td><td>4</td>
+</tr>
+<tr>
+<td>6-Sided Die </td><td> 3 </td>
+</tr>
+<tr>
+<td>20 sided die</td><td> 0 </td>
+</tr>
+</table>
 
 How many decisions do you have to make right now? 2, 5, 10, 30? When you have many decisions that need to be made, How can you increase the chances that you are making the right decision? We will answer this question later.
 
@@ -74,5 +83,5 @@ If your goal is to simply guess the right number, then the more times you guess,
 
 When you select the wrong option don't give up, keep guessing. Just remember to take what you learned and make a more educated guess. 
 
-image credit: The Dice Lab
+<small>image credit: The Dice Lab</small>
 
