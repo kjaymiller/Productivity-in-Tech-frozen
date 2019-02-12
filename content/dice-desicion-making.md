@@ -1,4 +1,5 @@
 Title: How not to have Disdyakis Decision Making
+image: https://s3-us-west-2.amazonaws.com/kjaymiller/images/d120five0316.jpg
 slug: disdyakis-decision-making
 tags: decision making
 date: February 11, 2019 17:10
@@ -65,8 +66,13 @@ https://www.youtube.com/embed?v=FRlbNOno5VA&feature=share
 Some may call it cheating, but I call it winning!! (I don't play this game very often)
 
 Put parameters around each option and make choices based on the parameters and not the number itself. 
+![multiple dice](https://kjaymiller.s3-us-west-2.amazonaws.com/images/61pQmLk-ZBL._SL1000_.jpg)
+<small>image-credit: The Dice Lab</small>
 
 ### Keep Rolling
 If your goal is to simply guess the right number, then the more times you guess, the better chances you have to guess correctly, NO MATTER THE SIZE OF THE DIE. 
 
 When you select the wrong option don't give up, keep guessing. Just remember to take what you learned and make a more educated guess. 
+
+image credit: The Dice Lab
+
