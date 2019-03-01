@@ -23,7 +23,7 @@ Subscribe $10/month
 </div>
 
 <div class="card border-0">
-<a class="btn btn-primary btn-lg text-white">
+<a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786">
 Subscribe $100/year
 </a>
 </div>
@@ -39,5 +39,5 @@ Backers get access to the bonus PIT Podcast Feed.
 
 You can also gift a membership to someone you think will benefit from it!
 
-<a class="btn btn-small btn-light text-dark">Gift Monthly Membership</a>
-<a class="btn btn-small btn-light text-dark">Gift Annual Membership</a>
+<a class="btn btn-small btn-light text-dark" href="https://productivityintech.memberful.com/gift?plan=21849">Gift Monthly Membership</a>
+<a class="btn btn-small btn-light text-dark" href="https://productivityintech.memberful.com/gift?plan=36786">Gift Annual Membership</a>
