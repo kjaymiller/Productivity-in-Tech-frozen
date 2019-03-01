@@ -1,4 +1,4 @@
-Title: Become a PIT Member
+Title: Become a PIT Member ❤️
 slug: memberships
 
 *Productivity in Tech* is a **Member-Supported Company**. 
