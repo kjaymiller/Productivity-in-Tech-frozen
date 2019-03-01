@@ -22,5 +22,7 @@ HEADER_LINKS = (
     Link(name='Blog', url='/blog/blog_0.html'),
     Link(name='Newsletter', url='/subscribe.html'),
     Link('Contact','/contact.html'),
-    Link(name='Productivity in Tech Podcast', url='https://productivityintech.transistor.fm')
+    Link(name='Productivity in Tech Podcast',
+        url='https://productivityintech.transistor.fm'),
+    Link(name='Membership', url='/memberships.html')
     )   
