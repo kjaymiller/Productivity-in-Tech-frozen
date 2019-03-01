@@ -13,8 +13,6 @@ Productivity in Tech is a Member supported company. While the business does make
 		<li>More to Come...</li>
 		</ul>
 	</p>
-		</div>
-
 <div class="card-deck">
 	<div class="card border-0">
 	</a>
@@ -29,6 +27,8 @@ Productivity in Tech is a Member supported company. While the business does make
 	</a>
 	</div>
 </div>
+
+		</div>
 
 If you would like to offer support in the form of a one-time donation you can do so via our Ko-Fi Page!
 Backers get access to the bonus PIT Podcast Feed.
