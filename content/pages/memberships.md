@@ -2,7 +2,6 @@ Title: Become a PIT Member
 slug: memberships
 		
 <div class="jumbotron">
-	<h1>$10/month</h1>
 	<p>
 		Your Membership gets you access to:
 	<ul>
@@ -15,17 +14,15 @@ slug: memberships
 		</div>
 
 <div class="card-deck">
-	<div class="card">
-	<h2>Monthly Membership</h2>
+	<div class="card border-0">
 	</a>
-	<a class="btn btn-primary btn-lg">
+	<a class="btn btn-primary btn-lg text-white">
 	Subscribe $10/month
 </a>
 	</div>
 
-	<div class="card">
-	<h2>Annual Membership</h2>
-	<a class="btn btn-primary btn-lg">
+	<div class="card border-0">
+	<a class="btn btn-primary btn-lg text-white">
 	Subscribe $100/year
 	</a>
 	</div>
