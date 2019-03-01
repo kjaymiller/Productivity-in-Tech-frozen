@@ -33,8 +33,11 @@ Subscribe $100/year
 
 If you would like to offer support in the form of a one-time donation you can do so via our Ko-Fi Page!
 
+<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support PIT on Ko-fi', '#3394FA', 'R6R4KQDM');kofiwidget2.draw();</script>
+
 Backers get access to the bonus PIT Podcast Feed.
 
-You can also gift a membership to someone!
-[Gift Monthly Membership]()
-[Gift Annual Membership]()
+You can also gift a membership to someone you think will benefit from it!
+
+* [Gift Monthly Membership]()
+* [Gift Annual Membership]()
