@@ -39,5 +39,5 @@ Backers get access to the bonus PIT Podcast Feed.
 
 You can also gift a membership to someone you think will benefit from it!
 
-* [Gift Monthly Membership]()
-* [Gift Annual Membership]()
+<a class="btn btn-small text-white">Gift Monthly Membership</a>
+<a class="btn btn-small text-white">Gift Annual Membership</a>
