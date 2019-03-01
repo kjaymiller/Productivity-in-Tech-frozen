@@ -22,7 +22,7 @@ slug: memberships
 	</a>
 	</div>
 	<div class="card">
-	<a class="button">
+	<a class="btn btn-primary btn-lg">
 	Subscribe $10/month
 	</a>
 
@@ -34,7 +34,7 @@ slug: memberships
 	</a>
 	</div>
 	<div class="card">
-	<a class="button">
+	<a class="btn btn-primary btn-lg">
 	Subscribe $10/month
 	</a>
 	</div>
