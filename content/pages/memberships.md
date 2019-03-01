@@ -4,8 +4,7 @@ slug: memberships
 Productivity in Tech is a Member supported company. While the business does make revenue from consulting, coaching and speaking, we cannot continue to grow the community and the things we do it without support from the community we wish to continue to help. 
 		
 <div class="jumbotron">
-	<p>
-		Your Membership gets you access to:
+		<h2>Your Membership gets you access to:</h2>
 	<ul>
 		<li>Priority Access to the PIT Mastermind Group</li>
 		<li>Access to the bonus PIT Podcast Feed</li>
