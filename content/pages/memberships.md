@@ -17,25 +17,16 @@ slug: memberships
 <div class="card-deck">
 	<div class="card">
 	<h2>Monthly Membership</h2>
-	<a class="button">
-	Subscribe $10/month
 	</a>
-	</div>
-	<div class="card">
 	<a class="btn btn-primary btn-lg">
 	Subscribe $10/month
-	</a>
-
+</a>
 	</div>
+
 	<div class="card">
 	<h2>Annual Membership</h2>
-	<a class="button">
-	Subscribe $10/month
-	</a>
-	</div>
-	<div class="card">
 	<a class="btn btn-primary btn-lg">
-	Subscribe $10/month
+	Subscribe $100/year
 	</a>
 	</div>
 </div>
