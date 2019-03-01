@@ -9,8 +9,7 @@ slug: productive-developer-mastermind
 
 ### What will be asked of you?
 - 1 hour video chat commitment per week
-- 1 midweek check-in
-- 1 RING THE BELL CHECK-IN (I completed my task for the week!)
+- 2 midweek check-ins
 - 1 notebook and pen
 - the understanding that for one month you have to give up all prior knowledge of Productivity Best Practices and Start Fresh
 - two one-on-one calls with me one at the beginning and one at the end
