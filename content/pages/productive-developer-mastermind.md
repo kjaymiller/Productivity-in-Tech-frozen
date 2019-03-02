@@ -14,7 +14,7 @@ This month-long course works to remove barriers to productive success, focuses o
 <h3>$400</h3>
 </h2>What Will I Get from this Mastermind</h2>
 <ul>
-<li>An understanding of how you best work</li>
+<li>4 Group Sessions with others also working to become more productive developers</li>
 <li>Accountability partners to help you achieve your personal and professional goals</li>
 <li>A group walkthrough of the PIT Foundations Course</li>
 <li>two one-on-one calls with a productivity coach</li>
@@ -28,5 +28,5 @@ This month-long course works to remove barriers to productive success, focuses o
 <li>The understanding that</li>
 </ul>
 
-Reserve your spot in line!
-<a class="btn btn-lg btn-primary">Reserve your spot</a>
+Reserve your spot on the waiting list!
+<a class="btn btn-lg btn-primary text-white">Reserve your spot</a>
