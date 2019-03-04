@@ -25,7 +25,6 @@ This month-long course works to remove barriers to productive success, focuses o
 <li>1 hour video chat commitment per week (for one month)</li>
 <li>2 midweek check-ins</li>
 <li>1 notebook and pen</li>
-<li>The understanding that</li>
 </ul>
 
 Reserve your spot on the waiting list!
