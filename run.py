@@ -9,6 +9,7 @@ from pages import (
         Collection,
         )
 from links import Link
+from pages.feeds import feed_gen
 from pages.generators import gen_static 
 from pages.writer import write_page, writer
 
@@ -69,16 +70,8 @@ def categorization():
                 post_list=blog.categories[category],
                 output_path=blog.output_path).html)
 
-def feed_gen():
-    page_groups = [blog] 
-    for page in page_groups:
-        with open(f'{page.output_path}/{page.name}.json', 'w') as fp:
-            json.dump(page.json_feed, fp)
-
-        with open(f'{page.output_path}/{page.name}.rss', 'w') as rss:
-            rss.write(page.rss_feed)
     
 index()
 categorization()
 pagination()
-feed_gen()
+feed_gen(blog)
