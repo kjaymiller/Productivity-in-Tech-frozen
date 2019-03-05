@@ -39,5 +39,5 @@ Backers get access to the bonus PIT Podcast Feed.
 
 You can also gift a membership to someone you think will benefit from it!
 
-<a class="btn btn-small btn-light text-dark" href="https://productivityintech.memberful.com/gift?plan=21849">Gift Monthly Membership</a>
-<a class="btn btn-small btn-light text-dark" href="https://productivityintech.memberful.com/gift?plan=36786">Gift Annual Membership</a>
+<a class="btn btn-small btn-gray text-dark" href="https://productivityintech.memberful.com/gift?plan=21849">Gift Monthly Membership</a>
+<a class="btn btn-small btn-gray text-dark" href="https://productivityintech.memberful.com/gift?plan=36786">Gift Annual Membership</a>

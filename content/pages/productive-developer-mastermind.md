@@ -1,16 +1,31 @@
-Title: The Productive Developer Mastermind
+Title: The Productive Developer Growth Mastermind Group
 slug: productive-developer-mastermind
 
-### What Will I Get from this Mastermind?
-- An understanding of how I (you) best work
-- 4 accountability partners and your commitment to being one as well for AT LEAST 1-month
-- The foundations to productivity as taught by me
-- Ways that you can migrate your personal productivity system outside of your analog system if you so choose
+## For one month, could you give up all prior knowledge of productivity *best practices* and be open to learning to design, decide, and direct your most productive life
 
-### What will be asked of you?
-- 1 hour video chat commitment per week
-- 2 midweek check-ins
-- 1 notebook and pen
-- the understanding that for one month you have to give up all prior knowledge of Productivity Best Practices and Start Fresh
-- two one-on-one calls with me one at the beginning and one at the end
+The *Productivity in Tech Developer Growth Mastermind Group* is designed for developers to improve themselves through group accountability and one-on-one mentorship.
 
+This month-long course works to remove barriers to productive success, focuses on the developers personal and professional goals, and equips them with the proper mindset to continue to progress as a developer.
+
+<div class="jumbotron">
+<h2>Sign up for the Waiting List</h2>
+<p>All <em>PIT Mastermind Groups</em> are made up of 4-5 members.</p>
+
+<h3>$400</h3>
+</h2>What Will I Get from this Mastermind</h2>
+<ul>
+<li>4 Group Sessions with others also working to become more productive developers</li>
+<li>Accountability partners to help you achieve your personal and professional goals</li>
+<li>A group walkthrough of the PIT Foundations Course</li>
+<li>two one-on-one calls with a productivity coach</li>
+</ul>
+
+<h3>What will be asked of you?</h3>
+<ul>
+<li>1 hour video chat commitment per week (for one month)</li>
+<li>2 midweek check-ins</li>
+<li>1 notebook and pen</li>
+</ul>
+
+Reserve your spot on the waiting list!
+<a class="btn btn-lg btn-primary text-white">Reserve your spot</a>
