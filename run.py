@@ -9,6 +9,7 @@ from pages import (
         Collection,
         )
 from links import Link
+from pages.feeds import feed_gen
 from pages.generators import gen_static 
 from pages.writer import write_page, writer
 
@@ -57,28 +58,21 @@ def categorization():
                 Page(template='blog_list.html',
                     post_list=blog.categories[category], 
                     output_path=blog.output_path).html)
+        feed_gen(blog, page_filter=blog.categories[category], output_path=category_path, name=category)
     
     tag_path = Path(f'{blog.output_path}/tag')
     tag_path.mkdir(parents=True, exist_ok=True)
     write_page(f'{tag_path}/all.html', Page(template='categories.html',
         topic_list=[t for t in blog.tags]).html)
-
+        
     for tag in blog.tags:
         write_page(f'{tag_path}/{tag}.html',
                 Page(template='blog_list.html',
-                post_list=blog.categories[category],
+                post_list=blog.tags[tag],
                 output_path=blog.output_path).html)
-
-def feed_gen():
-    page_groups = [blog] 
-    for page in page_groups:
-        with open(f'{page.output_path}/{page.name}.json', 'w') as fp:
-            json.dump(page.json_feed, fp)
-
-        with open(f'{page.output_path}/{page.name}.rss', 'w') as rss:
-            rss.write(page.rss_feed)
     
 index()
 categorization()
 pagination()
-feed_gen()
+feed_gen(blog)
+
