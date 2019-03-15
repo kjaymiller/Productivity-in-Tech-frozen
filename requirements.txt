@@ -1,7 +1,5 @@
 -i https://pypi.org/simple
 --trusted-host pypi.org
---extra-index-url https://files.pythonhosted.org
---trusted-host files.pythonhosted.org
 arrow==0.12.1
 certifi==2018.11.29
 click==7.0
