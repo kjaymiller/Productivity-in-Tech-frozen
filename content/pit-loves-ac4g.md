@@ -2,11 +2,13 @@ Title: PIT is Giving all of its New Memberships in March to AppCamp4Girls
 slug: pit-loves-ac4g
 date: March 15, 2019 09:32
 
-Productivity in Tech is serious about #diversityinTech. 
+![](https://kjaymiller.s3-us-west-2.amazonaws.com/images/pit-ac4g.jpg)
+
+## Productivity in Tech is serious about _#diversityinTech_. 
 
 In Celebration of #InternationalWomensMonth. PIT is going to be donating $10 for each new member we get in the month of March.
 
-Sign up to be a member today to gain perks and to celebrate a great cause! 
+## Sign up to be a member today to gain perks and to celebrate a great cause! 
 
 (And to be more productive....)
 
