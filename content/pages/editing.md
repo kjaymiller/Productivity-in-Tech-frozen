@@ -30,4 +30,4 @@ and optimize so that you get your point across.
 </div>
 </div>
 
-<button>I'd Like a Consultation</button> 
+<button class="btn btn-primary">I'd Like a Consultation</button> 
