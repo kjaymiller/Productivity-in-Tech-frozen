@@ -21,13 +21,13 @@ and optimize so that you get your point across.
 <div class="card-deck">
   <div class="card">
     <h2 class="card-title">Podcast Editing</h2>
-    <i class="fas fa-microphone-alt card-body"></i>
+    <i class="fas fa-microphone-alt"></i>
   </div>
 
   <div class="card">
     <h2 class="card-title">Video Editing</h2>
-    <i class="fas fa-microphone-alt card-body"></i>
-    </div>
+    <i class="fas fa-microphone-alt"></i>
+  </div>
   </div>
   
     <button>I'd Like a Consultation</button> 
