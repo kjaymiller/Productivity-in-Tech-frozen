@@ -18,15 +18,18 @@ because of the daunting task of editing.
 No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across. 
 
-<div class="row">
+<div class="row justify-content-around">
 <div class="card border-0">
 <h2 class="card-title border-bottom">Podcast Editing</h2>
+<div class="card-body">
 <i class="fas fa-microphone-alt fa-9x"></i>
+<h2 class="display-1">$45 Per Hour*</hr>
 </div>
 
 <div class="card border-0">
 <h2 class="card-title border-bottom">Video Editing</h2>
 <i class="fas fa-microphone-alt fa-9x"></i>
+<h2 class="display-1">$150 Per Hour*</hr>
 </div>
 </div>
 
