@@ -14,26 +14,6 @@
         </div>
     </div>
 
-    <div class="jumbotron row">
-      {% if featured_post.image %}
-        <div class="col-sm-4">
-            <a href="{{featured_post.href}}">
-                <img src="{{featured_post.image}}">
-            </a>
-        </div>
-        {% endif %}
-
-        <div class="col-sm-7">
-            <a href="{{featured_post.href}}">
-                <h2>{{featured_post.title}}</h2>
-            </a>
-            <p>{{featured_post.summary}}</p>
-            <p class="text-right">
-            <a href="{{featured_post.href}}">Read More</a>
-            </p>
-        </div>
-
-    </div>
     <div class="container row text-center">
         {% for link in services %}
         <div class="card border-0 col-md-12 col-lg-4 pb-5">
