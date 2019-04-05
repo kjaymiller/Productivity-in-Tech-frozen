@@ -18,7 +18,7 @@ because of the daunting task of editing.
 No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across. 
 
-<div class="card-deck">
+<div class="card-deck border-0">
 <div class="card">
 <h2 class="card-title">Podcast Editing</h2>
 <i class="fas fa-microphone-alt fa-9x"></i>
@@ -30,4 +30,4 @@ and optimize so that you get your point across.
 </div>
 </div>
 
-<button class="btn btn-primary">I'd Like a Consultation</button> 
+<button class="btn btn-primary mt-3">I'd Like a Consultation</button> 
