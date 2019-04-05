@@ -34,6 +34,8 @@ def index():
                 Link(name='Podcast',
                     url='https://productivityintech.transistor.fm', 
                     image='fa-microphone-alt'),
+                Link(name="Coaching", url="./pages/coaching.html",
+                    image='fas-hands-helping')
                 ]
     featured_post = blog.pages[0]
 
