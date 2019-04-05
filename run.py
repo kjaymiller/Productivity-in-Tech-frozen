@@ -30,10 +30,8 @@ for collection in page_collections:
 
 @writer(route='index.html')
 def index():
-    services = [Link(name='Blog', url='./blog/blog_0.html', image='fa-file-code'),
-                Link(name='Podcast',
-                    url='https://productivityintech.transistor.fm', 
-                    image='fa-microphone-alt'),
+    services = [Link(name='Editing', url='./editing.html',
+        image='fa-laptop-code'),
                 Link(name="Coaching", url="./coaching.html",
                     image='fa-hands-helping')
                 ]
