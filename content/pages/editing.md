@@ -27,9 +27,10 @@ and optimize so that you get your point across.
 </div>
 
 <div class="card border-0">
-<h2 class="card-title border-bottom">Video Editing</h2>
+<h3 class="card-title border-bottom">Video Editing</h2>
 <i class="fas fa-microphone-alt fa-9x"></i>
-<h2 class="display-1">$150 Per Hour*</hr>
+<h3 class="display-1">$150 Per Hour*</hr>
+</div>
 </div>
 </div>
 
