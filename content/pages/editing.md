@@ -18,14 +18,14 @@ because of the daunting task of editing.
 No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across. 
 
-<div class="card-deck border-0">
-<div class="card">
-<h2 class="card-title">Podcast Editing</h2>
+<div class="row">
+<div class="card border-0">
+<h2 class="card-title border-bottom">Podcast Editing</h2>
 <i class="fas fa-microphone-alt fa-9x"></i>
 </div>
 
-<div class="card">
-<h2 class="card-title">Video Editing</h2>
+<div class="card border-0">
+<h2 class="card-title border-bottom">Video Editing</h2>
 <i class="fas fa-microphone-alt fa-9x"></i>
 </div>
 </div>
