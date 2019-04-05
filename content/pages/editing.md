@@ -23,13 +23,13 @@ and optimize so that you get your point across.
 <h2 class="card-title border-bottom">Podcast Editing</h2>
 <div class="card-body">
 <i class="fas fa-microphone-alt fa-9x"></i>
-<h2 class="display-1">$45 Per Hour*</hr>
+<h2 class="display-4">$45 Per Hour*</hr>
 </div>
 
 <div class="card border-0">
 <h3 class="card-title border-bottom">Video Editing</h2>
 <i class="fas fa-microphone-alt fa-9x"></i>
-<h3 class="display-1">$150 Per Hour*</hr>
+<h3 class="display-4">$150 Per Hour*</hr>
 </div>
 </div>
 </div>
