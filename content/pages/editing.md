@@ -19,15 +19,15 @@ No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across. 
 
 <div class="card-deck">
-  <div class="card">
-    <h2 class="card-title">Podcast Editing</h2>
-    <i class="fas fa-microphone-alt"></i>
-  </div>
+<div class="card">
+<h2 class="card-title">Podcast Editing</h2>
+<i class="fas fa-microphone-alt fa-9x"></i>
+</div>
 
-  <div class="card">
-    <h2 class="card-title">Video Editing</h2>
-    <i class="fas fa-microphone-alt"></i>
-  </div>
-  </div>
-  
-    <button>I'd Like a Consultation</button> 
+<div class="card">
+<h2 class="card-title">Video Editing</h2>
+<i class="fas fa-microphone-alt fa-9x"></i>
+</div>
+</div>
+
+<button>I'd Like a Consultation</button> 
