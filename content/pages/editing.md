@@ -23,7 +23,7 @@ and optimize so that you get your point across.
 <h2 class="card-title border-bottom">Podcast Editing</h2>
 <div class="card-body row">
 <i class="fas fa-microphone-alt fa-9x"></i>
-<h2 class="">$45 Per Hour*</hr>
+<h3 class="mt-2">$45 Per Hour*</h3>
 </div>
 </div>
 
@@ -31,7 +31,7 @@ and optimize so that you get your point across.
 <h2 class="card-title border-bottom">Video Editing</h2>
 <div class="card-body">
 <i class="fas fa-file-video fa-9x"></i>
-<h3 class="">$150 Per Hour*</h3>
+<h3 class="mt-2">$150 Per Hour*</h3>
 </div>
 </div>
 </div>
@@ -44,7 +44,7 @@ and optimize so that you get your point across.
     <label>Your Email: <input type="email" name="email" /></label>
   </p>
   <p>
-	<label>I'm Interest in: <select name="editing_type[]" multiple>
+	<label>I'm Interested in: <select name="editing_type[]" multiple>
 	      <option value="Podcast">Podcast Editing</option>
       <option value="Video Editing">Video Editing</option>
     </select></label>
