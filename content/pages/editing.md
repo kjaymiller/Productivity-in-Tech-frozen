@@ -21,8 +21,8 @@ and optimize so that you get your point across.
 <div class="row justify-content-around">
 <div class="card border-0 col-lg-5">
 <h2 class="card-title border-bottom">Podcast Editing</h2>
-<div class="card-body row">
-<i class="fas fa-microphone-alt fa-9x"></i>
+<div class="card-body">
+<i class="fas fa-microphone-alt fa-9x text-primary text-center"></i>
 <h3 class="mt-2">$45 Per Hour*</h3>
 </div>
 </div>
@@ -30,7 +30,7 @@ and optimize so that you get your point across.
 <div class="card border-0 col-lg-5">
 <h2 class="card-title border-bottom">Video Editing</h2>
 <div class="card-body">
-<i class="fas fa-file-video fa-9x"></i>
+<i class="fas fa-file-video fa-9x text-primary text-center"></i>
 <h3 class="mt-2">$150 Per Hour*</h3>
 </div>
 </div>
