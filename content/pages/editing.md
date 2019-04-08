@@ -36,7 +36,7 @@ and optimize so that you get your point across.
 </div>
 </div>
 
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" class="col-md-10 col-lg-6" method="POST" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>   
   </p>
