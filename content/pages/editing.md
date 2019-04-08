@@ -23,15 +23,15 @@ and optimize so that you get your point across.
 <h2 class="card-title border-bottom">Podcast Editing</h2>
 <div class="card-body row">
 <i class="fas fa-microphone-alt fa-9x"></i>
-<h2 class="display-4">$45 Per Hour*</hr>
+<h2 class="">$45 Per Hour*</hr>
 </div>
 </div>
 
 <div class="card border-0 col-lg-5">
-<h3 class="card-title border-bottom">Video Editing</h2>
+<h2 class="card-title border-bottom">Video Editing</h2>
 <div class="card-body">
-<i class="fas fa-microphone-alt fa-9x"></i>
-<h3 class="display-4">$150 Per Hour*</hr>
+<i class="fas fa-file-video fa-9x"></i>
+<h3 class="">$150 Per Hour*</h3>
 </div>
 </div>
 </div>
@@ -50,7 +50,7 @@ and optimize so that you get your point across.
     </select></label>
   </p>
   <p>
-<button type="submit" class="btn btn-primary mt-3">I'd Like a Consultation</button> 
+<button type="submit" class="btn btn-success mt-3">I'd Like a Consultation</button> 
   </p>
 </form>
 
