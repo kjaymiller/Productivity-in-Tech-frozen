@@ -36,7 +36,7 @@ Let's take the first step and learn if I can help you become (More) Productive
     <label>Your Email: <input type="email" name="email" /></label>
   </p>
   <p>
-    <button type="submit">I would like a free productivity coaching
+    <button type="submit" class="btn btn-primary">I would like a free productivity coaching
       assessment.</button>
   </p>
 </form>
