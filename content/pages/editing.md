@@ -52,7 +52,7 @@ and optimize so that you get your point across.
     </select></label>
   </p>
   <p>
-<button type="submit" class="btn btn-success mt-3">I'd Like a Consultation</button> 
+<button type="submit" class="btn btn-primary mt-3">I'd Like a Consultation</button> 
   </p>
 </form>
 
