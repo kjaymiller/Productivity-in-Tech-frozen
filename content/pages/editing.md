@@ -1,8 +1,5 @@
 title: Offloading a Bit of the Editing can Help you be (More) Productive
 
-Having created content around Productivity in Tech has given me many editing
-skills.
-
 ## Podcast or Video Course Editing
 ------
 You can make your podcast sound amazing with some work, but according to the
