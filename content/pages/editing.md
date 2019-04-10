@@ -54,7 +54,6 @@ and optimize so that you get your point across.
 </form>
 
 <small>
-
-* Podcast Editing rounded for every 30 minutes of RAW Content<br>
-* Video Editing rounded to the minute of RAW Content 
+_* Podcast Editing rounded for every 30 minutes of RAW Content_<br>
+_* Video Editing rounded to the minute of RAW Content_
 </small>
