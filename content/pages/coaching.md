@@ -1,8 +1,7 @@
 title: Need Help Getting Productive? 
+subtitle: Productivity in Tech provides productivity coaching for people in the tech space.
 
-Productivity in Tech provides coaching people in the tech space.
-
-Whether you have a system in place or you are just getting started. We can help you find clarity in your process. 
+Whether you have a system in place or you are just getting started. I can help you find **clarity in your process.** 
 
 ## We Know About Productivity AND We Know About Tech
 The biggest challenge in finding a productivity coach that works for you is finding one that understands what you do.
