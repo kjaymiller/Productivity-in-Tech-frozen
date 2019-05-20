@@ -54,5 +54,5 @@ Let's take the first step and learn if I can help you become (More) Productive
 
 <sup>\*\* Productivity in Tech does not claim to provide any type of therapy business and should not be used in substitution of seeing a mental health professional.</sup>
 </div>
-<img src="https://kjaymiller.s3-us-west-2.amazonaws.com/images/WAX_0357.JPG" class="col-lg-5">
+<img src="https://kjaymiller.s3-us-west-2.amazonaws.com/images/WAX_0357.JPG" style="max-width: 100%">
 </div>
