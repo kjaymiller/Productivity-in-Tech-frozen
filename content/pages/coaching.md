@@ -32,7 +32,9 @@ There will be times when you need to work with me a lot and times when you will 
 
 If you have a quick thought or concern we can work on that for free. You only pay when it's time to get done to work!
 
-## We Make Sure That I'm the Right Coach for You Before You Pay
+<div class="row">
+<div class="col-lg-6">
+<h2>We Make Sure That I'm the Right Coach for You Before You Pay</h2>
 The first call that we do is a free consultation. In that call I learn about what issues you are running into and let you know what my planned approach would be. 
 
 Let's take the first step and learn if I can help you become (More) Productive
@@ -51,3 +53,6 @@ Let's take the first step and learn if I can help you become (More) Productive
 </form>
 
 <sup>\*\* Productivity in Tech does not claim to provide any type of therapy business and should not be used in substitution of seeing a mental health professional.</sup>
+</div>
+<img src="https://kjaymiller.s3-us-west-2.amazonaws.com/images/WAX_0357.JPG" class="col-lg-5">
+</div>
