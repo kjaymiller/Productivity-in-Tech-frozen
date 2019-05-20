@@ -8,7 +8,7 @@ Whether you have a system in place or you are just getting started. We can help 
 The biggest challenge in finding a productivity coach that works for you is finding one that understands what you do.
 
 
-<blockquote class="blockquote">
+<blockquote class="blockquote text-center">
 <p class="font-italic">I wanted to focus on my career. I knew I wasn't very proactive or productive anymore and so I thought a productivity coach sounded practical." I know (Jay is) passionate about this... so you seemed perfect.</p> 
 
 <p class="font-italic">
