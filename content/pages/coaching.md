@@ -7,6 +7,15 @@ Whether you have a system in place or you are just getting started. We can help 
 ## We Know About Productivity AND We Know About Tech
 The biggest challenge in finding a productivity coach that works for you is finding one that understands what you do.
 
+
+<quote>
+<p class="text-italic">I wanted to focus on my career. I knew I wasn't very proactive or productive anymore and so I thought a productivity coach sounded practical." I know (Jay is) passionate about this... so you seemed perfect.</p> 
+
+<p class="text-italic">
+That and I couldn't afford $150-$500 a session.
+</p>
+- Chris J.
+</quote>
 I have productivity coaching experience as I have worked with other productivity coaches for the past 5 years. 
 
 I also am an active developer and spend the majority of my day working in the tech space. So whether you are a developer, designer, system administrator. I speak your language. I know your struggles, and I have helped others like you!
