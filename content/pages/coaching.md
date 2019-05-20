@@ -8,13 +8,12 @@ The biggest challenge in finding a productivity coach that works for you is find
 
 
 <blockquote class="blockquote text-center">
-<p class="font-italic">I wanted to focus on my career. I knew I wasn't very proactive or productive anymore and so I thought a productivity coach sounded practical." I know (Jay is) passionate about this... so you seemed perfect.</p> 
-
 <p class="font-italic">
-That and I couldn't afford $150-$500 a session.
+"I wanted to <b>focus</b> on my career. I knew I wasn't very proactive or productive in that area so I thought a productivity coach sounded practical. I knew Jay was passionate about this from listening to his podcast for so long. That and unlike some of the other coaches I looked into, I could actually afford his coaching."
 </p>
 - Chris J.
 </blockquote>
+
 I have productivity coaching experience as I have worked with other productivity coaches for the past 5 years. 
 
 I also am an active developer and spend the majority of my day working in the tech space. So whether you are a developer, designer, system administrator. I speak your language. I know your struggles, and I have helped others like you!
