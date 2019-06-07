@@ -7,12 +7,14 @@
         method="post"
         target="popupwindow"
         onsubmit="window.open('https://buttondown.email/productivityintech', 'popupwindow')"
-        class="embeddable-buttondown-form"
+        class="custom-form embeddable-buttondown-form"
         >
-        <label for="bd-email">Enter your email</label>
-        <input type="email" name="email" id="bd-email">
+
+        <div class="input-group">
+        <input type="email" name="email" id="bd-email" class="form-control"
+        placeholder="Email">
+        <input type="submit" class="btn btn-outline-primary" value="Subscribe" />
         <input type="hidden" value="1" name="embed"/>
-        <input type="submit" class="btn btn-primary" value="Subscribe" />
         <p>
         <a href="https://buttondown.email" target="_blank">Powered by Buttondown.</a>
         </p>
