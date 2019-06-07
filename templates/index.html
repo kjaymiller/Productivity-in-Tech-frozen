@@ -5,21 +5,12 @@
 {% block content %}
 <!--Start Jumbotron  -->
 <div class="container">
-    <div class="text-center"> <img class="img" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg"></div>
-
-  <div class="container row text-center">
-    {% for link in services %}
-    <div class="card border-0 col-md-12 col-lg-4 pb-5">
-      <div class="text-primary card-header bg-transparent no-border">
-        <a href="{{link.url}}"><h3>{{link.name}}</h3>
-      </div>
-      <div class="card-img-bottom p-3">
-        <i class="fas {{link.image}} fa-7x"></i>
-      </div>
-        </a>
+    <div class="text-center">
+      <img class="img" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg">
     </div>
-    {% endfor %}
-  </div>
+
+
+    {% include 'index/coaching.html' %}
   <div class="col-md-8 text-center" style="margin: auto;">
     <h2 class="text-primary">Community</h2>
     <p class="">Because working together is just more fun!</p>
