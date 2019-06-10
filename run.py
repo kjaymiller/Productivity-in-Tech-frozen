@@ -69,7 +69,7 @@ def categorization():
                 output_path=blog.output_path).html)
 
 
-@writer(route='coaching/feedback')
+@writer(route='coaching_feedback')
 def coaching_feedback():
     return Page(template='coaching/coaching_feedback.html').html
 
