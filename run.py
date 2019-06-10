@@ -71,7 +71,7 @@ def categorization():
 
 @writer(route='coaching/feedback')
 def coaching_feedback():
-    return Page(template='coaching/coaching_feedback.html')
+    return Page(template='coaching/coaching_feedback.html').html
 
 
 if __name__ == "__main__":
