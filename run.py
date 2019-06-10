@@ -74,10 +74,10 @@ def coaching_feedback():
     return Page(template='coaching/coaching_feedback.html')
 
 
-if __name__ == "__main__"
-index()
-coaching_feedback()
-categorization()
-pagination()
-feed_gen(blog)
+if __name__ == "__main__":
+    index()
+    coaching_feedback()
+    categorization()
+    pagination()
+    feed_gen(blog)
 
