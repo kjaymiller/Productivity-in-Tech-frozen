@@ -67,8 +67,16 @@ def categorization():
                 Page(template='blog_list.html',
                 post_list=blog.tags[tag],
                 output_path=blog.output_path).html)
-    
+
+
+@writer(route='coaching/feedback')
+def coaching_feedback():
+    return Page(template='coaching/coaching_feedback.html')
+
+
+if __name__ == "__main__"
 index()
+coaching_feedback()
 categorization()
 pagination()
 feed_gen(blog)
