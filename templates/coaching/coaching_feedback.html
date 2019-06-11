@@ -16,10 +16,8 @@
   <p>Please fill out the short form and let us know what you think of your last
   Series of sessions with us.</p>
   <form data-netlify="true" method="POST" action='/'>
-    <div class="input-group mb-3">
+    <div class="form-row mb-3">
       <input type="text" name="name" class="form-control" placeholder="Your Name">
-    </div>
-    <div class="input-group mb-3">
       <input type="email"
       name="email"
       class="form-control"
@@ -27,23 +25,24 @@
       placeholder="Your Email Address">
     </div>
 
-    <div class="input-group mb-1">
+    <div class="input-group mb-3">
       <h3>What was our goal?</h3>
     </div>
-    <div class="input-group mb-3">
-      <textarea rows="3" class="form-control">
-      </textarea>
+    <div class="input-group col-8 col-lg-4 mb-3">
+      <textarea rows="3" class="form-control"></textarea>
     </div>
     <div class="input-group mb-3">
       <label for="#progressMade" class="input-group-prepend">
         Do you feel we made progress towards this goal?
       </label>
+
       <select name="progressOnGoal" id="progressMade" class="form-control">
         <option>Yes</option>
         <option>No</option>
+
       </select>
     </div>
-    <div class="input-group">
+    <div class="input-group col-8 col-lg-4 mb-3">
       <label for="#intervalCheck">
         Did you feel like the our meeting interval was a good pace?
       </label>
