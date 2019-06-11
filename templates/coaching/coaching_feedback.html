@@ -19,11 +19,14 @@
       <input type="text" name="name" class="form-control" placeholder="Your Name">
     </div>
     <div class="input-group mb-3">
-      <input type="email" name="email" class="form-control" placeholder="Your
-      Email Address">
+      <input type="email"
+      name="email"
+      class="form-control"
+      required="required"
+      placeholder="Your Email Address">
     </div>
     <div class="input-group mb-3" id="starRating">
-      <label>Stars</label>
+      <label mr-4>Stars</label>
       <star-item
            v-for="star in stars"
            v-bind:star="star"
