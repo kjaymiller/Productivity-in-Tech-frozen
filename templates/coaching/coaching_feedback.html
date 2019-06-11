@@ -5,11 +5,12 @@
 <link href="/static/css/index.css" rel="stylesheet"> 
 {% endblock %}
 
-{% block add-ons %}
-  {% include 'add-ons/vue.jxt' %}
+{% block add_ons %}
+  {% include 'add-ons/vue.html' %}
 {% endblock %}
 
 {% block content %}
+<div class="container">
 <h1>How Are We Doing?</h1>
 <p>We are always trying bring our absolute best to all of our clients!</p>
 
@@ -17,23 +18,27 @@
 Series of sessions with us.</p>
 <form>
   <div class="input-group">
-    <input type="text" name="" class="" placeholder="">
+    <input type="text" name="name" class="form-control" placeholder="Your Name">
   </div>
   <div class="input-group">
-    <input type="text" name="" class="hide" placeholder="">
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
+    <input type="email" name="email" class="form-control" placeholder="Your
+    Email Address">
+  </div>
 
-    
-  </div>
   <div class="input-group">
-    <button class="btn btn-info">Submit</button>
+    <i class="fa fa-star px-2"></i>
+    <i class="fa fa-star px-2"></i>
+    <i class="fa fa-star px-2"></i>
+    <i class="fa fa-star px-2"></i>
+    <i class="fa fa-star px-2"></i>
+  </div>
+
+  <div class="input-group">
+    <button class="btn btn-primary">Submit</button>
   </div>
 
 </form>
 
+</div>
 
 {% endblock %}
