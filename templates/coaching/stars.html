@@ -1,0 +1,8 @@
+<div id="starRating">
+<star-item 
+   v-for="star in stars"
+   v-bind:star="star"
+   v-bind:key="star.id"
+   ></star-item>
+   
+Vue.component('star-item', {})
