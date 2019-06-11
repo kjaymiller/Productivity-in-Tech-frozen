@@ -1,5 +1,12 @@
-<div class="container input-group" id="starRating">
-<h3>Stars</h3>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://kit.fontawesome.com/94d9a219ee.js"></script>
+  </head>
+  <body>
+<div class="container" id="starRating">
+    <h1>Stars</h1>
 <star-item 
    v-for="star in stars"
    v-bind:star="star"
@@ -12,8 +19,12 @@
 <script>
   Vue.component('star-item', {
     props: ['star', 'toggle'],
-    template: '<i v-bind:class="star" @click="toggle(star)" @mouseover="toggle(star)"></i>',
+    template: '<i v-bind:class="star" @click="toggle(star)" @mouseover="toggle(star)" @mouseaway="toggle(star)"></i>',
     })
+
+  var far = true
+  var fas = false
+
 
   var app = new Vue({
     el: '#starRating',
@@ -22,8 +33,8 @@
       stars: [{'id': 1}, {'id': 2}, {'id': 3}, {'id': 4}, {'id': 5}].map(function(e) {
         return {
           'id': e.id, 
-          'far': false, 
-          'fas': true,
+          'far': far, 
+          'fas': fas,
           'fa-4x': true,
           'fa-star': true,
           'text-warning': true
@@ -47,3 +58,5 @@
         }
     })
 </script>
+</body>
+</html>
