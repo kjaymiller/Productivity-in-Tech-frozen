@@ -1,5 +1,6 @@
-<div class="container" id="starRating">
-    <h1>Stars</h1>
+{% raw %}
+<div class="container input-group" id="starRating">
+    <h2>Stars</h2>
 <star-item 
    v-for="star in stars"
    v-bind:star="star"
@@ -51,3 +52,4 @@
         }
     })
 </script>
+{% endraw %}
