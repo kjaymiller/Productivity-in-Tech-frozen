@@ -37,7 +37,8 @@
     </div>
     <div class="input-group mb-3">
       <label for="#progressMade" class="input-group-prepend">
-        Do you feel we made <strong class="px-1 text-warning">progress</strong> towards this goal?
+        Do you feel we made <span class="font-weight-bold px-1
+          text-primary">progress</span> towards this goal?
       </label>
     </div>
       <div class="input-group col-8 col-lg-4 mb-3">
@@ -48,9 +49,23 @@
     </div>
     <div class="input-group col-8 col-lg-4 mb-3">
       <label for="#intervalCheck">
-        Did you feel like the our meeting interval was a good pace?
+        Did you feel like the our <span class="font-weight-bold px-1">
+        meeting interval</span> was a good pace?
       </label>
       <select name="intervalCheck" id="intervalCheck" class="form-control">
+        <option class="text-success">Yes</option>
+        <option class="text-danger">No</option>
+      </select>
+
+    </div>
+
+    <div class="input-group col-8 col-lg-4 mb-3">
+      <label for="#takeaways">
+        Did you feel like you have been given <span class="font-weight-bold px-1">tools and techniques
+        </span> you can use to continue improving and sustain the improvements
+        that have been made?
+      </label>
+      <select name="takeawayCheck" id="takeaways" class="form-control">
         <option class="text-success">Yes</option>
         <option class="text-danger">No</option>
       </select>
