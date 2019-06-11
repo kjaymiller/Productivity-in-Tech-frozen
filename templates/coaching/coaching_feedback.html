@@ -44,6 +44,7 @@
 {% endblock %}
 
 {% block body_javascript %}
+{% raw %}
 <script>
   Vue.component('star-item', {
     props: ['star', 'toggle'],
@@ -86,4 +87,5 @@
         }
     })
 </script>
+{% endraw %}
 {% endblock %}
