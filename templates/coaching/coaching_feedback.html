@@ -22,7 +22,6 @@
     </div>
     <div class="input-group mb-3" id="starRating">
       <h3>Stars</h3>
-      {% raw %}
       <star-item
            v-for="star in stars"
            v-bind:star="star"
@@ -30,7 +29,6 @@
            v-bind:key="star.id"
            v-bind:class="star"
            ></star-item>
-      {% endraw %}
     </div>
 
     <div class="input-group">
@@ -44,7 +42,6 @@
 {% endblock %}
 
 {% block body_javascript %}
-{% raw %}
 <script>
   Vue.component('star-item', {
     props: ['star', 'toggle'],
@@ -64,7 +61,7 @@
           'id': e.id,
           'far': far,
           'fas': fas,
-          'fa-4x': true,
+          'fa-2x': true,
           'fa-star': true,
           'text-warning': true
            }
@@ -87,5 +84,4 @@
         }
     })
 </script>
-{% endraw %}
 {% endblock %}
