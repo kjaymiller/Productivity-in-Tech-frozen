@@ -1,24 +1,8 @@
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<!--
-    <script async
-  src="https://www.googletagmanager.com/gtag/js?id={config.G_ANALYTICS}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-135630295-1');
-    -->
-</script>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    {% include 'add-ons/meta.html' %}
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
- 
     <title>{% block title %}{% endblock %}</title>
     {% block head %}{% endblock %}
   </head>
@@ -26,7 +10,7 @@
     {% block add_ons %}{% endblock %}
     {% include 'header.html' %}
     <div style="margin-top: 5rem;">
-    {% block content %} {% endblock %}
+      {% block content %} {% endblock %}
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

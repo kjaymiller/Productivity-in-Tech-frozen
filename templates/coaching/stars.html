@@ -12,12 +12,8 @@
 <script>
   Vue.component('star-item', {
     props: ['star', 'toggle'],
-    template: '<i v-bind:class="star" @click="toggle(star)" @mouseover="toggle(star)" @mouseaway="toggle(star)"></i>',
+    template: '<i v-bind:class="star" @click="toggle(star)" @mouseover="toggle(star)"></i>',
     })
-
-  var far = true
-  var fas = false
-
 
   var app = new Vue({
     el: '#starRating',
@@ -26,8 +22,8 @@
       stars: [{'id': 1}, {'id': 2}, {'id': 3}, {'id': 4}, {'id': 5}].map(function(e) {
         return {
           'id': e.id, 
-          'far': far, 
-          'fas': fas,
+          'far': false, 
+          'fas': true,
           'fa-4x': true,
           'fa-star': true,
           'text-warning': true
