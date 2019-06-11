@@ -14,7 +14,7 @@
 
   <p>Please fill out the short form and let us know what you think of your last
   Series of sessions with us.</p>
-  <form>
+  <form data-netlify="true" method="POST">
     <div class="input-group mb-3">
       <input type="text" name="name" class="form-control" placeholder="Your Name">
     </div>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="input-group">
-      <button class="btn btn-primary">Submit</button>
+      <button class="btn btn-primary" onclick="say(thanks)">Submit</button>
     </div>
 
   </form>
@@ -44,6 +44,13 @@
 {% endblock %}
 
 {% block body_javascript %}
+<script>
+  var thanks = 'Thank you! Your Form has been Submitted!'
+function say(message) {
+  return alert(message)
+  }
+</script>
+
 <script>
   Vue.component('star-item', {
     props: ['star', 'toggle'],
