@@ -1,35 +1,53 @@
-<div id="starRating">
+<div class="container" id="starRating">
+    <h1>Stars</h1>
 <star-item 
    v-for="star in stars"
    v-bind:star="star"
+   v-bind:toggle="toggle"
    v-bind:key="star.id"
-	 v-bind:class="[star.far, star.fas]"
+	 v-bind:class="star"
    ></star-item>
+   
 </div>
-	<script>
-Vue.component('star-item', {
-	props: ['star'],
-	data: function () {
-		return classList: {
-			fa-4x: true,
-			fa-star: true
-	}},
-		template: '<i v-bind:class="classList"></i>
-	methods: {
-	togg: function () {
-		this.classList.far = !this.classList.far
-		this.classList.fas = !this.classList.fas
-		}
-	}
+<script>
+  Vue.component('star-item', {
+    props: ['star', 'toggle'],
+    template: '<i v-bind:class="star" @click="toggle(star)" @mouseover="toggle(star)" @mouseaway="toggle(star)"></i>',
+    })
 
-var app = New Vue({
-	data: {
-	stars: [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}].map(e => {id: e.index(), far:true, fas: false})
-	},
-	methods: {
-		toggStars: function (){
-			for star in app.stars
-		}
-	}
-})
-	</script>
+  var far = true
+  var fas = false
+
+
+  var app = new Vue({
+    el: '#starRating',
+    data: function () {
+    return {
+      stars: [{'id': 1}, {'id': 2}, {'id': 3}, {'id': 4}, {'id': 5}].map(function(e) {
+        return {
+          'id': e.id, 
+          'far': far, 
+          'fas': fas,
+          'fa-4x': true,
+          'fa-star': true,
+          'text-warning': true
+           }
+          })
+        }
+      },
+      methods: {
+        toggle: function (star) {
+        this.stars.forEach(function (e) {
+            if (e.id <= star.id) {
+              e.far = false
+              e.fas = true
+              }
+            else {
+              e.far = true
+              e.fas = false
+              }
+            })
+         }
+        }
+    })
+</script>
