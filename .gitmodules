@@ -1,6 +1,6 @@
 [submodule "pages"]
 	path = pages
-	url = https://github.com/kjaymiller/render_engine.git
+	url = git@github.com:kjaymiller/render_engine.git
 [submodule "render_engine"]
 	path = render_engine
 	url = git@github.com:kjaymiller/render_engine.git
