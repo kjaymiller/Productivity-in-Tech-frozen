@@ -9,11 +9,11 @@
 	<script>
 Vue.component('star-item', {
 	props: ['star']
-	data:  function () {
-		classList: {
+	data: function () {
+		return classList: {
 			fa-4x: true,
-			}
-		},
+			fa-star: true
+	}},
 		template: '<i v-bind:class="classList"></i>
 	methods: {
 	togg: function () {
