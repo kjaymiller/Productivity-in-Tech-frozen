@@ -26,7 +26,7 @@
       placeholder="Your Email Address">
     </div>
     <div class="input-group mb-3" id="starRating">
-      <label mr-4>Stars</label>
+      <h3>Stars</h3>
       <star-item
            v-for="star in stars"
            v-bind:star="star"
@@ -75,7 +75,8 @@ function say(message) {
           'fas': fas,
           'fa-2x': true,
           'fa-star': true,
-          'text-warning': true
+          'text-warning': true,
+          'mx-3': true
            }
           })
         }
