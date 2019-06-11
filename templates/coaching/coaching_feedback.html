@@ -13,15 +13,15 @@
   <p>Please fill out the short form and let us know what you think of your last
   Series of sessions with us.</p>
   <form>
-    <div class="input-group">
+    <div class="input-group mb-3">
       <input type="text" name="name" class="form-control" placeholder="Your Name">
     </div>
-    <div class="input-group">
+    <div class="input-group mb-3">
       <input type="email" name="email" class="form-control" placeholder="Your
       Email Address">
     </div>
     <div class="input-group mb-3" id="starRating">
-      <h3>Stars</h3>
+      <label>Stars</label>
       <star-item
            v-for="star in stars"
            v-bind:star="star"
