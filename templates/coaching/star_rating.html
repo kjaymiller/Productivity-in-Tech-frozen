@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://kit.fontawesome.com/94d9a219ee.js"></script>
+  </head>
+  <body>
+  <div>
+</div>
+    <div class="input-group star-rating">
+      <star v-for="s in stars" @click="hi"></star>
+
+          </div>
+    
+    <script> 
+      Vue.component('star', {
+      template: '<i v-bind:class="starClasses" @click="togg"></i>',
+      data: function () {
+      return {
+        starClasses: {
+          far: true, 
+          fas: false,
+          'fa-star': true,
+          'text-warning': true,
+          'fa-4x': true,
+          'px-2': true
+          }
+        }
+         },
+        methods: {
+          togg: function () {
+            this.starClasses.far = !this.starClasses.far
+            this.starClasses.fas = !this.starClasses.fas
+            }
+        }
+      })
+        
+      var app = new Vue ({
+      el: '.star-rating',
+      data:
+        {
+          stars: Array(5)
+        },
+      methods: {
+        hi: function() {console.log('Hi!')}
+      }
+      })
+    </script>
+  </body>
+</html>
