@@ -4,13 +4,13 @@ import shutil
 from pathlib import Path
 from pages.paginate import write_paginated_pages
 from pages import (
-        Page, 
+        Page,
         BlogPost,
         Collection,
         )
 from links import Link
 from pages.feeds import feed_gen
-from pages.generators import gen_static 
+from pages.generators import gen_static
 from pages.writer import write_page, writer
 
 
@@ -21,7 +21,7 @@ shutil.rmtree(Path(config.OUTPUT_PATH))
 
 # build static pages
 gen_static()
- 
+
 page_collections = pages, blog
 for collection in page_collections:
     collection.output_path.mkdir(parents=True, exist_ok=True)
@@ -37,7 +37,7 @@ def index():
                 ]
     featured_post = blog.pages[0]
 
-    return Page(template='index.html', services=services, featured_post=featured_post).html 
+    return Page(template='index.html', services=services, featured_post=featured_post).html
 
 def pagination():
     write_paginated_pages(blog.name, blog.paginate, path=blog.output_path, template='blog_list.html')
@@ -46,22 +46,27 @@ def categorization():
     category_filename = f'{blog.output_path}/categories'
     category_path = Path(category_filename)
     category_path.mkdir(parents=True, exist_ok=True)
-    write_page(f'{category_path}/all.html', 
+    write_page(f'{category_path}/all.html',
             Page(template='categories.html',
             topic_list=[c for c in blog.categories]).html)
 
     for category in blog.categories:
         write_page(f'{category_path}/{category}.html',
                 Page(template='blog_list.html',
-                    post_list=blog.categories[category], 
+                    post_list=blog.categories[category],
                     output_path=blog.output_path).html)
-        feed_gen(blog, page_filter=blog.categories[category], output_path=category_path, name=category)
-    
+        feed_gen(
+                blog,
+                page_filter=blog.categories[category],
+                output_path=category_path,
+                name=category,
+                )
+
     tag_path = Path(f'{blog.output_path}/tag')
     tag_path.mkdir(parents=True, exist_ok=True)
     write_page(f'{tag_path}/all.html', Page(template='categories.html',
         topic_list=[t for t in blog.tags]).html)
-        
+
     for tag in blog.tags:
         write_page(f'{tag_path}/{tag}.html',
                 Page(template='blog_list.html',

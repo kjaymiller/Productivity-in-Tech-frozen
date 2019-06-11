@@ -3,6 +3,32 @@
    v-for="star in stars"
    v-bind:star="star"
    v-bind:key="star.id"
+	 v-bind:class="[star.far, star.fas]"
    ></star-item>
-   
-Vue.component('star-item', {})
+
+Vue.component('star-item', {
+	props: ['star']
+	data:  function () {
+		classList: {
+			fa-4x: true,
+			}
+		},
+		template: '<i v-bind:class="classList"></i>
+	methods: {
+	togg: function () {
+		this.classList.far = !this.classList.far
+		this.classList.fas = !this.classList.fas
+		}
+	}
+
+var app = New Vue({
+	data: {
+	stars: [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}].map(e => {id: e.index(), far:true, fas: false})
+	},
+	methods: {
+		toggStars: function (){
+			for star in app.stars
+		}
+	}
+})
+
