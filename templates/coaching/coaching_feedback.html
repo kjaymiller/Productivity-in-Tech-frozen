@@ -93,8 +93,8 @@
 			<h3 class="text-primary">If you had to rate us on a 5-Star Scale!</h3>
 		</div>
 
-		<div class="input-group mb-3" id="starRating">
-			<div>
+		<div class="" id="starRating">
+			<div class="input-group mb-3">
 			<star-item
 				v-for="star in stars"
 				v-bind:star="star"
@@ -104,7 +104,7 @@
 				></star-item>
 			</div>
 
-			<div>
+			<div class="input-group mb-3">
 				<p v-bind:class="star_message.class">
 				{% raw %}
 				{{ star_message.text }}
