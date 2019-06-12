@@ -21,6 +21,7 @@ var app = new Vue({
 				})
 			}
 		},
+
 	methods: {
 		toggle: function (star) {
 			this.stars.forEach(function (e) {
@@ -33,7 +34,7 @@ var app = new Vue({
 				e.far = true
 				e.fas = false
 				}
-			this.status = star.id
+			this.starData = star.id
 			})
 		}
 	},
