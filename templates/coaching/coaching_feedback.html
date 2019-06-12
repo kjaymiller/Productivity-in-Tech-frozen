@@ -105,9 +105,9 @@
 			</div>
 
 			<div>
-				<p v-bind:class="star_message">
+				<p v-bind:class="star_message.class">
 				{% raw %}
-				{{ star_message }}
+				{{ star_message.text }}
 				{% endraw %}
 				</p>
 			</div>
