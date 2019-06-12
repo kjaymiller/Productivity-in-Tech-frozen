@@ -95,7 +95,7 @@
 		<div class="" id="starRating">
       <!-- The Stars aren't actually an input so we have to bind the value to
         the input -->
-        <input type="text" class="hide" v-bind:value="starData"></input>
+        <input type="hidden" v-bind:value="starData"></input>
 			<div class="input-group mb-3">
 			<star-item
 				v-for="star in stars"
