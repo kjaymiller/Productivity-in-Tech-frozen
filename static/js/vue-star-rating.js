@@ -79,7 +79,7 @@ computed: {
 
 			default :
 				return {
-					class:"text-light",
+					class:"text-secondary",
 					text: 'Give us your overall star Rating'
 					}
 				}
