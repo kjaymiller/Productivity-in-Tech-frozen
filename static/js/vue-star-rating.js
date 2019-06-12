@@ -43,8 +43,8 @@ var app = new Vue({
 
 computed: {
 	star_message: function () {
+    console.log(this.starData)
 		switch (this.starData) {
-      console.log(this.starData)
 			case 1:
 				return {
 					class: 'text-danger',
