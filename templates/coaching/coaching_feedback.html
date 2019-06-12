@@ -131,6 +131,7 @@ var app = new Vue({
 	el: '#starRating',
 	data: function () {
 		return {
+			starData: 0,
 			stars: [{'id': 1}, {'id': 2}, {'id': 3}, {'id': 4}, {'id': 5}].map(function(e) {
 				return {
 					'id': e.id,
@@ -156,6 +157,24 @@ var app = new Vue({
 					e.fas = false
 				}
 			})
+		}
+	},
+	computed: {
+		star_message: function () {
+			switch (this.starData) {
+				case 1:
+					return '<p class="text-danger">This wasn\'t great at all!</p>'
+				case 2:
+					return '<p class="text-warning">I got very little out of it</p>'
+				case 3:
+					return '<p class="text-secondary">I got something out of it, but I was hoping for more</p>'
+				case 4:
+					return '<p class="text-info">The coaching was helpful. I definitely got something out of it</p>'
+				case 5:
+					return '<p class="text-success">OMG! This was amazing! I can\'t wait to do future sessions and learn more!</p>'
+				default :
+					return '<p>Give us your overall star Rating</p>'
+			}
 		}
 	}
 })
