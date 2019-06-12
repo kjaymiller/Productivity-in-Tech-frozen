@@ -26,7 +26,7 @@ var app = new Vue({
 		toggle: function (star) {
 			this.stars.forEach(function (e) {
         this.starData = star.id
-        console.log(this.starData)
+        // console.log(this.starData)
 				if (e.id <= star.id) {
 					e.far = false
 					e.fas = true
@@ -44,6 +44,7 @@ var app = new Vue({
 computed: {
 	star_message: function () {
 		switch (this.starData) {
+      console.log(this.starData)
 			case 1:
 				return {
 					class: 'text-danger',
