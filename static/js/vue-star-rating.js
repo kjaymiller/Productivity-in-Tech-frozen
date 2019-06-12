@@ -25,6 +25,7 @@ var app = new Vue({
 	methods: {
 		toggle: function (star) {
 			this.stars.forEach(function (e) {
+        this.starData = star.id
 				if (e.id <= star.id) {
 					e.far = false
 					e.fas = true
