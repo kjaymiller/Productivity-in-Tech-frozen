@@ -1,5 +1,5 @@
 Vue.component('star-item', {
-	props: ['starData', 'star', 'toggle'],
+	props: ['star', 'toggle'],
 	template: '<i v-bind:class="star" @click="toggle(star)" @mouseover="toggle(star)"></i>',
 })
 
