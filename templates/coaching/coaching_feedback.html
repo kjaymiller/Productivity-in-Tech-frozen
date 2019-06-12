@@ -101,9 +101,11 @@
 				v-bind:class="star"
 				></star-item>
 		<div>
+			<p v-bind:class="star_message.class">
 			{% raw %}
-			{{ star_message }}
+			{{ star_message.text }}
 			{% endraw %}
+			</p>
 		</div>
 		</div>
 
@@ -170,17 +172,26 @@ var app = new Vue({
 		star_message: function () {
 			switch (this.starData) {
 				case 1:
-					return '<p class="text-danger">This wasn\'t great at all!</p>'
+					return {'class': 'text-danger',
+						'text': 'This wasn\'t great at all!'}
+
 				case 2:
-					return '<p class="text-warning">I got very little out of it</p>'
+					return {'class': 'text-warning',
+						'text': 'I got very little out of it'}
+
 				case 3:
-					return '<p class="text-secondary">I got something out of it, but I was hoping for more</p>'
+					return {'class': 'text-secondary',
+						'text': 'I got something out of it, but I was hoping for more'}
+
 				case 4:
-					return '<p class="text-info">The coaching was helpful. I definitely got something out of it</p>'
+					return {'class':"text-info",
+						'text': 'The coaching was helpful. I definitely got something out of it'}
+
 				case 5:
-					return '<p class="text-success">OMG! This was amazing! I can\'t wait to do future sessions and learn more!</p>'
+					return {'class':"text-success", 'text': OMG! This was amazing! I can\'t wait to do future sessions and learn more!'}
+
 				default :
-					return '<p>Give us your overall star Rating</p>'
+					return {'class':"text-light", 'text':'Give us your overall star Rating'}
 			}
 		}
 	}
