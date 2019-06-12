@@ -93,12 +93,15 @@
 			<h3 class="text-primary">If you had to rate us on a 5-Star Scale!</h3>
 
 		<div class="" id="starRating">
+      <!-- The Stars aren't actually an input so we have to bind the value to
+        the input -->
+        <input type="text" class="hide" v-bind:value="starData"></input>
+    </div>
 			<div class="input-group mb-3">
 			<star-item
 				v-for="star in stars"
 				v-bind:star="star"
 				v-bind:toggle="toggle"
-				v-bind:key="star.id"
 				v-bind:class="star"
 				></star-item>
 			</div>
