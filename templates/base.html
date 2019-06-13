@@ -7,6 +7,10 @@
     <title>{% block title %}{% endblock %}</title>
     {% block head %}{% endblock %}
   </head>
+<style>
+  {% block style %}
+  {% endblock %}
+  </style>
   <body>
     {% block add_ons %}{% endblock %}
     {% include 'header.html' %}
