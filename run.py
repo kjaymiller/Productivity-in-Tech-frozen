@@ -80,7 +80,7 @@ def coaching_feedback():
 
 @writer(route='better-podcaster-course.html')
 def podcasting_course():
-    return Page(template='coaching/courses.html').html
+    return Page(template='courses.html').html
 
 
 if __name__ == "__main__":
