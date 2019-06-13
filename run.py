@@ -78,9 +78,14 @@ def categorization():
 def coaching_feedback():
     return Page(template='coaching/coaching_feedback.html').html
 
+@writer(route='better-podcaster-course.html')
+def podcasting_course():
+    return Page(template='coaching/courses.html').html
+
 
 if __name__ == "__main__":
     index()
+    podcasting_course()
     coaching_feedback()
     categorization()
     pagination()
