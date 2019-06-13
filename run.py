@@ -78,7 +78,7 @@ def categorization():
 def coaching_feedback():
     return Page(template='coaching/coaching_feedback.html').html
 
-@writer(route='better-podcaster-course.html')
+@writer(route='dev-podcaster-course.html')
 def podcasting_course():
     return Page(template='courses.html').html
 
