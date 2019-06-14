@@ -24,5 +24,8 @@ HEADER_LINKS = (
     Link(name='Newsletter', url='https://buttondown.email/productivityintech'),
     Link(name='Productivity in Tech Podcast',
         url='https://productivityintech.transistor.fm'),
-    Link(name='PIT Membership', url='/memberships.html')
-    )   
+    Link(name='PIT Membership', url='/memberships'),
+    Link(name="Editing Service", url='/editing'),
+    Link(name="Coaching", url="/coaching.html"),
+    Link(name="Courses", url="/pit-podcaster-course")
+    )
