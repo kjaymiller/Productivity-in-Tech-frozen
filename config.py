@@ -27,5 +27,5 @@ HEADER_LINKS = (
     Link(name='PIT Membership', url='/memberships'),
     Link(name="Editing Service", url='/editing'),
     Link(name="Coaching", url="/coaching.html"),
-    Link(name="Courses", url="/pit-podcaster-course")
+    Link(name="Courses", url="/dev-podcaster-course")
     )
