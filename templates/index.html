@@ -12,6 +12,21 @@
   {% include 'index/coaching.html' %}
   {% include 'index/editing.html' %}
   {% include 'index/community.html' %}
-  {% include 'index/newsletter.html' %}
+
+<!-- Newsletter Section -->
+<div class="jumbotron text-white bg-primary text-center my-3">
+  <h3>Get Productivity in Tech Tips and Updates in your Inbox 📬!</h3>
+    {% include 'addons/buttondown_form.html' %}
+  <div class="text-center">
+    <h4 class="py-3">
+      <a class="text-white" href="/memberships">
+        <i class="d-none d-lg-inline-block img-fluid text-white far fa-star fa-2x px-2"></i>
+        <span>Premium Memberships unlock bonus perks!!</span>
+        <i class="d-none d-lg-inline-block img-fluid text-white far fa-star fa-2x px-2"></i>
+      </a>
+      </a>
+    </h4>
+  </div>
+</div>
 </div>
 {% endblock %}
