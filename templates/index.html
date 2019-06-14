@@ -2,12 +2,20 @@
 {% block title %}{{config.SITE_TITLE}}{% endblock %}
 {% block head %}<link href="/static/css/index.css" rel="stylesheet"> {% endblock %}
 
-{% block content %}
+{% block container %}
 <!--Start Jumbotron  -->
-<div class="container text-justify">
-  <div class="col-lg-3 text-md-center">
+<div class="row">
+  <div class="col-lg-4">
     <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg">
    </div>
+   <div class="jumbotron-fluid">
+     <ul class="list-group list-group-horizontal">
+       <li class="list-group-item"><h2>Clarity</h2></li>
+       <li class="list-group-item"><h2>Creativity</h2></li>
+       <li class="list-group-item"><h2>Connection</h2></li>
+     </ul>
+   </div>
+</div>
 
   {% include 'index/coaching.html' %}
   {% include 'index/editing.html' %}
