@@ -1,5 +1,5 @@
-title: Need Help Getting Productive? 
-subtitle: Productivity in Tech provides productivity coaching for people in the tech space.
+title: PIT Coaching and Speaking Services
+subtitle: Need Help Getting Productive?
 
 Whether you have a system in place or you are just getting started. I can help you find **clarity in your process.** 
 
