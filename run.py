@@ -1,14 +1,10 @@
 import json
-import config
-import shutil
 from pathlib import Path
-from paginate import write_paginated_pages
-from page import Page
-from blog import BlogPost
-from engine import Engine
+from pages.page import Page
+from pages.blog import BlogPost
+from pages.engine import Engine
+from pages.collection import Collection
 from links import Link
-from feeds import feed_gen
-from collection import Collection
 
 
 engine = Engine()
