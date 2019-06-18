@@ -31,19 +31,7 @@ engine.collections = (pages, blog, services)
 
 @engine.build(Page, template='index.html', route='/index')
 def index():
-    services = [
-            Link(
-                name='Editing',
-                url='editing.html',
-                image='fa-laptop-code',
-                ),
-            Link(
-                name="Coaching",
-                url="coaching.html",
-                image='fa-hands-helping',
-                ),
-            ]
-    return (services)
+    return ()
 
 @engine.build(
         Page,
@@ -55,7 +43,7 @@ def coaching_feedback():
 
 @engine.build(
         Page,
-        template='coaching/coaching_feedback.html',
+        template='/courses.html',
         route='/dev-podcaster-course',
         )
 def podcasting_course():
