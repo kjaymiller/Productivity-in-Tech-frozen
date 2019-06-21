@@ -7,7 +7,7 @@ While the business does make some revenue from consulting, coaching and speaking
 
 <div class="jumbotron bg-transparent border border-primary">
 <h2>Your PIT Premium Membership gets you access to:</h2>
-<div class="">
+<div class="col-md-6 text-centered">
 <ul class="list-group list-group-flush">
 <li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
 <li class="list-group-item">Access to the bonus PIT Podcast Feed</li>
