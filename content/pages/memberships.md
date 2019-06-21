@@ -24,11 +24,9 @@ Subscribe $10/month
 <!-- Modal -->
 <div class="modal fade" id="srf-monthly"></div>
 <button type="button" class="btn-danger close" data-dismiss="modal">
-Close
-<span aria-hidden="true">&times;</span>
+	Close
+	<span aria-hidden="true">&times;</span>
 </button>
-<script src="https://js.stripe.com/v3/"></script>
-<script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 2,
@@ -54,13 +52,6 @@ Subscribe $100/year
 
 </div>
 
-If you would like to offer support in the form of a one-time donation you can do so via our Ko-Fi Page!
 
-<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support PIT on Ko-fi', '#3394FA', 'R6R4KQDM');kofiwidget2.draw();</script>
-
-Backers get access to the bonus PIT Podcast Feed.
-
-You can also gift a membership to someone you think will benefit from it!
-
-<a class="btn btn-small btn-gray text-dark" href="https://productivityintech.memberful.com/gift?plan=21849">Gift Monthly Membership</a>
-<a class="btn btn-small btn-gray text-dark" href="https://productivityintech.memberful.com/gift?plan=36786">Gift Annual Membership</a>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
