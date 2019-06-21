@@ -10,7 +10,7 @@ While the business does make some revenue from consulting, coaching and speaking
 </p>
 
 <div class="jumbotron bg-transparent border border-primary">
-<h2>Your <span class="text-primary"PIT Premium Membership</span> gets you access to:</h2>
+<h2 class="text-primary">Get you access to:</h2>
 <div class="col-md-6 my-3 text-centered">
 <ul class="list-group list-group-flush">
 <li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
