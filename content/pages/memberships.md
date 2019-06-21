@@ -36,6 +36,12 @@ Subscribe $100/year
 </div>
 </div>
 
+<!-- Membership JS - Place Ahead of Modals -->
+<!-- Stripe and ServiceBot JS -->
+<script src="https://js.stripe.com/v3/"></script>
+<script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
+<!-- End Membership JS -->
+
 <!--Monthly Modal -->
 <div class="modal fade" tabindex="-1" id="modal-monthly" role="dialog">
 <div class="modal-dialog" id="srf-monthly" role="document"></div>
@@ -72,6 +78,3 @@ setPassword : true, //set to true if you want customer to fill out a password
 })
 </script>
 
-
-<script src="https://js.stripe.com/v3/"></script>
-<script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
