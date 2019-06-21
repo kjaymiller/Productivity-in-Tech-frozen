@@ -5,7 +5,7 @@ slug: memberships
 
 While the business does make some revenue from consulting, coaching and speaking, we cannot continue to grow the community and the services we offer without support from the community members like you! 
 
-<div class="jumbotron bg-transparent border-primary">
+<div class="jumbotron bg-transparent border border-primary">
 <h2>Your PIT Premium Membership gets you access to:</h2>
 <div class="">
 <ul class="list-group list-group-flush">
@@ -19,19 +19,19 @@ While the business does make some revenue from consulting, coaching and speaking
 
 <div class="row justify-content-around">
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srf-monthly">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-monthly">
 Subscribe $10/month
 </button>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srf-annual">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-annual">
 Subscribe $100/year
 </button>
 </div>
 </div>
 
 <!--Monthly Modal -->
-<div class="modal fade" tabindex="-1" role="dialog">
+<div class="modal fade" tabindex="-1" id="modal-monthly" role="dialog">
 <div class="modal-dialog" id="srf-monthly" role="document"></div>
 <script  type="text/javascript">
 Servicebot.init({
