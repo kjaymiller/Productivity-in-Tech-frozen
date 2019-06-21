@@ -22,9 +22,11 @@ Subscribe $10/month
 </button>
 
 <!-- Modal -->
-<button type="button" class="btn-danger close" data-dismiss="modal">Close</button>
-<span aria-hidden="true">&times;</span>
 <div class="modal fade" id="srf-monthly"></div>
+<button type="button" class="btn-danger close" data-dismiss="modal">
+Close
+<span aria-hidden="true">&times;</span>
+</button>
 <script src="https://js.stripe.com/v3/"></script>
 <script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
 <script  type="text/javascript">
