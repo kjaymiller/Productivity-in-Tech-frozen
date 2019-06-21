@@ -48,7 +48,7 @@ Subscribe $100/year
 
 <!--Monthly Modal -->
 <div class="modal fade" tabindex="-1" id="modal-monthly" role="dialog">
-<div class="modal-dialog" id="srf-monthly" role="document"></div>
+<div class="modal-dialog bg-white" id="srf-monthly" role="document"></div>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 2,
@@ -66,7 +66,7 @@ setPassword : true, //set to true if you want customer to fill out a password
 
 <!-- Modal -->
 <div class="modal fade" tabindex="-1" id="modal-annual" role="dialog">
-<div class="modal-dialog" id="srf-annual" role="document"></div>
+<div class="modal-dialog bg-white" id="srf-annual" role="document"></div>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 3,
