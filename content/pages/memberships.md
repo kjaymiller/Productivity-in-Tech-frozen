@@ -2,15 +2,15 @@ Title: Become a PIT Member ❤️
 slug: memberships
 
 <h2 class="">
-<span class="text-primary">Productivity in Tech</span> is a <em>Member-Supported Company</em>. 
+<span class="text-primary">Productivity in Tech</span> is a <em>Member-Supported</em> Company. 
 </h2>
 
-<p class='lead my-3'>
+<p class='lead my-4'>
 While the business does make some revenue from consulting, coaching and speaking, we cannot continue to grow the community and the services we offer without support from the community members like you! 
 </p>
 
 <div class="jumbotron bg-transparent border border-primary">
-<h2 class="text-primary">Get you access to:</h2>
+<h2 class="text-primary">Get access to:</h2>
 <div class="col-md-6 my-3 text-centered">
 <ul class="list-group list-group-flush">
 <li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
@@ -18,67 +18,84 @@ While the business does make some revenue from consulting, coaching and speaking
 <li class="list-group-item">PIT Premium Newsletter</li>
 </ul>
 
-<!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849"> -->
-<!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786"> -->
+<div class="row">
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
 
-<div class="row justify-content-around my-3">
-<!-- Monthly Subscribe Button - triggers modal -->
-<button type="button"
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
 	class="btn btn-primary"
-	data-toggle="modal"
-	data-target="#modal-monthly">
-Subscribe $10/month
+  id="checkout-button-5d0bd868f033bf667526053f"
+  role="link"
+>
+Subscribe $10/Month
 </button>
 
-<!-- Annual Subscribe Button - triggers modal -->
-<button type="button"
-	class="btn btn-primary"
-	data-toggle="modal"
-	data-target="#modal-annual">
-Subscribe $100/year
+<button
+	class='btn btn-primary'
+  id="checkout-button-pit-annual"
+  role="link"
+>
+Subscribe $100/Year
 </button>
-</div>
-</div>
 
-<!-- Membership JS - Place Ahead of Modals -->
-<!-- Stripe and ServiceBot JS -->
-<script src="https://js.stripe.com/v3/"></script>
-<script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
-<!-- End Membership JS -->
 
-<!--Monthly Modal -->
-<div class="modal fade" tabindex="-1" id="modal-monthly" role="dialog">
-<div class="modal-dialog bg-white" id="srf-monthly" role="document"></div>
-<script  type="text/javascript">
-Servicebot.init({
-templateId : 2,
-url : "https://members.productivityintech.com",
-selector : document.getElementById('srf-monthly'),
-handleResponse : (response) => {
-},
-type: "request",
-spk: "pk_live_kDLC8qiW74z3zUMfXQBjEfjD",
-hideSummary: true, // Hides the summary on the side
-forceCard : true, //set to true if you want credit card to be a required field for the customer
-setPassword : true, //set to true if you want customer to fill out a password
-})
+<script>
+  var stripe = Stripe('pk_live_kDLC8qiW74z3zUMfXQBjEfjD');
+
+  var checkoutButton = document.getElementById('checkout-button-5d0bd868f033bf667526053f');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{plan: '5d0bd868f033bf667526053f', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://productivityintech.com/success',
+      cancelUrl: 'https://productivityintech.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
 </script>
 
-<!-- Modal -->
-<div class="modal fade" tabindex="-1" id="modal-annual" role="dialog">
-<div class="modal-dialog bg-white" id="srf-annual" role="document"></div>
-<script  type="text/javascript">
-Servicebot.init({
-templateId : 3,
-url : "https://members.productivityintech.com",
-selector : document.getElementById('srf-annual'),
-handleResponse : (response) => {
-},
-type: "request",
-spk: "pk_live_kDLC8qiW74z3zUMfXQBjEfjD",
-hideSummary: true, // Hides the summary on the side
-forceCard : true, //set to true if you want credit card to be a required field for the customer
-setPassword : true, //set to true if you want customer to fill out a password
-})
-</script>
+<div id="error-message" class="text-danger"></div>
 
+<script>
+  var stripe = Stripe('pk_live_kDLC8qiW74z3zUMfXQBjEfjD');
+
+  var checkoutButton = document.getElementById('checkout-button-pit-annual');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{plan: 'pit-annual', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://productivityintech.com/',
+      cancelUrl: 'https://productivityintech.com/',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
