@@ -47,6 +47,7 @@ handleResponse : (response) => {
 },
 type: "request",
 spk: "pk_live_kDLC8qiW74z3zUMfXQBjEfjD",
+hideSummary: true, // Hides the summary on the side
 forceCard : true, //set to true if you want credit card to be a required field for the customer
 setPassword : true, //set to true if you want customer to fill out a password
 })
