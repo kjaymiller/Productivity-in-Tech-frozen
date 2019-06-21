@@ -35,6 +35,7 @@ Subscribe $10/month
 </button>
 </div>
 <div class="modal-body">
+<button type="button" class="btn btn-light close" data-dismiss="modal">Close</button>
 <div id="servicebot-request-form"></div>
 <script src="https://js.stripe.com/v3/"></script>
 <script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
@@ -54,8 +55,6 @@ setPassword : true, //set to true if you want customer to fill out a password
 </script>
 </div>
 <div class="modal-footer">
-<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-<button type="button" class="btn btn-primary">Create My Account</button>
 </div>
 </div>
 </div>
