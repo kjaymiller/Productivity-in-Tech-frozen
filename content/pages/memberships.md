@@ -5,16 +5,17 @@ slug: memberships
 
 While the business does make some revenue from consulting, coaching and speaking, we cannot continue to grow the community and the services we offer without support from the community members like you! 
 
-<div class="jumbotron bg-light border-primary">
+<div class="jumbotron bg-transparent border-primary">
 <h2>Your PIT Premium Membership gets you access to:</h2>
 <div class="">
 <ul class="list-group list-group-flush">
 <li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
 <li class="list-group-item">Access to the bonus PIT Podcast Feed</li>
 <li class="list-group-item">PIT Premium Newsletter</li>
-<li class="list-group-item">More to Come...</li>
 </ul>
+
 <!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849"> -->
+<!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786"> -->
 
 <div class="row justify-content-around">
 <!-- Button trigger modal -->
@@ -22,7 +23,6 @@ While the business does make some revenue from consulting, coaching and speaking
 Subscribe $10/month
 </button>
 
-<!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786"> -->
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srf-annual">
 Subscribe $100/year
