@@ -7,13 +7,13 @@ While the business does make some revenue from consulting, coaching and speaking
 
 <div class="jumbotron">
 <h2>Your PIT Premium Membership gets you access to:</h2>
-<ul>
-<li>Priority Access to the PIT Mastermind Group</li>
-<li>Access to the bonus PIT Podcast Feed</li>
-<li>PIT Premium Newsletter</li>
-<li>More to Come...</li>
+<div class="">
+<ul class="list-group list-group-flush">
+<li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
+<li class="list-group-item">Access to the bonus PIT Podcast Feed</li>
+<li class="list-group-item">PIT Premium Newsletter</li>
+<li class="list-group-item">More to Come...</li>
 </ul>
-</p>
 <!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849"> -->
 
 <div class="row justify-content-around">
@@ -23,7 +23,7 @@ Subscribe $10/month
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="srf-monthly"></div>
+<div class="modal fade" id="srf-monthly" tabindex="-1" role="form"></div>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 2,
@@ -46,7 +46,7 @@ Subscribe $100/year
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="srf-annual"></div>
+<div class="modal fade" id="srf-annual" tabindex="-1" role="form"></div>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 3,
