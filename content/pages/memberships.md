@@ -17,7 +17,25 @@ While the business does make some revenue from consulting, coaching and speaking
 <div class="card-deck">
 <div class="card border-0">
 </a>
-<a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849">
+<!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849"> -->
+
+<div id="servicebot-request-form"></div>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
+<script  type="text/javascript">
+Servicebot.init({
+    templateId : 2,
+    url : "https://members.productivityintech.com",
+    selector : document.getElementById('servicebot-request-form'),
+    handleResponse : (response) => {
+        //Response function, you can put redirect logic or app integration logic here
+    },
+    type: "request",
+    spk: "pk_live_kDLC8qiW74z3zUMfXQBjEfjD",
+    forceCard : false, //set to true if you want credit card to be a required field for the customer
+    setPassword : false //set to true if you want customer to fill out a password
+})
+</script>
 Subscribe $10/month
 </a>
 </div>
