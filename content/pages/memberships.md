@@ -19,12 +19,18 @@ While the business does make some revenue from consulting, coaching and speaking
 
 <div class="row justify-content-around">
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-monthly">
+<button type="button"
+	class="btn btn-primary"
+	data-toggle="modal"
+	data-target="#modal-monthly">
 Subscribe $10/month
 </button>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-annual">
+<button type="button"
+	class="btn btn-primary"
+	data-toggle="modal"
+	data-target="#modal-annual">
 Subscribe $100/year
 </button>
 </div>
@@ -65,7 +71,6 @@ forceCard : true, //set to true if you want credit card to be a required field f
 setPassword : true, //set to true if you want customer to fill out a password
 })
 </script>
-</div>
 
 
 <script src="https://js.stripe.com/v3/"></script>
