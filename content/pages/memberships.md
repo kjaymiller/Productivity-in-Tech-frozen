@@ -14,36 +14,24 @@ While the business does make some revenue from consulting, coaching and speaking
 <li>More to Come...</li>
 </ul>
 </p>
-<div class="card-deck">
-<div class="card border-0">
-</a>
 <!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849"> -->
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#">
 Subscribe $10/month
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<button type="button" class="btn-danger close" data-dismiss="modal">Close</button>
 <span aria-hidden="true">&times;</span>
-</button>
-</div>
-<div class="modal-body">
-<button type="button" class="btn btn-light close" data-dismiss="modal">Close</button>
-<div id="servicebot-request-form"></div>
+<div class="modal fade" id="srf-monthly"></div>
 <script src="https://js.stripe.com/v3/"></script>
 <script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 2,
 url : "https://members.productivityintech.com",
-selector : document.getElementById('servicebot-request-form'),
+selector : document.getElementById('srf-monthly'),
 handleResponse : (response) => {
 },
 type: "request",
@@ -53,13 +41,6 @@ forceCard : true, //set to true if you want credit card to be a required field f
 setPassword : true, //set to true if you want customer to fill out a password
 })
 </script>
-</div>
-<div class="modal-footer">
-</div>
-</div>
-</div>
-</div>
-</a>
 </div>
 
 <div class="card border-0">
