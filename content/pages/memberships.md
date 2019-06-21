@@ -23,7 +23,8 @@ Subscribe $10/month
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="srf-monthly" tabindex="-1" role="form"></div>
+<div class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog" id="srf-monthly" role="document"></div>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 2,
@@ -44,9 +45,11 @@ setPassword : true, //set to true if you want customer to fill out a password
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srf-annual">
 Subscribe $100/year
 </button>
+</div>
 
 <!-- Modal -->
-<div class="modal fade" id="srf-annual" tabindex="-1" role="form"></div>
+<div class="modal fade" tabindex="-1" id="modal-annual" role="dialog">
+<div class="modal-dialog" id="srf-annual" role="document"></div>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 3,
@@ -61,6 +64,7 @@ forceCard : true, //set to true if you want credit card to be a required field f
 setPassword : true, //set to true if you want customer to fill out a password
 })
 </script>
+</div>
 </div>
 </div>
 
