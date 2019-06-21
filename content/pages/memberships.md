@@ -5,7 +5,7 @@ slug: memberships
 
 While the business does make some revenue from consulting, coaching and speaking, we cannot continue to grow the community and the services we offer without support from the community members like you! 
 
-<div class="jumbotron">
+<div class="jumbotron bg-light border-primary">
 <h2>Your PIT Premium Membership gets you access to:</h2>
 <div class="">
 <ul class="list-group list-group-flush">
@@ -22,7 +22,15 @@ While the business does make some revenue from consulting, coaching and speaking
 Subscribe $10/month
 </button>
 
-<!-- Modal -->
+<!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786"> -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srf-annual">
+Subscribe $100/year
+</button>
+</div>
+</div>
+
+<!--Monthly Modal -->
 <div class="modal fade" tabindex="-1" role="dialog">
 <div class="modal-dialog" id="srf-monthly" role="document"></div>
 <script  type="text/javascript">
@@ -39,13 +47,6 @@ forceCard : true, //set to true if you want credit card to be a required field f
 setPassword : true, //set to true if you want customer to fill out a password
 })
 </script>
-
-<!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786"> -->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srf-annual">
-Subscribe $100/year
-</button>
-</div>
 
 <!-- Modal -->
 <div class="modal fade" tabindex="-1" id="modal-annual" role="dialog">
@@ -64,8 +65,6 @@ forceCard : true, //set to true if you want credit card to be a required field f
 setPassword : true, //set to true if you want customer to fill out a password
 })
 </script>
-</div>
-</div>
 </div>
 
 
