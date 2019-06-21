@@ -17,7 +17,7 @@ While the business does make some revenue from consulting, coaching and speaking
 <!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849"> -->
 <!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786"> -->
 
-<div class="row justify-content-around">
+<div class="row justify-content-around my-3">
 <!-- Monthly Subscribe Button - triggers modal -->
 <button type="button"
 	class="btn btn-primary"
