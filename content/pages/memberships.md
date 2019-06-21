@@ -18,7 +18,7 @@ While the business does make some revenue from consulting, coaching and speaking
 <li class="list-group-item">PIT Premium Newsletter</li>
 </ul>
 
-<div class="row">
+<div class="row justify-content-around">
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
@@ -26,25 +26,22 @@ While the business does make some revenue from consulting, coaching and speaking
 <button
 	class="btn btn-primary"
   id="checkout-button-5d0bd868f033bf667526053f"
-  role="link"
->
+  role="link">
 Subscribe $10/Month
 </button>
 
 <button
 	class='btn btn-primary'
   id="checkout-button-pit-annual"
-  role="link"
->
+  role="link">
 Subscribe $100/Year
 </button>
 
 
 <script>
   var stripe = Stripe('pk_live_kDLC8qiW74z3zUMfXQBjEfjD');
-
-  var checkoutButton = document.getElementById('checkout-button-5d0bd868f033bf667526053f');
-  checkoutButton.addEventListener('click', function () {
+  var monthlyCheckout = document.getElementById('checkout-button-5d0bd868f033bf667526053f');
+  monthlyCheckout.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
@@ -55,8 +52,8 @@ Subscribe $100/Year
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://productivityintech.com/success',
-      cancelUrl: 'https://productivityintech.com/canceled',
+      successUrl: 'https://productivityintech.com',
+      cancelUrl: 'https://productivityintech.com',
     })
     .then(function (result) {
       if (result.error) {
@@ -69,13 +66,10 @@ Subscribe $100/Year
   });
 </script>
 
-<div id="error-message" class="text-danger"></div>
 
 <script>
-  var stripe = Stripe('pk_live_kDLC8qiW74z3zUMfXQBjEfjD');
-
-  var checkoutButton = document.getElementById('checkout-button-pit-annual');
-  checkoutButton.addEventListener('click', function () {
+  var annualButton= document.getElementById('checkout-button-pit-annual');
+  annualButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
@@ -99,3 +93,4 @@ Subscribe $100/Year
     });
   });
 </script>
+<div id="error-message" class="text-danger"></div>
