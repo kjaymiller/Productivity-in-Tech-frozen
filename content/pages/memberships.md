@@ -19,7 +19,6 @@ While the business does make some revenue from consulting, coaching and speaking
 </a>
 <!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849"> -->
 
-<div id="servicebot-request-form jj"></div>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
 Subscribe $10/month
@@ -36,6 +35,7 @@ Subscribe $10/month
 </button>
 </div>
 <div class="modal-body">
+<div id="servicebot-request-form"></div>
 <script src="https://js.stripe.com/v3/"></script>
 <script src="https://servicebot.io/js/servicebot-embed.js" type="text/javascript"></script>
 <script  type="text/javascript">
@@ -44,18 +44,17 @@ templateId : 2,
 url : "https://members.productivityintech.com",
 selector : document.getElementById('servicebot-request-form'),
 handleResponse : (response) => {
-//Response function, you can put redirect logic or app integration logic here
 },
 type: "request",
 spk: "pk_live_kDLC8qiW74z3zUMfXQBjEfjD",
-forceCard : false, //set to true if you want credit card to be a required field for the customer
-setPassword : false //set to true if you want customer to fill out a password
+forceCard : true, //set to true if you want credit card to be a required field for the customer
+setPassword : true, //set to true if you want customer to fill out a password
 })
 </script>
 </div>
 <div class="modal-footer">
-<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-<button type="button" class="btn btn-primary">Save changes</button>
+<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Create My Account</button>
 </div>
 </div>
 </div>
