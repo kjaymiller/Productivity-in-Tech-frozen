@@ -16,17 +16,14 @@ While the business does make some revenue from consulting, coaching and speaking
 </p>
 <!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849"> -->
 
+<div class="row justify-content-around">
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srf-monthly">
 Subscribe $10/month
 </button>
 
 <!-- Modal -->
 <div class="modal fade" id="srf-monthly"></div>
-<button type="button" class="btn-danger close" data-dismiss="modal">
-	Close
-	<span aria-hidden="true">&times;</span>
-</button>
 <script  type="text/javascript">
 Servicebot.init({
 templateId : 2,
@@ -41,15 +38,30 @@ forceCard : true, //set to true if you want credit card to be a required field f
 setPassword : true, //set to true if you want customer to fill out a password
 })
 </script>
-</div>
 
-<div class="card border-0">
-<a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786">
+<!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786"> -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#srf-annual">
 Subscribe $100/year
-</a>
-</div>
-</div>
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="srf-annual"></div>
+<script  type="text/javascript">
+Servicebot.init({
+templateId : 3,
+url : "https://members.productivityintech.com",
+selector : document.getElementById('srf-annual'),
+handleResponse : (response) => {
+},
+type: "request",
+spk: "pk_live_kDLC8qiW74z3zUMfXQBjEfjD",
+hideSummary: true, // Hides the summary on the side
+forceCard : true, //set to true if you want credit card to be a required field for the customer
+setPassword : true, //set to true if you want customer to fill out a password
+})
+</script>
+</div>
 </div>
 
 
