@@ -7,7 +7,7 @@ While the business does make some revenue from consulting, coaching and speaking
 
 <div class="jumbotron bg-transparent border border-primary">
 <h2>Your PIT Premium Membership gets you access to:</h2>
-<div class="col-md-6 text-centered">
+<div class="col-md-6 my-3 text-centered">
 <ul class="list-group list-group-flush">
 <li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
 <li class="list-group-item">Access to the bonus PIT Podcast Feed</li>
@@ -18,7 +18,7 @@ While the business does make some revenue from consulting, coaching and speaking
 <!-- <a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786"> -->
 
 <div class="row justify-content-around">
-<!-- Button trigger modal -->
+<!-- Monthly Subscribe Button - triggers modal -->
 <button type="button"
 	class="btn btn-primary"
 	data-toggle="modal"
@@ -26,7 +26,7 @@ While the business does make some revenue from consulting, coaching and speaking
 Subscribe $10/month
 </button>
 
-<!-- Button trigger modal -->
+<!-- Annual Subscribe Button - triggers modal -->
 <button type="button"
 	class="btn btn-primary"
 	data-toggle="modal"
