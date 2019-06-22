@@ -45,7 +45,7 @@ def index():
     else:
         print(f'ERROR - {r.status_code}:{r.text}')
 
-    return ()
+    return {'buttondown_count':results}
 
 @engine.build(
         Page,
