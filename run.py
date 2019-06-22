@@ -42,10 +42,7 @@ def index():
     if r.status_code == 200:
         results = r.json()['count']
 
-    else:
-        print(f'ERROR - {r.status_code}:{r.text}')
-
-    return {'buttondown_count':results}
+    return {'buttondown_count': results}
 
 @engine.build(
         Page,
@@ -53,7 +50,7 @@ def index():
         route='/coaching_feedback',
         )
 def coaching_feedback():
-    return ()
+    return {}
 
 @engine.build(
         Page,
@@ -61,7 +58,7 @@ def coaching_feedback():
         route='/dev-podcaster-course',
         )
 def podcasting_course():
-    return Page(template='courses.html').html
+    pass
 
 def pagination():
     # TODO: Create Pagination
