@@ -1,4 +1,6 @@
+import os
 import json
+import requests
 from pathlib import Path
 from pages.page import Page
 from pages.blog import BlogPost
@@ -31,6 +33,18 @@ engine.collections = (pages, blog, services)
 
 @engine.build(Page, template='index.html', route='/index')
 def index():
+    api_key = os.environ['BUTTONDOWN_API_KEY']
+    headers = {'Authorization': f'Token {api_key}'}
+    params = {'type': 'regular'}
+    url = "https://api.buttondown.email/v1/subscribers"
+    r = requests.get(url, headers=headers, params=params)
+
+    if r.status_code == 200:
+        results = r.json()['count']
+
+    else:
+        print(f'ERROR - {r.status_code}:{r.text}')
+
     return ()
 
 @engine.build(
