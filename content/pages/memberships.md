@@ -9,9 +9,9 @@ slug: memberships
 While the business does make some revenue from consulting, coaching and speaking, we cannot continue to grow the community and the services we offer without support from the community members like you! 
 </p>
 
-<div class="jumbotron bg-transparent border border-primary">
+<div class="col-md-6 my-3 text-centered mx-auto bg-transparent border border-primary">
 <h2 class="text-primary">Get access to:</h2>
-<div class="col-md-6 my-3 text-centered">
+<div class="">
 
 <ul class="list-group list-group-flush my-3">
 <li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
