@@ -5,41 +5,42 @@
 {% block container %}
 <!--Start Jumbotron  -->
 <div class="row">
-  <div class="col-lg-4">
-    <img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg">
-   </div>
-   <div class="row col-lg-8 justify-content-around text-primary align-items-center">
-       <div class=""><h1>Clarity,</h1></div>
-       <div class=""><h1>Creativity,</h1></div>
-       <div class=""><h1>Connection</h1></div>
-   </div>
-	 </div>
+	<div class="col-lg-4">
+		<img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg">
+	</div>
+	<div class="row col-lg-8 justify-content-around text-primary align-items-center">
+		<div class=""><h1>Clarity,</h1></div>
+		<div class=""><h1>Creativity,</h1></div>
+		<div class=""><h1>Connection</h1></div>
+	</div>
+</div>
 
-  {% include 'index/coaching.html' %}
-  {% include 'index/editing.html' %}
-  {% include 'index/community.html' %}
+{% include 'index/coaching.html' %}
+{% include 'index/editing.html' %}
+{% include 'index/community.html' %}
 
 <!-- Newsletter Section -->
 <div class="jumbotron text-primary bg-transparent border-primary text-center my-3">
-  <h2>Get Productivity in Tech Tips and Updates in your Inbox 📬!</h2>
-	<h3>Join {% if buttondown_count %}
-		the {{buttondown_count}}
+	<h2>Get Productivity in Tech Tips and Updates in your Inbox 📬!</h2>
+	<h3>
+		Join the {% if buttondown_count %}
+		{{buttondown_count}}
 		{% else %}
-		our
+		other
 		{% endif %}
-		Mailing List!
+		Developers on our Mailing List!
 	</h3>
-    {% include 'addons/buttondown_form.html' %}
-  <div class="text-center">
-    <h4 class="py-3">
-      <a class="" href="/memberships">
-        <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
-        <span>Premium Memberships unlock bonus perks!!</span>
-        <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
-      </a>
-      </a>
-    </h4>
-  </div>
+	{% include 'addons/buttondown_form.html' %}
+	<div class="text-center">
+		<h4 class="py-3">
+			<a class="" href="/memberships">
+				<i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+				<span>Premium Memberships unlock bonus perks!!</span>
+				<i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+			</a>
+			</a>
+		</h4>
+	</div>
 </div>
 </div>
 {% endblock %}
