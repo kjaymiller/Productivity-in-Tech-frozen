@@ -12,19 +12,19 @@ engine = Engine()
 # Add Collections
 pages = engine.add_collection(
         Page,
-        content_path='pages',
+        content_path='content/pages',
         template='page.html')
 
 blog = engine.add_collection(
         BlogPost,
         content_path='content',
-        output_path='blog',
+        output_path='output/blog',
         template='blog.html',
         )
 services = engine.add_collection(
         Page,
-        output_path='services',
-        content_path='services',
+        output_path='output/services',
+        content_path='content/services',
         template='page.html',
         )
 
