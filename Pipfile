@@ -29,5 +29,6 @@ virtualenv-clone = "*"
 werkzeug = "*"
 pathlib = "*"
 pillow = "*"
+requests = "*"
 
 [requires]
