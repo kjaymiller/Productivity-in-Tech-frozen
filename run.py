@@ -1,32 +1,26 @@
 import os
 import json
 import requests
-from pathlib import Path
 from pages.page import Page
 from pages.blog import BlogPost
 from pages.engine import Engine
-from pages.collection import Collection
 from links import Link
 
 
 engine = Engine()
 
 # Add Collections
-pages = engine.add_collection(
-        name='pages',
-        content_type=Page,
-        content_path='pages',
-        )
-blog = engine.add_collection(
-        name='blog',
-        content_type=BlogPost,
+pages = engine.add_collection(Page, content_path='pages', template='page.html')
+blog = engine.add_collection(BlogPost,
+        content_path='content',
         output_path='blog',
+        template='blog.html',
         )
-services = enginve.add_collection(
-        name='services',
-        content_type=Page,
+services = engine.add_collection(
+        Page,
         output_path='services',
         content_path='services',
+        template='page.html',
         )
 
 
