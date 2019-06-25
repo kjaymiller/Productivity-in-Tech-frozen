@@ -10,8 +10,13 @@ from links import Link
 engine = Engine()
 
 # Add Collections
-pages = engine.add_collection(Page, content_path='pages', template='page.html')
-blog = engine.add_collection(BlogPost,
+pages = engine.add_collection(
+        Page,
+        content_path='pages',
+        template='page.html')
+
+blog = engine.add_collection(
+        BlogPost,
         content_path='content',
         output_path='blog',
         template='blog.html',
@@ -27,16 +32,17 @@ services = engine.add_collection(
 # Build Static Pages
 @engine.build(Page, template='index.html', route='/index')
 def index():
-    api_key = os.environ['BUTTONDOWN_API_KEY']
-    headers = {'Authorization': f'Token {api_key}'}
-    params = {'type': 'regular'}
-    url = "https://api.buttondown.email/v1/subscribers"
-    r = requests.get(url, headers=headers, params=params)
-
-    if r.status_code == 200:
-        results = r.json()['count']
-
-    return {'buttondown_count': results}
+#    api_key = os.environ['BUTTONDOWN_API_KEY']
+#    headers = {'Authorization': f'Token {api_key}'}
+#    params = {'type': 'regular'}
+#    url = "https://api.buttondown.email/v1/subscribers"
+#    r = requests.get(url, headers=headers, params=params)
+#
+#    if r.status_code == 200:
+#        results = r.json()['count']
+#
+    return {}
+#    return {'buttondown_count': results}
 
 
 @engine.build(
