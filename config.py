@@ -17,12 +17,12 @@ DEFAULT_POST_BANNER = ''
 
 
 HEADER_LINKS = (
-    Link(name='Blog', url='/blog/blog_0.html'),
+#    Link(name='Blog', url='/blog/blog_0.html'),
     Link(name='Newsletter', url='https://buttondown.email/productivityintech'),
     Link(name='Productivity in Tech Podcast',
         url='https://productivityintech.transistor.fm'),
     Link(name='PIT Membership', url='/memberships'),
-    Link(name="Editing Service", url='/editing'),
-    Link(name="Coaching", url="/coaching.html"),
+    Link(name="Editing Services", url='/services/editing'),
+    Link(name="Coaching", url="/services/coaching.html"),
     Link(name="Courses", url="/dev-podcaster-course")
     )

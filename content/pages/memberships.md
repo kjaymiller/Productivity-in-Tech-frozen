@@ -1,43 +1,97 @@
 Title: Become a PIT Member ❤️
 slug: memberships
 
-*Productivity in Tech* is a **Member-Supported Company**. 
+<h2 class="">
+<span class="text-primary">Productivity in Tech</span> is a <em>Member-Supported</em> Company. 
+</h2>
 
+<p class='lead my-4'>
 While the business does make some revenue from consulting, coaching and speaking, we cannot continue to grow the community and the services we offer without support from the community members like you! 
-
-<div class="jumbotron">
-<h2>Your PIT Premium Membership gets you access to:</h2>
-<ul>
-<li>Priority Access to the PIT Mastermind Group</li>
-<li>Access to the bonus PIT Podcast Feed</li>
-<li>PIT Premium Newsletter</li>
-<li>More to Come...</li>
-</ul>
 </p>
-<div class="card-deck">
-<div class="card border-0">
-</a>
-<a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=21849">
-Subscribe $10/month
-</a>
-</div>
 
-<div class="card border-0">
-<a class="btn btn-primary btn-lg text-white" href="https://productivityintech.memberful.com/checkout?plan=36786">
-Subscribe $100/year
-</a>
-</div>
-</div>
+<div class="col-md-6 my-3 text-centered mx-auto bg-transparent border border-primary">
+<h2 class="text-primary">Get access to:</h2>
+<div class="">
 
-</div>
+<ul class="list-group list-group-flush my-3">
+<li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
+<li class="list-group-item">Access to the bonus PIT Podcast Feed</li>
+<li class="list-group-item">PIT Premium Newsletter</li>
+</ul>
 
-If you would like to offer support in the form of a one-time donation you can do so via our Ko-Fi Page!
+<div class="row justify-content-around">
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
 
-<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support PIT on Ko-fi', '#3394FA', 'R6R4KQDM');kofiwidget2.draw();</script>
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+	class="btn btn-primary"
+  id="checkout-button-5d0bd868f033bf667526053f"
+  role="link">
+Subscribe $10/Month
+</button>
 
-Backers get access to the bonus PIT Podcast Feed.
+<button
+	class='btn btn-primary'
+  id="checkout-button-pit-annual"
+  role="link">
+Subscribe $100/Year
+</button>
 
-You can also gift a membership to someone you think will benefit from it!
 
-<a class="btn btn-small btn-gray text-dark" href="https://productivityintech.memberful.com/gift?plan=21849">Gift Monthly Membership</a>
-<a class="btn btn-small btn-gray text-dark" href="https://productivityintech.memberful.com/gift?plan=36786">Gift Annual Membership</a>
+<script>
+  var stripe = Stripe('pk_live_kDLC8qiW74z3zUMfXQBjEfjD');
+  var monthlyCheckout = document.getElementById('checkout-button-5d0bd868f033bf667526053f');
+  monthlyCheckout.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{plan: '5d0bd868f033bf667526053f', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://productivityintech.com',
+      cancelUrl: 'https://productivityintech.com',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
+
+
+<script>
+  var annualButton= document.getElementById('checkout-button-pit-annual');
+  annualButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{plan: 'pit-annual', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://productivityintech.com/',
+      cancelUrl: 'https://productivityintech.com/',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
+<div id="error-message" class="text-danger"></div>

@@ -3,17 +3,12 @@
 {% block head %}
 <link href="/static/css/pages.css" rel="stylesheet">
 {% endblock %}
-{% block content %}
-<div class="container">
-	<div class="">
+{% block container %}
 		<h1 class="display-4 text-primary">{{metadata.title}}</h1>
     {% if subtitle in metadata.keys %}
       {{metadata.subtitle}}
     {% endif %}
-	</div>
 	<div class="py-2">
 		{{metadata.markup}}
 	</div>
-</div>
-</div>
 {% endblock %}

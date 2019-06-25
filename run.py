@@ -1,53 +1,43 @@
+import os
 import json
-import config
-import shutil
-from pathlib import Path
-from paginate import write_paginated_pages
-from page import Page
-from blog import BlogPost
-from engine import Engine
+import requests
+from pages.page import Page
+from pages.blog import BlogPost
+from pages.engine import Engine
 from links import Link
-from feeds import feed_gen
-from collection import Collection
 
 
 engine = Engine()
 
-pages = Collection(
-        name='pages',
-        content_type=Page,
-        content_path='pages',
-        )
-
-blog = Collection(name='blog',
-        content_type=BlogPost,
+# Add Collections
+pages = engine.add_collection(Page, content_path='pages', template='page.html')
+blog = engine.add_collection(BlogPost,
+        content_path='content',
         output_path='blog',
+        template='blog.html',
         )
-
-services = Collection(
-        name='services',
-        content_type=Page,
+services = engine.add_collection(
+        Page,
         output_path='services',
         content_path='services',
+        template='page.html',
         )
 
-engine.collections = (pages, blog, services)
 
+# Build Static Pages
 @engine.build(Page, template='index.html', route='/index')
 def index():
-    services = [
-            Link(
-                name='Editing',
-                url='editing.html',
-                image='fa-laptop-code',
-                ),
-            Link(
-                name="Coaching",
-                url="coaching.html",
-                image='fa-hands-helping',
-                ),
-            ]
-    return (services)
+    api_key = os.environ['BUTTONDOWN_API_KEY']
+    headers = {'Authorization': f'Token {api_key}'}
+    params = {'type': 'regular'}
+    url = "https://api.buttondown.email/v1/subscribers"
+    r = requests.get(url, headers=headers, params=params)
+
+    if r.status_code == 200:
+        results = r.json()['count']
+
+    return {'buttondown_count': results}
+
 
 @engine.build(
         Page,
@@ -55,20 +45,18 @@ def index():
         route='/coaching_feedback',
         )
 def coaching_feedback():
-    return ()
+    return {}
+
 
 @engine.build(
         Page,
-        template='coaching/coaching_feedback.html',
+        template='/courses.html',
         route='/dev-podcaster-course',
         )
 def podcasting_course():
-    return Page(template='courses.html').html
-
-def pagination():
-    # TODO: Create Pagination
-    # write_paginated_pages(blog.name, blog.paginate, path=blog.output_path, template='blog_list.html')
     pass
+
+
 
 
 if __name__ == "__main__":
