@@ -19,7 +19,7 @@ While the business does make some revenue from consulting, coaching and speaking
 <li class="list-group-item">PIT Premium Newsletter</li>
 </ul>
 
-<div class="row justify-content-around">
+<div class="my-3 row justify-content-around">
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
