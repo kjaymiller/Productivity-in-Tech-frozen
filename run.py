@@ -18,7 +18,7 @@ pages = engine.add_collection(
 blog = engine.add_collection(
         BlogPost,
         content_path='content',
-        route='/blog',
+        routes='/blog',
         template='blog.html',
         )
 
@@ -33,14 +33,14 @@ services = engine.add_collection(
 @engine.build(
         Page,
         template='coaching/coaching_feedback.html',
-        route='/coaching_feedback',
+        routes='/coaching_feedback',
         )
 def coaching_feedback():
     return {}
 
 
 
-@engine.build(Page, template='index.html', route='/index')
+@engine.build(Page, template='index.html', routes='/index')
 def index():
     api_key = os.environ['BUTTONDOWN_API_KEY']
     headers = {'Authorization': f'Token {api_key}'}
@@ -53,8 +53,6 @@ def index():
 
 #    return {}
     return {'buttondown_count': results}
-
-
 
 
 if __name__ == "__main__":
