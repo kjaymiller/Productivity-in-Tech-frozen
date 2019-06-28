@@ -18,24 +18,28 @@ pages = engine.add_collection(
 blog = engine.add_collection(
         BlogPost,
         content_path='content',
-        output_path='/blog',
+        route='/blog',
         template='blog.html',
         )
+
 services = engine.add_collection(
         Page,
-        output_path='/services',
+        routes=['','/services'],
         content_path='content/services',
         template='page.html',
         )
 
-services_alt_route = engine.add_collection(
-        Page,
-        output_path='',
-        content_path='/services',
-        template='page.html',
-        )
-
 # Build Static Pages
+@engine.build(
+        Page,
+        template='coaching/coaching_feedback.html',
+        route='/coaching_feedback',
+        )
+def coaching_feedback():
+    return {}
+
+
+
 @engine.build(Page, template='index.html', route='/index')
 def index():
     api_key = os.environ['BUTTONDOWN_API_KEY']
@@ -49,19 +53,6 @@ def index():
 
 #    return {}
     return {'buttondown_count': results}
-
-
-@engine.build(
-        Page,
-        template='coaching/coaching_feedback.html',
-        route='/coaching_feedback',
-        )
-def coaching_feedback():
-    return {}
-
-
-def podcasting_course():
-    pass
 
 
 
