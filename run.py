@@ -24,7 +24,7 @@ blog = engine.add_collection(
 
 services = engine.add_collection(
         Page,
-        routes=['','/services'],
+        routes=['./','/services'],
         content_path='content/services',
         template='page.html',
         )
