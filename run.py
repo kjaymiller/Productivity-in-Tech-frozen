@@ -28,6 +28,12 @@ services = engine.add_collection(
         template='page.html',
         )
 
+services_alt_route = engine.add_collection(
+        Page,
+        output_path='',
+        content_path='content/services',
+        template='page.html',
+        )
 
 # Build Static Pages
 @engine.build(Page, template='index.html', route='/index')
