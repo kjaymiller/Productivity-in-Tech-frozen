@@ -31,24 +31,24 @@ services = engine.add_collection(
 services_alt_route = engine.add_collection(
         Page,
         output_path='',
-        content_path='content/services',
+        content_path='/services',
         template='page.html',
         )
 
 # Build Static Pages
 @engine.build(Page, template='index.html', route='/index')
 def index():
-#    api_key = os.environ['BUTTONDOWN_API_KEY']
-#    headers = {'Authorization': f'Token {api_key}'}
-#    params = {'type': 'regular'}
-#    url = "https://api.buttondown.email/v1/subscribers"
-#    r = requests.get(url, headers=headers, params=params)
-#
-#    if r.status_code == 200:
-#        results = r.json()['count']
-#
-    return {}
-#    return {'buttondown_count': results}
+    api_key = os.environ['BUTTONDOWN_API_KEY']
+    headers = {'Authorization': f'Token {api_key}'}
+    params = {'type': 'regular'}
+    url = "https://api.buttondown.email/v1/subscribers"
+    r = requests.get(url, headers=headers, params=params)
+
+    if r.status_code == 200:
+        results = r.json()['count']
+
+#    return {}
+    return {'buttondown_count': results}
 
 
 @engine.build(
@@ -60,11 +60,6 @@ def coaching_feedback():
     return {}
 
 
-@engine.build(
-        Page,
-        template='/courses.html',
-        route='/dev-podcaster-course',
-        )
 def podcasting_course():
     pass
 
