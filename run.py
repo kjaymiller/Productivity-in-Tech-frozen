@@ -20,6 +20,8 @@ blog = engine.add_collection(
         content_path='content',
         routes='/blog',
         template='blog.html',
+        archive=True,
+        name='blog',
         )
 
 services = engine.add_collection(
