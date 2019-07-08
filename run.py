@@ -20,6 +20,8 @@ blog = engine.add_collection(
         content_path='content',
         routes='/blog',
         template='blog.html',
+        archive=True,
+        name='Blog'
         )
 
 services = engine.add_collection(
@@ -53,6 +55,12 @@ def index():
 
 #    return {}
     return {'buttondown_count': results}
+
+@engine.build(Page, template='index.html', routes='/dotnetcore')
+def index_dnetcore():
+    index_content = index()
+    index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
+    return index_content
 
 
 if __name__ == "__main__":
