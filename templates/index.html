@@ -4,6 +4,11 @@
 
 {% block container %}
 <!--Start Jumbotron  -->
+{% if promo %}
+  <section class="bg-primary">
+    <h3>{{promo}}</h3>
+
+    </section>
 <div class="row">
 	<div class="col-lg-4">
 		<img class="img-fluid" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg">
