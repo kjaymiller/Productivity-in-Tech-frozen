@@ -1,9 +1,7 @@
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
-    {% include 'addons/meta.html' %}
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/94d9a219ee.js"></script>
+    {% include 'addons/bulma' %}
     <title>{% block title %}{% endblock %}</title>
     {% block head %}{% endblock %}
   </head>
@@ -22,7 +20,6 @@
     </div>
     </div>
 
-    {% include 'addons/bootstrap_js.html' %}
     {% include 'footer.html' %}
     {% block body_javascript %}{% endblock %}
   </body>
