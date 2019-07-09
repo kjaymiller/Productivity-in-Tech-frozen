@@ -1,33 +1,34 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<section class="section">
+  <nav class="navbar container" role="navigation" aria-label="main navigation">
     </button>
     <div class="navbar-brand">
-    	<a class="" href="/">{{config.SITE_TITLE}}</a>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-</a>
-	</div>
-   	<div class="navbar-menu">
-	<div class="navbar-start">
-   		{% for link in config.HEADER_LINKS %}
-            {% if link.links %}
-            <div class="navbar-item has-dropdown"> 
-            <a class="navbar-link" href="{{link.href}}" role="button" aria-haspopup="true" aria-expanded="false" >
-            	{{link.name}}
-             </a>
-               {% for l in link.links %}
-               {{l.name}}
-               {% endfor %}
-               
+      <a class="" href="/">{{config.SITE_TITLE}}</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        {% for link in config.HEADER_LINKS %}
+        {% if link.links %}
+        <div class="navbar-item has-dropdown"> 
+          <a class="navbar-link" href="{{link.href}}" role="button" aria-haspopup="true" aria-expanded="false" >
+            {{link.name}}
+          </a>
+            {% for l in link.links %}
+            {{l.name}}
+            {% endfor %}
             {% else %}
-      	     <a class="navbar-item is-text-primary" href="{{link.url}}">
-                    {{link.name}}
-              </a>
+            <a class="navbar-item is-text-primary" href="{{link.url}}">
+              {{link.name}}
+            </a>
             {% endif %}
 
             {% endfor %}
+        </div>
+      </div>
     </div>
-    </div>
-
-</nav>
+  </nav>
+</section>
