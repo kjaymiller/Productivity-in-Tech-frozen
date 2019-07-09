@@ -1,4 +1,4 @@
-title: Offloading a Bit of the Editing can Help you be (More) Productive
+Title: Offloading a Bit of the Editing can Help you be (More) Productive
 
 ## Podcast or Video Course Editing
 ------
@@ -22,7 +22,7 @@ and optimize so that you get your point across.
 <h2 class="card-title border-bottom">Podcast Editing</h2>
 <div class="card-body">
 <i class="fas fa-microphone-alt fa-9x text-primary text-center"></i>
-<h3 class="mt-2">$55 Per Hour*</h3>
+<h3 class="mt-2">$65 Per Hour*</h3>
 </div>
 </div>
 
