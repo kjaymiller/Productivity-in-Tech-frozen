@@ -13,10 +13,12 @@
     {% block add_ons %}{% endblock %}
     {% include 'header.html' %}
 
+    <section class="section">
     {% block content %} {% endblock %}
-    {% block container%} {% endblock %}
+    <div class="container">
+      {% block container %} {% endblock %}
     </div>
-    </div>
+    </section>
 
     {% include 'footer.html' %}
     {% block body_javascript %}{% endblock %}
