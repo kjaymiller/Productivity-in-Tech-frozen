@@ -29,27 +29,28 @@
 {% include 'index/community.html' %}
 
 <!-- Newsletter Section -->
-<div class="hero has-text-centered is-info">
-  <h2>Get Productivity in Tech Tips and Updates in your Inbox 📬!</h2>
-  <h3>
-    Join the {% if buttondown_count %}
-    {{buttondown_count}}
-    {% else %}
-    other
-    {% endif %}
-    Developers on our Mailing List!
-  </h3>
-  {% include 'addons/buttondown_form.html' %}
-  <div class="text-center">
-    <h4 class="py-3">
-      <a class="" href="/memberships">
-        <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
-        <span>Premium Memberships unlock bonus perks!!</span>
-        <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
-      </a>
-      </a>
-    </h4>
+<section class="section">
+  <div class="hero has-text-centered is-info">
+    <h2>Get Productivity in Tech Tips and Updates in your Inbox 📬!</h2>
+    <h3>
+      Join the {% if buttondown_count %}
+      {{buttondown_count}}
+      {% else %}
+      other
+      {% endif %}
+      Developers on our Mailing List!
+    </h3>
+    {% include 'addons/buttondown_form.html' %}
+    <div class="text-center">
+      <h4 class="py-3">
+        <a class="" href="/memberships">
+          <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+          <span>Premium Memberships unlock bonus perks!!</span>
+          <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+        </a>
+        </a>
+      </h4>
+    </div>
   </div>
-</div>
-</div>
-{% endblock %}
+  <section class="section">
+    {% endblock %}
