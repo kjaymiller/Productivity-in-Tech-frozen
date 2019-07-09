@@ -3,7 +3,13 @@
     <div class="navbar-brand">
     	<a class="" href="/">{{config.SITE_TITLE}}</a>
 	</div>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</a>
    	<div class="navbar-menu">
+	<div class="navbar-start">
    		{% for link in config.HEADER_LINKS %}
             {% if link.links %}
             <a data-toggle="dropdown" href="{{link.href}}" role="button" aria-haspopup="true" aria-expanded="false" >
@@ -18,9 +24,6 @@
 
             {% endfor %}
     </div>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-  <span aria-hidden="true"></span>
-</a>
+    </div>
+
 </nav>
