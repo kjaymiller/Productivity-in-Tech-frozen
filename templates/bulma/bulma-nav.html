@@ -1,7 +1,7 @@
 <section class="section">
   <nav class="navbar container" role="navigation" aria-label="main navigation">
     </button>
-    <div class="navbar-brand">
+    <div class="navbar-brand is-vcentered">
       <a class="" href="/">{{config.SITE_TITLE}}</a>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -13,7 +13,7 @@
       <div class="navbar-start">
         {% for link in config.HEADER_LINKS %}
         {% if link.links %}
-        <div class="navbar-item has-dropdown"> 
+        <div class="navbar-item has-dropdown">
           <a class="navbar-link" href="{{link.href}}" role="button" aria-haspopup="true" aria-expanded="false" >
             {{link.name}}
           </a>
