@@ -11,15 +11,12 @@
              </a>
      </div>
             {% else %}
-            <li class="nav-item px-2">
-                <a href="{{link.url}}">
+      	     <a href="{{link.url}}">
                     {{link.name}}
-                </a>
-            </li>
+              </a>
             {% endif %}
 
             {% endfor %}
-        </ul>
     </div>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
   <span aria-hidden="true"></span>
