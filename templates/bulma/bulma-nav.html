@@ -12,9 +12,14 @@
 	<div class="navbar-start">
    		{% for link in config.HEADER_LINKS %}
             {% if link.links %}
-            <a data-toggle="dropdown" href="{{link.href}}" role="button" aria-haspopup="true" aria-expanded="false" >
+            <div class="navbar-item has-dropdown"> 
+            <a class="navbar-link" href="{{link.href}}" role="button" aria-haspopup="true" aria-expanded="false" >
             	{{link.name}}
              </a>
+               {% for l in link.links %}
+               {{l.name}}
+               {% endfor %}
+               
             {% else %}
       	     <a href="{{link.url}}">
                     {{link.name}}
