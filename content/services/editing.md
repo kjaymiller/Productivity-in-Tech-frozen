@@ -11,12 +11,14 @@ Podcast & Video Production Services
 <h2 class="subtitle has-text-grey-dark has-text-weight-bold">
   <p>Great content shouldn't be hindered by time constraints!<p>
 </h2>
+</div>
 
-<p class=''>
+<div class="section">
+<p>
 In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
 </p>
 
-<div class="hero box is-bold">
+<div class="box is-bold">
 <h1 class="title is-4 has-text-grey">
 Jay takes podcasting seriously and it shows. He does good work with audio editing and understands what podcasters need as one himself. He is conscientious and thorough in making sure he does quality work and that he has satisfied customers. I highly recommend his work.”
 </h1>
@@ -27,7 +29,9 @@ Jay takes podcasting seriously and it shows. He does good work with audio editin
 <section class="section">
 <h2 class="subtitle is-4">Professional Studio-Level Editing at a Home Studio
 Price</h2>
+
 </div>
+
 <p class="has-text-info">
   No matter what you need done to your audio and video, trust us!
 </p>
