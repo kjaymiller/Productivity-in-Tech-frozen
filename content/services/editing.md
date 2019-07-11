@@ -17,7 +17,13 @@ In fact many podcasts and video channel ideas for never get published because of
 </p>
 </div>
 
-<
+<div class="hero box is-bold">
+<h1 class="title">
+Jay takes podcasting seriously and it shows. He does good work with audio editing and understands what podcasters need as one himself. He is conscientious and thorough in making sure he does quality work and that he has satisfied customers. I highly recommend his work.”
+</h1>
+<h2 class="subtitle">Dave Rael - Developer on Fire</h2>
+</div>
+
 <section class="section">
 <h2 class="subtitle is-4">Professional Studio-Level Editing at a Home Studio
 Price</h2>
