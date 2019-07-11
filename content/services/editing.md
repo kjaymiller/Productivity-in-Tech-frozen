@@ -18,6 +18,8 @@ Podcast & Video Production Services
 In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
 </p>
 
+</div>
+
 <div class="box is-bold">
 <h1 class="title is-4 has-text-grey">
 Jay takes podcasting seriously and it shows. He does good work with audio editing and understands what podcasters need as one himself. He is conscientious and thorough in making sure he does quality work and that he has satisfied customers. I highly recommend his work.”
