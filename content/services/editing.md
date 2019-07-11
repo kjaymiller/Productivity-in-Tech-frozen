@@ -22,7 +22,7 @@ and optimize so that you get your point across.
 <h2 class="card-title border-bottom">Podcast Editing</h2>
 <div class="card-body">
 <i class="fas fa-microphone-alt fa-9x text-primary text-center"></i>
-<h3 class="mt-2">$65 Per Hour*</h3>
+<h3 class="mt-2">$80 Per Hour*</h3>
 </div>
 </div>
 
@@ -30,7 +30,7 @@ and optimize so that you get your point across.
 <h2 class="card-title border-bottom">Video Editing</h2>
 <div class="card-body">
 <i class="fas fa-file-video fa-9x text-primary text-center"></i>
-<h3 class="mt-2">$2.50 Per Minute*</h3>
+<h3 class="mt-2">$3.00 Per Minute*</h3>
 </div>
 </div>
 </div>
