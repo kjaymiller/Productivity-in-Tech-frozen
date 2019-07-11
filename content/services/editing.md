@@ -44,9 +44,13 @@ Price</h2>
 <div class="container">
   <a type="submit" class="button">I'd Like a Consultation</a>
 </div>
+</section>
 
-<h2 class="subtitle is-2">Want to Connect with Other Developer Content Creators</h2>
-<p>Join the many other content creators</p>
+<section>
+<h2 class="title is-4 has-text-primary">Want to Connect with Other Developer Content Creators</h2>
+<p>Join the many other content creators in our FREE Slack Channel</p>
+<div class="icon">
+  <i class="fab fa-slack fa-5x px-2" style="color:#1DA1F2;"></i>
+</div>
 
-<h2 class="subtitle is-2"></h2>
 </section>
