@@ -15,23 +15,28 @@ Podcast & Video Production Services
 <p class=''>
 In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
 </p>
-
 </div>
 
+<
 <section class="section">
 <h2 class="subtitle is-4">Professional Studio-Level Editing at a Home Studio
 Price</h2>
-<div class="level">
-<div class="level-item">Item-1</div>
-<div class="level-item">Item-2</div>
-<div class="level-item">Item-3</div>
 </div>
-<p>
-No matter what you need done to the audio, trust us! We can clean up your sound
-and optimize so that you get your point across.
+<p class="has-text-info">
+  No matter what you need done to your audio and video, trust us!
 </p>
 
-<div class="has-text-centered">
+<p>
+  We use popular editing tools and techniques to make your content look and
+  sound great!
+</p>
+
+<div class="container">
   <a type="submit" class="button">I'd Like a Consultation</a>
 </div>
+
+<h2 class="subtitle is-2">Want to Connect with Other Developer Content Creators</h2>
+<p>Join the many other content creators</p>
+
+<h2 class="subtitle is-2"></h2>
 </section>
