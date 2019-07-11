@@ -6,19 +6,19 @@
 <!--Start Jumbotron  -->
 {% if promo %}
 <div class="media row bg-primary rounded">
-	<div class="col-3 mr-3">
-		<img class="img" src="https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg" alt="">
-	</div>
-	<h3 class="media-body">{{promo}}</h3>
+  <div class="col-3 mr-3">
+    <img class="img" src="https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg" alt="">
+  </div>
+  <h3 class="media-body">{{promo}}</h3>
 </div>
 {% endif %}
 <div class="columns is-vcentered">
-	<div class="column is-4">
-		<img class="img" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg">
-	</div>
-	<!-- div class="row col-lg-8 justify-content-around text-primary align-items-center" - Bootstrap -->
-	<div class="container">
-		<h1 class="subtitle is-3 has-text-justified">Helping Tech Folks Create Content to Help Tech Folks</h1></div>
+  <div class="column is-4">
+    <img class="img" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3.jpg">
+  </div>
+  <!-- div class="row col-lg-8 justify-content-around text-primary align-items-center" - Bootstrap -->
+  <div class="container">
+    <h1 class="subtitle is-3 has-text-justified">Helping Tech Folks Create Content to Help Tech Folks</h1></div>
 </div>
 
 {% include 'index/coaching.html' %}
@@ -26,28 +26,29 @@
 {% include 'index/community.html' %}
 
 <!-- Newsletter Section -->
-<section class="section">
-	<div class="hero is-large has-text-centered is-info">
-		<h2 class="title">Get Productivity in Tech Tips and Updates in your Inbox 📬!</h2>
-		<h3 class="subtitle">
-			Join the {% if buttondown_count %}
-			{{buttondown_count}}
-			{% else %}
-			other
-			{% endif %}
-			Developers on our Mailing List!
-		</h3>
-		{% include 'addons/buttondown_form.html' %}
-		<div class="text-center">
-			<h4 class="py-3">
-				<a class="" href="/memberships">
-					<i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
-					<span>Premium Memberships unlock bonus perks!!</span>
-					<i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
-				</a>
-				</a>
-			</h4>
-		</div>
-	</div>
-	<section class="section">
-		{% endblock %}
+<section class="hero is-has-text-centered is-info">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Get Productivity in Tech Tips and Updates in your Inbox 📬!</h2>
+      <h3 class="subtitle">
+        Join the {% if buttondown_count %}
+        {{buttondown_count}}
+        {% else %}
+        other
+        {% endif %}
+        Developers on our Mailing List!
+      </h3>
+      {% include 'addons/buttondown_form.html' %}
+      <div class="text-center">
+        <h4 class="py-3">
+          <a class="" href="/memberships">
+            <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+            <span>Premium Memberships unlock bonus perks!!</span>
+            <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+          </a>
+        </h4>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    {% endblock %}
