@@ -26,27 +26,4 @@ No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across.
 </p>
 
-<section class="section">
-
-</section>
-
-<form name="contact" class="col-md-10 col-lg-6" method="POST" data-netlify="true">
-
-<div class="control">
-<input type="text" name="name" placeholder="name"></input>
-</div>
-
-<div class="control">
-<input type="text" name="name" placeholder="email"></input>
-</div>
-
-<p>
-<label>I'm Interested in: <select name="editing_type" multiple>
-<option value="Podcast">Podcast Editing</option>
-<option value="Video Editing">Video Editing</option>
-</select></label>
-</p>
-<p>
-<button type="submit" class="btn btn-primary mt-3">I'd Like a Consultation</button> 
-</p>
-</form>
+<a type="submit" class="button">I'd Like a Consultation</a>
