@@ -4,6 +4,7 @@ title: Offloading a Bit of the Editing can Help you be (More) Productive
 Podcast & Video Production Services
 </h2>
 <section class="section">
+  <div>
   <h2 class="subtitle is-4 has-text-info">For most people, making content is 20% making and 80%
     <span class="has-text-weight-semibold">Doing Everything Else!</span>
   </h2>
@@ -15,17 +16,14 @@ Podcast & Video Production Services
   <p>
   In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
   </p>
+  </div>
 
 <div class="box is-bold">
-</section>
-
-<section>
 <h1 class="title is-4 has-text-grey">
 Jay takes podcasting seriously and it shows. He does good work with audio editing and understands what podcasters need as one himself. He is conscientious and thorough in making sure he does quality work and that he has satisfied customers. I highly recommend his work.”
 </h1>
 
 <h2 class="subtitle has-text-right is-italic">Dave Rael - Developer on Fire</h2>
-</div>
 </div>
 </section>
 
