@@ -18,14 +18,20 @@ In fact many podcasts and video channel ideas for never get published because of
 
 </div>
 
-
+<section class="section">
 <h2 class="subtitle is-4">Professional Studio-Level Editing at a Home Studio
 Price</h2>
+<div class="level">
+<div class="level-item">Item-1</div>
+<div class="level-item">Item-2</div>
+<div class="level-item">Item-3</div>
+</div>
 <p>
 No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across.
 </p>
 
-<div class="is-centered">
+<div class="has-text-centered">
   <a type="submit" class="button">I'd Like a Consultation</a>
 </div>
+</section>
