@@ -43,8 +43,8 @@ Price</h2>
 </p>
 
 <div class="section">
-  <div class="container">
-    <a type="submit" class="button">I'd Like a Consultation</a>
+  <div class="is-centered">
+    <a type="submit" class="button is-large">I'd Like a Consultation</a>
   </div>
 </div>
 </section>
@@ -52,13 +52,13 @@ Price</h2>
 <section class="level">
 <div class="level-item">
   <h2 class="title is-4 has-text-primary">Want to Connect with Other Developer Content Creators</h2>
->
   </div>
 
-  <p>
+  <p class="level-item">
     <i class="fab fa-slack fa-5x px-2" style="color:#1DA1F2;"></i>
   </p>
-  <p>
+  <p class="level-item">
     Join the many other content creators in our FREE Slack Channel
   </p>
+  </div>
 </section>
