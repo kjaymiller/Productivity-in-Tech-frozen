@@ -8,11 +8,11 @@ Podcast & Video Production Services
   <span class="has-text-weight-semibold">Doing Everything Else!</span>
 </h2>
 
-<h2 class="subtitle has-text-grey-dark">
+<h2 class="subtitle has-text-grey-dark has-text-weight-bold">
   <p>Great content shouldn't be hindered by time constraints!<p>
 </h2>
 
-<p class='has-text-weight-strong'>
+<p class=''>
 In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
 </p>
 
