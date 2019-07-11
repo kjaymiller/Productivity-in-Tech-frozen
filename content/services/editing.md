@@ -17,8 +17,8 @@ because of the daunting task of editing.
 No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across. 
 
-<div class="row justify-content-around">
-<div class="card border-0 col-lg-5">
+<div class="columns"
+<div class="column is-one-half">
 <h2 class="card-title border-bottom">Podcast Editing</h2>
 <div class="card-body">
 <i class="fas fa-microphone-alt fa-9x text-primary text-center"></i>
@@ -37,13 +37,13 @@ and optimize so that you get your point across.
 
 <form name="contact" class="col-md-10 col-lg-6" method="POST" data-netlify="true">
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
+    <label>Your Name: <input type="text" name="name" /></label>
   </p>
   <p>
     <label>Your Email: <input type="email" name="email" /></label>
   </p>
   <p>
-	<label>I'm Interested in: <select name="editing_type[]" multiple>
+	<label>I'm Interested in: <select name="editing_type" multiple>
 	      <option value="Podcast">Podcast Editing</option>
       <option value="Video Editing">Video Editing</option>
     </select></label>
