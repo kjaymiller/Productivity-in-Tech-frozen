@@ -1,13 +1,13 @@
 title: Offloading a Bit of the Editing can Help you be (More) Productive
-subtitle: Editing Services
 
+<h2 class="subtitle is-3">
 You can make your podcast sound amazing with some work, but according to the
 Paretto Principle, you should be focusing on the 20% of podcasting that gives
 80% of the return.
 
 That 20% is recording the thing.
 
-In fact many people record ideas for podcasts bnd courses ut they never get published
+In fact many people record ideas for podcasts and courses but they never get published
 because of the daunting task of editing.
 
 
