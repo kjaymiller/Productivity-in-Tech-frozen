@@ -15,13 +15,13 @@ Podcast & Video Production Services
 <p class=''>
 In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
 </p>
-</div>
 
 <div class="hero box is-bold">
 <h1 class="title">
 Jay takes podcasting seriously and it shows. He does good work with audio editing and understands what podcasters need as one himself. He is conscientious and thorough in making sure he does quality work and that he has satisfied customers. I highly recommend his work.”
 </h1>
 <h2 class="subtitle has-text-right is-italic">Dave Rael - Developer on Fire</h2>
+</div>
 </div>
 
 <section class="section">
