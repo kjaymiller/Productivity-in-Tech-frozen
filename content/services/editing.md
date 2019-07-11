@@ -8,7 +8,7 @@ Podcast & Video Production Services
   <span class="has-text-weight-semibold">Doing Everything Else!</span>
 </h2>
 
-<h2 class="subtitle has-text-grey-lighter">
+<h2 class="subtitle has-text-grey-dark">
   <p>Great content shouldn't be hindered by time constraints!<p>
 </h2>
 
