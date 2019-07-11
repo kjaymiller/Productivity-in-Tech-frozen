@@ -1,23 +1,21 @@
 title: Offloading a Bit of the Editing can Help you be (More) Productive
 
 <h2 class="subtitle is-3 has-text-info">
-Podcast & Video Editing Services
+Podcast & Video Production Services
 </h2>
 <div class="section">
-<p>You can make your podcast sound amazing with some work, but according to the
-Paretto Principle, you should be focusing on the 20% of podcasting that gives
-80% of the return.
-<p>
-<h2 class="subtitle is-3">
-That 20% is recording the thing.
+<h2 class="subtitle is-4 has-text-info">For most people, making content is 20% making and 80% <span class="has-text-weight-semibold">Doing Everything Else!</span><h2>
+
+<p>Great content shouldn't be hindered by time constraints!<p>
 </h2>
 
-In fact many people record ideas for podcasts and courses but they never get published
-because of the daunting task of editing.
+<p class='has-text-weight-strong'>
+In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
+</p>
+
 </div>
 
 
-## Edit for Quality, Content, Length or All the Above!
 ------
 No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across.
