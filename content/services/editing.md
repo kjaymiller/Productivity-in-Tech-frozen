@@ -51,7 +51,7 @@ Price</h2>
 
 <section class="level">
 <div class="level-item">
-  <h2 class="title is-4 has-text-primary">Want to Connect with Other Developer Content Creators</h2>
+  <h2 class="title is-4 has-text-info">Want to Connect with Other Developer Content Creators</h2>
   </div>
 
   <p class="level-item">
