@@ -5,11 +5,12 @@
 {% block container %}
 <!--Start Jumbotron  -->
 {% if promo %}
-<div class="media row bg-primary rounded">
-  <div class="col-3 mr-3">
-    <img class="img" style="height: 25em;" src="https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg" alt="">
+<div class="row bg-primary rounded justify-content-between
+  align-items-center">
+  <div class="col-3" >
+    <img class="img" src="https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg" alt="">
   </div>
-  <h3 class="media-body">{{promo}}</h3>
+  <h3 class="col-8">{{promo}}</h3>
 </div>
 {% endif %}
 <div class="row">
