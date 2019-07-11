@@ -8,7 +8,7 @@ Podcast & Video Production Services
   <span class="has-text-weight-semibold">Doing Everything Else!</span>
 </h2>
 
-<h2 class="subtitle has-text-light">
+<h2 class="subtitle has-text-grey-lighter">
   <p>Great content shouldn't be hindered by time constraints!<p>
 </h2>
 
@@ -26,22 +26,9 @@ No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across.
 </p>
 
-<div class="columns">
-<div class="column is-one-half">
-<h2 class="subtitle is-5">Podcast Editing</h2>
-<i class="fas fa-microphone-alt fa-9x text-primary text-center"></i>
-<h3 class="mt-2">$80 Per Hour*</h3>
-</div>
-</div>
+<section class="section">
 
-<div class="column is-one-half">
-<h2 class="subtitle is-5">Video Editing</h2>
-<div class="card-body">
-<i class="fas fa-file-video fa-9x text-primary text-center"></i>
-<h3 class="mt-2">$3.00 Per Minute*</h3>
-</div>
-</div>
-</div>
+</section>
 
 <form name="contact" class="col-md-10 col-lg-6" method="POST" data-netlify="true">
 
@@ -63,8 +50,3 @@ and optimize so that you get your point across.
 <button type="submit" class="btn btn-primary mt-3">I'd Like a Consultation</button> 
 </p>
 </form>
-
-<small>
-_* Podcast Editing rounded for every 30 minutes of RAW Content_
-_* Video Editing rounded to the minute of RAW Content_
-</small>
