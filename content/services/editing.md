@@ -26,4 +26,6 @@ No matter what you need done to the audio, trust us! We can clean up your sound
 and optimize so that you get your point across.
 </p>
 
-<a type="submit" class="button">I'd Like a Consultation</a>
+<div class="is-centered">
+  <a type="submit" class="button">I'd Like a Consultation</a>
+</div>
