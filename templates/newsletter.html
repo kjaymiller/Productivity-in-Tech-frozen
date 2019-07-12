@@ -1,0 +1,30 @@
+<!-- Newsletter Section -->
+<section class="hero is-has-text-centered is-info">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Get Productivity in Tech Tips and Updates in your Inbox 📬!</h2>
+      <h3 class="subtitle">
+        Join the {% if buttondown_count %}
+        {{buttondown_count}}
+        {% else %}
+        other
+        {% endif %}
+        Developers on our Mailing List!
+      </h3>
+      <div class="columns">
+        <div class="column is-4">
+      {% include 'addons/buttondown_form.html' %}
+        </div>
+      </div>
+      <div class="text-center">
+        <h2 class="subtitle">
+          <a class="" href="/memberships">
+            <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+            <span>Premium Memberships unlock bonus perks!!</span>
+            <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+          </a>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <section class="section">
