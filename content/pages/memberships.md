@@ -2,11 +2,12 @@ Title: Become a PIT Member ❤️
 slug: memberships
 
 <h2 class="">
-<span class="text-primary">Productivity in Tech</span> is a <em>Member-Supported</em> Company. 
+Productivity in Tech is a <span class="has-text-weight-semi-bold is-italic">Member-Supported</span> Company. 
 </h2>
 
-<p class='lead my-4'>
-While the business does make some revenue from consulting, coaching and speaking, we cannot continue to grow the community and the services we offer without support from the community members like you! 
+<p class="subtitle is-4">
+While the business does make some revenue from consulting, and helping developers get their content to you,
+ we cannot continue to grow the community and the services we offer without support from community members like you! 
 </p>
 
 <div class="col-md-6 py-3 my-3 text-centered mx-auto bg-transparent border border-primary">
