@@ -3,7 +3,6 @@ title: Offloading a Bit of the Editing can Help you be (More) Productive
 <h2 class="subtitle is-3 has-text-info">
 Podcast & Video Production Services
 </h2>
-<section class="section">
   <div>
   <h2 class="subtitle is-4 has-text-info">For most people, making content is 20% making and 80%
     <span class="has-text-weight-semibold">Doing Everything Else!</span>
@@ -17,7 +16,6 @@ Podcast & Video Production Services
   In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
   </p>
   </div>
-  </section>
 
 <section class="section">
   <div class="box is-bold">
