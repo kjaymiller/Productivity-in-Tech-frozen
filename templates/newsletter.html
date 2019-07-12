@@ -1,12 +1,12 @@
 <!-- Newsletter Section -->
 <section class="hero is-has-text-centered is-info">
   <div class="hero-body">
-    <div class="container">
+    <div class="has-text-centered">
       <h1 class="title">
         Are you building things for developers? Me Too! Hear more about it!
       </h1>
 
-      <h3 class="subtitle is-4">
+      <h3 class="subtitle">
         Join the {% if buttondown_count %}
         {{buttondown_count}}
         {% else %}
@@ -14,11 +14,13 @@
         {% endif %}
         Developers on our Mailing List!
       </h3>
+
       <div class="columns">
         <div class="column is-4">
-      {% include 'addons/buttondown_form.html' %}
+          {% include 'addons/buttondown_form.html' %}
         </div>
       </div>
+
       <div class="text-center">
         <h2 class="subtitle">
           <a class="" href="/memberships">
@@ -28,6 +30,7 @@
           </a>
         </h2>
       </div>
+
     </div>
   </div>
 </section>
