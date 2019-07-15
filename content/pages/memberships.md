@@ -10,15 +10,16 @@ While the business does make some revenue from consulting, and helping developer
 we cannot continue to grow the community and the services we offer without support from community members like you!  </p> 
 
 <div class="columns is-centered">
-<div class="column is-half">
-<h2 class="text-primary is-subtitle">Get access to:</h2>
+<div class="column is-half box section">
+<h2 class="is-subtitle has-text-primary">Get access to:</h2>
 <ul class="list-group list-group-flush my-3">
 <li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
 <li class="list-group-item">Access to the bonus PIT Podcast Feed</li>
 <li class="list-group-item">PIT Premium Newsletter</li>
 </ul>
+</div>
 
-<div class="my-3 row justify-content-around">
+<div class="my-3 column">
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
@@ -36,7 +37,8 @@ id="checkout-button-pit-annual"
 role="link">
 Subscribe $100/Year
 </button>
-
+</div>
+</div>
 
 <script>
 var stripe = Stripe('pk_live_kDLC8qiW74z3zUMfXQBjEfjD');
