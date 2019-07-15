@@ -11,7 +11,7 @@ we cannot continue to grow the community and the services we offer without suppo
 
 <div class="columns is-centered">
 <div class="column is-half">
-<h2 class="text-primary">Get access to:</h2>
+<h2 class="text-primary is-subtitle">Get access to:</h2>
 <ul class="list-group list-group-flush my-3">
 <li class="list-group-item">Priority Access to the PIT Mastermind Group</li>
 <li class="list-group-item">Access to the bonus PIT Podcast Feed</li>
