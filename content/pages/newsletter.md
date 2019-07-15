@@ -15,17 +15,19 @@ Premium Members get all of this and more interaction with me from the community.
 
 <section class="section">
 <div class="box">
-<form
+form
 	action="https://buttondown.email/api/emails/embed-subscribe/productivityintech"
 	method="post"
 	target="popupwindow"
 	onsubmit="window.open('https://buttondown.email/productivityintech', 'popupwindow')"
 	class="col-lg-3 embeddable-buttondown-form">
+	<div class="field">
+	<div class="control">
+<input type="text"
 	name="email"
 	placeholder="Email"
 	id="bd-email">
-	<div class="field">
-	<div class="control">
+
 	<input type="hidden"
 	value="1"
 	name="embed" />
