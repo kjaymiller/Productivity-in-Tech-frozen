@@ -22,8 +22,9 @@ Premium Members get all of this and more interaction with me from the community.
 	onsubmit="window.open('https://buttondown.email/productivityintech', 'popupwindow')"
 	class="col-lg-3 embeddable-buttondown-form">
 	<div class="field">
-	<div class="control">
+	<div class="control is-expandable">
 <input type="text"
+	class="input"
 	name="email"
 	placeholder="Email"
 	id="bd-email">
