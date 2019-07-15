@@ -3,12 +3,13 @@ Title: Subscribe to my newsletter! 🗞📨📬
 
 I want to help people create the content they dream about! My newsletter is designed to be a journey along what I'm doing in PIT. 
 
-Here are a few things that you will get when you subscribe.
 
-- Updates on all the fun things I'm working on.
-- Automation and workflow breakdowns.
-- A direct line to me! (Your buddy, your pal!)
-- Full transparency on my business
+<h2 class="subtitle is-3">Here are a few things that you will get when you subscribe:</h2>
+
+* Updates on all the fun things I'm working on.
+* Automation and workflow breakdowns.
+* A direct line to me! (Your buddy, your pal!)
+* Full transparency on my business
 
 Premium Members get all of this and more interaction with me from the community. 
 
@@ -20,16 +21,19 @@ Premium Members get all of this and more interaction with me from the community.
 	target="popupwindow"
 	onsubmit="window.open('https://buttondown.email/productivityintech', 'popupwindow')"
 	class="col-lg-3 embeddable-buttondown-form">
-	<h4 class="font-italic font-weight-strong text-primary"> All this content (plus some extra goodies) in a digestible package in your inbox! </h4> <input type="email"
 	name="email"
 	placeholder="Email"
 	id="bd-email">
+	<div class="field">
+	<div class="control">
 	<input type="hidden"
 	value="1"
 	name="embed" />
-	<input class="btn btn-primary my-2"
+	<input class="button"
 	type="submit"
 	value="Subscribe" />
+</div>
+</div>
 </form>
 </div>
 </section>
