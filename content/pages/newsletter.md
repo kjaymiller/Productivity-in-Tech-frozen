@@ -1,11 +1,16 @@
 slug: subscribe 
 Title: Subscribe to my newsletter! 🗞📨📬
 
+I want to help people create the content they dream about! My newsletter is designed to be a journey along what I'm doing in PIT. 
+
 Here are a few things that you will get when you subscribe.
 
 - Updates on all the fun things I'm working on.
 - Automation and workflow breakdowns.
 - A direct line to me! (Your buddy, your pal!)
+- Full transparency on my business
+
+Premium Members get all of this and more interaction with me from the community. 
 
 <form
 	action="https://buttondown.email/api/emails/embed-subscribe/productivityintech"
