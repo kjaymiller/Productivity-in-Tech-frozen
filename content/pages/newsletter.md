@@ -15,7 +15,7 @@ Premium Members get all of this and more interaction with me from the community.
 
 <section class="section">
 <div class="box">
-form
+<form
 	action="https://buttondown.email/api/emails/embed-subscribe/productivityintech"
 	method="post"
 	target="popupwindow"
