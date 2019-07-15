@@ -1,59 +1,63 @@
 Title: Offloading a Bit of the Editing can Help you be (More) Productive
 
-## Podcast or Video Course Editing
-------
-You can make your podcast sound amazing with some work, but according to the
-Paretto Principle, you should be focusing on the 20% of podcasting that gives
-80% of the return. 
+<h2 class="subtitle is-3 has-text-info">
+Podcast & Video Production Services
+</h2>
+  <div>
+  <h2 class="subtitle is-4 has-text-info">For most people, making content is 20% making and 80%
+    <span class="has-text-weight-semibold">Doing Everything Else!</span>
+  </h2>
 
-That 20% is recording the thing. 
+  <h2 class="subtitle has-text-grey-dark has-text-weight-bold">
+    Great content shouldn't be hindered by time constraints!
+  </h2>
 
-In fact many people record ideas for podcasts bnd courses ut they never get published
-because of the daunting task of editing. 
-
-
-## Edit for Quality, Content, Length or All the Above!
-------
-No matter what you need done to the audio, trust us! We can clean up your sound
-and optimize so that you get your point across. 
-
-<div class="row justify-content-around">
-<div class="card border-0 col-lg-5">
-<h2 class="card-title border-bottom">Podcast Editing</h2>
-<div class="card-body">
-<i class="fas fa-microphone-alt fa-9x text-primary text-center"></i>
-<h3 class="mt-2">$80 Per Hour*</h3>
-</div>
-</div>
-
-<div class="card border-0 col-lg-5">
-<h2 class="card-title border-bottom">Video Editing</h2>
-<div class="card-body">
-<i class="fas fa-file-video fa-9x text-primary text-center"></i>
-<h3 class="mt-2">$3.00 Per Minute*</h3>
-</div>
-</div>
-</div>
-
-<form name="contact" class="col-md-10 col-lg-6" method="POST" data-netlify="true">
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
+  In fact many podcasts and video channel ideas for never get published because of the daunting task of editing.
   </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-	<label>I'm Interested in: <select name="editing_type[]" multiple>
-	      <option value="Podcast">Podcast Editing</option>
-      <option value="Video Editing">Video Editing</option>
-    </select></label>
-  </p>
-  <p>
-<button type="submit" class="btn btn-primary mt-3">I'd Like a Consultation</button> 
-  </p>
-</form>
+  </div>
 
-<small>
-_* Podcast Editing rounded for every 30 minutes of RAW Content_
-_* Video Editing rounded to the minute of RAW Content_
-</small>
+<section class="section">
+  <div class="box is-bold">
+<h1 class="title is-4 has-text-grey">
+Jay takes podcasting seriously and it shows. He does good work with audio editing and understands what podcasters need as one himself. He is conscientious and thorough in making sure he does quality work and that he has satisfied customers. I highly recommend his work.”
+</h1>
+
+<h2 class="subtitle has-text-right is-italic">Dave Rael - Developer on Fire</h2>
+</div>
+</section>
+
+<section class="section">
+<h2 class="subtitle is-4">Professional Studio-Level Editing at a Home Studio
+Price</h2>
+
+<p class="has-text-info">
+  No matter what you need done to your audio and video, trust us!
+</p>
+
+<p>
+  We use popular editing tools and techniques to make your content look and
+  sound great!
+</p>
+
+<div class="section">
+  <div class="is-centered">
+    <a type="submit" class="button is-large">I'd Like a Consultation</a>
+  </div>
+>>>>>>> bulma-transfer
+</div>
+</section>
+
+<section class="level">
+<div class="level-item">
+  <h2 class="title is-4 has-text-info">Want to Connect with Other Developer Content Creators</h2>
+  </div>
+
+  <p class="level-item">
+    <i class="fab fa-slack fa-5x px-2" style="color:#1DA1F2;"></i>
+  </p>
+  <p class="level-item">
+    Join the many other content creators in our FREE Slack Channel
+  </p>
+  </div>
+</section>

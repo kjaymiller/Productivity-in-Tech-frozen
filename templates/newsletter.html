@@ -1,0 +1,36 @@
+<!-- Newsletter Section -->
+<section class="hero is-has-text-centered is-info">
+  <div class="hero-body">
+    <div class="has-text-centered">
+      <h1 class="title">
+        Are you building things for developers? Me Too! Hear more about it!
+      </h1>
+
+      <h3 class="subtitle">
+        Join the {% if buttondown_count %}
+        {{buttondown_count}}
+        {% else %}
+        other
+        {% endif %}
+        Developers on our Mailing List!
+      </h3>
+
+      <div class="columns is-centered">
+        <div class="column is-half-tablet">
+          {% include 'addons/buttondown_form.html' %}
+        </div>
+      </div>
+
+      <div class="text-center">
+        <h2 class="subtitle">
+          <a class="" href="/memberships">
+            <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+            <span>Premium Memberships unlock bonus perks!!</span>
+            <i class="d-none d-lg-inline-block img-fluid text-primary far fa-star px-2"></i>
+          </a>
+        </h2>
+      </div>
+
+    </div>
+  </div>
+</section>

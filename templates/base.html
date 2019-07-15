@@ -1,9 +1,7 @@
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
-    {% include 'addons/meta.html' %}
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/94d9a219ee.js"></script>
+    {% include 'addons/bulma.html' %}
     <title>{% block title %}{% endblock %}</title>
     {% block head %}{% endblock %}
   </head>
@@ -13,18 +11,48 @@
   </style>
   <body>
     {% block add_ons %}{% endblock %}
+
+
     {% include 'header.html' %}
 
-    <div style="margin-top: 5rem;">
+    <section>
+    {% include 'addons/promo.html' %}
+    </section>
+
+    <section class="section">
     {% block content %} {% endblock %}
     <div class="container">
-    {% block container%} {% endblock %}
+      {% block container %} {% endblock %}
     </div>
-    </div>
+    </section>
 
-    {% include 'addons/bootstrap_js.html' %}
     {% include 'footer.html' %}
     {% block body_javascript %}{% endblock %}
     {% block analytics %}{% endblock %}
+		<script type="text/javascript">document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+		}); </script>
   </body>
 </html>
