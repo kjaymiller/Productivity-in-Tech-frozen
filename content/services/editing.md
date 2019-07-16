@@ -42,7 +42,7 @@ Price</h2>
 
 <div class="section">
   <div class="is-centered">
-    <a type="submit" href="contact.html" class="button is-large">I'd Like a Consultation</a>
+    <a type="submit" href="/contact.html" class="button is-large">I'd Like a Consultation</a>
   </div>
 </div>
 </section>
