@@ -64,7 +64,7 @@ def index_dnetcore():
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
     return index_content
 
-@engine.build(Page, template='contact.html', routes='/index')
+@engine.build(Page, template='contact.html', routes='/contact')
 def contact_page():
     return {}
 
