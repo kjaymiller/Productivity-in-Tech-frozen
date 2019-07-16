@@ -65,7 +65,7 @@ def index_dnetcore():
     return index_content
 
 @engine.build(Page, template='contact.html', routes='/index')
-def index():
+def contact_page():
     return {}
 
 if __name__ == "__main__":
