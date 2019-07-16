@@ -13,6 +13,7 @@ engine = Engine()
 pages = engine.add_collection(
         Page,
         content_path='content/pages',
+        routes='./',
         template='page.html')
 
 blog = engine.add_collection(
