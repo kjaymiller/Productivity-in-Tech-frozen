@@ -57,12 +57,16 @@ def index():
 #    return {}
     return {'buttondown_count': results}
 
+# TODO Things like this should be a separate page
 @engine.build(Page, template='index.html', routes='/dotnetcore')
 def index_dnetcore():
     index_content = index()
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
     return index_content
 
+@engine.build(Page, template='contact.html', routes='/index')
+def index():
+    return {}
 
 if __name__ == "__main__":
     # This will all become render_engine.run()
