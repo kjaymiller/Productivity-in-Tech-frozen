@@ -64,10 +64,16 @@ def index_dnetcore():
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
     return index_content
 
+# TODO Things like this should be a separate page
+@engine.build(Page, template='index.html', routes='/developer_on_fire')
+def index_dev_on_fire():
+    index_content = index()
+    index_content['promo'] = 'Dave Rael trusts PIT to make him sound great!'
+    return index_content
+
 @engine.build(Page, template='contact.html', routes='/contact')
 def contact_page():
     return {}
-
 
 if __name__ == "__main__":
     # This will all become render_engine.run()
