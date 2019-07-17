@@ -66,7 +66,7 @@ def index_dnetcore():
     return index_content
 
 # TODO Things like this should be a separate page
-@engine.build(Page, template='index.html', routes='/developer_on_fire')
+@engine.build(Page, template='index.html', routes='/developer-on-fire')
 def index_dev_on_fire():
     index_content = index()
     index_content['promo'] = 'Dave Rael trusts PIT to make him sound great!'
