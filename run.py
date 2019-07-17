@@ -62,6 +62,7 @@ def index():
 def index_dnetcore():
     index_content = index()
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
+    index_content['promo_image'] = 'https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg'
     return index_content
 
 # TODO Things like this should be a separate page
