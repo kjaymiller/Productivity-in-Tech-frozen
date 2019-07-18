@@ -70,6 +70,7 @@ def index_dnetcore():
 def index_dev_on_fire():
     index_content = index()
     index_content['promo'] = 'Dave Rael trusts PIT to make him sound great!'
+    index_content['promo_image'] = 'https://s3-us-west-2.amazonaws.com/kjaymiller/images/developeronfire.png'
     return index_content
 
 @engine.build(Page, template='contact.html', routes='/contact')
