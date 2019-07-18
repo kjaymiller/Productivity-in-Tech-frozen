@@ -26,6 +26,13 @@
     </div>
     </section>
 
+    <section class="section">
+    {% block content_2 %} {% endblock %}
+    <div class="container">
+      {% block container_2 %} {% endblock %}
+    </div>
+    </section>
+    
     {% include 'footer.html' %}
     {% block body_javascript %}{% endblock %}
     {% block analytics %}{% endblock %}

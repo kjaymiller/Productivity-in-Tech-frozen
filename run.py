@@ -13,14 +13,13 @@ engine = Engine()
 pages = engine.add_collection(
         Page,
         content_path='content/pages',
-        routes='./',
-        template='page.html',
-        )
+        routes=['./'],
+        template='page.html')
 
 blog = engine.add_collection(
         BlogPost,
         content_path='content',
-        routes='/blog',
+        routes=['/blog'],
         template='blog.html',
         archive=True,
         name='blog',
@@ -63,6 +62,15 @@ def index():
 def index_dnetcore():
     index_content = index()
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
+    index_content['promo_image'] = 'https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg'
+    return index_content
+
+# TODO Things like this should be a separate page
+@engine.build(Page, template='index.html', routes='/developer-on-fire')
+def index_dev_on_fire():
+    index_content = index()
+    index_content['promo'] = 'Dave Rael trusts PIT to make him sound great!'
+    index_content['promo_image'] = 'https://s3-us-west-2.amazonaws.com/kjaymiller/images/developeronfire.png'
     return index_content
 
 @engine.build(Page, template='contact.html', routes='/contact')

@@ -9,18 +9,17 @@
     <form name="consultation-form" method="Post" class="" netlify-honeypot="bot-field" data-netlify="true" >
     <div class="field">
       <div class="control">
-        <input class="input" placeholder="Name" />
+        <input class="input" name="name" placeholder="Name" />
       </div>
     </div>
     <div class="field">
       <div class="control">
-        <input class="input" placeholder="Email" />
+        <input class="input" name="email" placeholder="Email" />
       </div>
     </div>
     <div class="field">
       <div class="control">
-        <textarea class="textarea" placeholder="Tell us what you're working on!
-        Also let us know how we can help you!"></textarea>
+        <textarea class="textarea" name="description" placeholder="Tell us what you're working on! Also let us know how we can help you!"></textarea>
       </div>
     </div>
     <div class="field is-hidden">
@@ -40,7 +39,9 @@
   </div>
 
 </div>
-<footer><small>Your information will be added to our CRM so we can get in
-    touch with you, but not to any mailing list. If you want to join that, sign up here</small></footer>
+<footer>
+  <small>
+    Your information will be added to our CRM so we can get in touch with you,
+    but not to any mailing list. If you want to join that, <a href="/newsletter">sign up here</small></footer>
 </div>
 {% endblock %}
