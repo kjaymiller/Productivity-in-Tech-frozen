@@ -52,7 +52,6 @@ services = engine.Collection(
 def coaching_feedback():
     return {}
 
-
 @engine.build(Page, template='index.html', routes='/index')
 def index():
     api_key = os.environ['BUTTONDOWN_API_KEY']

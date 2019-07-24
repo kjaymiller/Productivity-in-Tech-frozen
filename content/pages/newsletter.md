@@ -1,4 +1,4 @@
-slug: subscribe 
+slug: newsletter
 Title: Subscribe to my newsletter! 🗞📨📬
 
 I want to help people create the content they dream about! My newsletter is designed to be a journey along what I'm doing in PIT. 
