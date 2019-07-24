@@ -10,13 +10,13 @@ from links import Link
 engine = Engine()
 
 # Add Collections
-pages = engine.add_collection(
+pages = engine.Collection(
         Page,
         content_path='content/pages',
         routes=['./'],
         template='page.html')
 
-blog = engine.add_collection(
+blog = engine.Collection(
         BlogPost,
         content_path='content',
         routes=['/blog'],
@@ -25,7 +25,7 @@ blog = engine.add_collection(
         name='blog',
         )
 
-services = engine.add_collection(
+services = engine.Collection(
         Page,
         routes=['./','/services'],
         content_path='content/services',
