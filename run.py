@@ -4,10 +4,21 @@ import requests
 from pages.page import Page
 from pages.blog import BlogPost
 from pages.engine import Engine
-from links import Link
+from pages.links import Link
 
 
-engine = Engine()
+HEADER_LINKS = (
+    Link(name='Blog', url='/blog/blog_0.html'),
+    Link(name='Newsletter', url='newsletter'),
+    Link(name='Productivity in Tech Podcast',
+        url='https://productivityintech.transistor.fm'),
+    Link(name='PIT Membership', url='/memberships'),
+    Link(name="Editing Services", url='/services/editing'),
+# Link(name="Consulting", url="/consulting.html"),
+# Link(name="Courses", url="/dev-podcaster-course")
+    )
+
+engine = Engine(HEADER_LINKS=HEADER_LINKS)
 
 # Add Collections
 pages = engine.Collection(
