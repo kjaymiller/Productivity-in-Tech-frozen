@@ -30,5 +30,7 @@ werkzeug = "*"
 pathlib = "*"
 pillow = "*"
 requests = "*"
+pyyaml = "*"
+maya = "*"
 
 [requires]

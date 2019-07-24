@@ -1,0 +1,7 @@
+<item>
+<title>{{feed_items.content.title}}</title>
+<description>{{feed_items.content.markup}}</description>
+<link>{{feed_items.content_path}}</link>
+<guid isPermaLink="true">{{feed_items.content_path}}</guid>
+<pubDate>{{feed_items.content.rfc2822}}</pubDate>
+</item>

@@ -18,16 +18,18 @@ HEADER_LINKS = (
 # Link(name="Courses", url="/dev-podcaster-course")
     )
 
-engine = Engine(HEADER_LINKS=HEADER_LINKS)
+engine = Engine(config='config.yaml', HEADER_LINKS=HEADER_LINKS)
 
 # Add Collections
-pages = engine.Collection(
+pages = engine.build_collection(
         Page,
+        name='pages',
         content_path='content/pages',
         routes=['./'],
-        template='page.html')
+        template='page.html',
+        )
 
-blog = engine.Collection(
+blog = engine.build_collection(
         BlogPost,
         content_path='content',
         routes=['/blog'],
@@ -36,21 +38,13 @@ blog = engine.Collection(
         name='blog',
         )
 
-services = engine.Collection(
+services = engine.build_collection(
         Page,
         routes=['./','/services'],
+        name='services',
         content_path='content/services',
         template='page.html',
         )
-
-# Build Static Pages
-@engine.build(
-        Page,
-        template='coaching/coaching_feedback.html',
-        routes='/coaching_feedback',
-        )
-def coaching_feedback():
-    return {}
 
 @engine.build(Page, template='index.html', routes='/index')
 def index():
