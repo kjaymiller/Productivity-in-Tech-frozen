@@ -32,5 +32,7 @@ pillow = "*"
 requests = "*"
 pyyaml = "*"
 maya = "*"
+legit = "*"
+shlex = "*"
 
 [requires]
