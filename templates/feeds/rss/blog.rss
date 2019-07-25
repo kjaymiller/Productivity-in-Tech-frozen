@@ -18,6 +18,25 @@
 	{% if docs %}
 		<docs>{{channel.docs}}</docs>
 	{% endif %}
+	{% if generator %}
+		<generator>{{Generator}}</generator>
+	{% endif %}
+	{% if 'image' in channel %}
+		<image>
+			<link>{{channel.url}}</link>
+			<title>{{image.title}}</title>
+			<url>{{image.url}}</url>
+			{% if 'description' in image %}
+				<description>{{image.description}}</description>
+			{% endif %}
+			{% if 'description' in image %}
+				<height>{{image.height}}</height>
+			{% endif %}
+			{% if 'description' in image %}
+				<width>{{image.width}}</width>
+			{% endif %}
+		</image>
+	{% endif %}
 	{% for item in items %}
 		{% include 'feeds/rss/blog_item.rss' %}
 	{% endfor %}
