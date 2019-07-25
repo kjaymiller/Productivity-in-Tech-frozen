@@ -1,7 +1,35 @@
 <item>
-<title>{{feed_items.content.title}}</title>
-<description>{{feed_items.content.markup}}</description>
-<link>{{feed_items.content_path}}</link>
-<guid isPermaLink="true">{{feed_items.content_path}}</guid>
-<pubDate>{{feed_items.content.rfc2822}}</pubDate>
+{% if 'title' in item %}
+	<title>{{item.title}}</title>
+{% endif %}
+
+{% if 'author' in item %}
+	<author>({{author['email']}} {{author['name']}})</author>
+{% endif %}
+
+<description><![CDATA[{{item.description}}]]></description>
+<link>{{item.url}}</link>
+<guid>{{item.url}}</guid>
+
+{% if 'pubDate' in item %}
+	<pubDate>{{items.pubDate}}</pubDate>
+{% endif %}
+
+{% if 'tags' in item %}
+	{% for tag in item.tags %}
+		<category>{{tag}}</category>
+	{% endfor %}
+{% endif %}
+
+{% if 'comments' in item %}
+	<comments>{{comments}}</comments>
+{% endif %}
+
+{% if 'attachments' in item %}
+		<enclosure
+			length="{{item.attachments[0].enclosure}}"
+			type="{{item.attachments[0].mimetype}}"
+			url="{{item.attachments[0].url}}" />
+{% endif %}
 </item>
+
