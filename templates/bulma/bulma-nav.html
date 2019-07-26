@@ -6,7 +6,7 @@
           <img src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3-circle-square.png">
       </a>
       <a class="navbar-item" href="/">
-          {{config.SITE_TITLE}}
+          {{SITE_TITLE}}
       </a>
       <a role="button" class="navbar-burger" data-target="headerMenu" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
@@ -16,7 +16,7 @@
       </div>
       <div class="navbar-menu" id="headerMenu">
         <div class="navbar-start">
-          {% for link in config.HEADER_LINKS %}
+          {% for link in HEADER_LINKS %}
           {% if link.links %}
           <div class="navbar-item has-dropdown">
             <a class="navbar-link" href="{{link.href}}" role="button" aria-haspopup="true" aria-expanded="false" >

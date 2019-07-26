@@ -1,8 +1,6 @@
 import os
 import json
 import requests
-from pages.page import Page
-from pages.blog import BlogPost
 from pages.engine import Engine
 from pages.links import Link
 
@@ -22,15 +20,13 @@ engine = Engine(config='config.yaml', HEADER_LINKS=HEADER_LINKS)
 
 # Add Collections
 pages = engine.build_collection(
-        Page,
         name='pages',
         content_path='content/pages',
-        routes=['./'],
+        routes=['/'],
         template='page.html',
         )
 
 blog = engine.build_collection(
-        BlogPost,
         content_path='content',
         routes=['/blog'],
         template='blog.html',
@@ -39,14 +35,13 @@ blog = engine.build_collection(
         )
 
 services = engine.build_collection(
-        Page,
         routes=['./','/services'],
         name='services',
         content_path='content/services',
         template='page.html',
         )
 
-@engine.build(Page, template='index.html', routes='/index')
+@engine.build(template='index.html', routes='/index')
 def index():
     api_key = os.environ['BUTTONDOWN_API_KEY']
     headers = {'Authorization': f'Token {api_key}'}
@@ -61,7 +56,7 @@ def index():
     return {'buttondown_count': results}
 
 # TODO Things like this should be a separate page
-@engine.build(Page, template='index.html', routes='/dotnetcore')
+@engine.build(template='index.html', routes='/dotnetcore')
 def index_dnetcore():
     index_content = index()
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
@@ -69,14 +64,14 @@ def index_dnetcore():
     return index_content
 
 # TODO Things like this should be a separate page
-@engine.build(Page, template='index.html', routes='/developer-on-fire')
+@engine.build(template='index.html', routes='/developer-on-fire')
 def index_dev_on_fire():
     index_content = index()
     index_content['promo'] = 'Dave Rael trusts PIT to make him sound great!'
     index_content['promo_image'] = 'https://s3-us-west-2.amazonaws.com/kjaymiller/images/developeronfire.png'
     return index_content
 
-@engine.build(Page, template='contact.html', routes='/contact')
+@engine.build(template='contact.html', routes='/contact')
 def contact_page():
     return {}
 
