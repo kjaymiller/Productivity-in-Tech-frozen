@@ -32,6 +32,7 @@ blog = engine.build_collection(
         template='blog.html',
         archive=True,
         name='blog',
+        feeds=True,
         )
 
 services = engine.build_collection(

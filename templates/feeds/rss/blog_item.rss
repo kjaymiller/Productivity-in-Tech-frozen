@@ -1,9 +1,9 @@
 <item>
-{% if 'title' in item %}
+{% if 'title' in item.keys() %}
 	<title>{{item.title}}</title>
 {% endif %}
 
-{% if 'author' in item %}
+{% if 'author' in item.keys() %}
 	<author>({{author['email']}} {{author['name']}})</author>
 {% endif %}
 
@@ -11,21 +11,21 @@
 <link>{{item.url}}</link>
 <guid>{{item.url}}</guid>
 
-{% if 'pubDate' in item %}
+{% if 'pubDate' in item.keys() %}
 	<pubDate>{{items.pubDate}}</pubDate>
 {% endif %}
 
-{% if 'tags' in item %}
+{% if 'tags' in item.keys() %}
 	{% for tag in item.tags %}
 		<category>{{tag}}</category>
 	{% endfor %}
 {% endif %}
 
-{% if 'comments' in item %}
+{% if 'comments' in item.keys() %}
 	<comments>{{comments}}</comments>
 {% endif %}
 
-{% if 'attachments' in item %}
+{% if 'attachments' in item.keys() %}
 		<enclosure
 			length="{{item.attachments[0].enclosure}}"
 			type="{{item.attachments[0].mimetype}}"

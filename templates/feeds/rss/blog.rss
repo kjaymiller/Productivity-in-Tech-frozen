@@ -6,7 +6,7 @@
 	<description>{{channel.description}}</description>
 	<link>{{channel.url}}</link>
 	<lastBuildDate>{{build_date}}</lastBuildDate>
-	<pubDate>{{items[0].pubDate}}</pubDate>
+	<pubDate>{{channel['items'][0].pubDate}}</pubDate>
 
 	{% if 'tags' in channel %}
 		{% for tag in channel.tags %}
@@ -59,8 +59,8 @@
 	<skipDays>{{skipDays}}</skipDays>
 	{% endif %}
 
-	{% for item in items %}
-		{% include 'feeds/rss/blog_item.rss' %}
+	{% for item in channel['items'] %}
+	{{item}}
 	{% endfor %}
 </channel>
 </rss>
