@@ -6,7 +6,7 @@ slug: about
 <figure class="is-child is-2 image is-128x128">
     <img class="is-rounded" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/kjaymiller_profile_photo.JPG" alt="Jay">
 </figure>
-<div class="is-3">
+<div>
 <h2 class="title is-3 has-text-info">
 Jay Miller
 </h2>
@@ -21,7 +21,7 @@ A US Marine Veteran, Jay has been training tech folks all over the world.
 <figure class="is-child is-2 image is-128x128">
 <img class="is-rounded" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/britnie_profile_photo_edit.png" alt="Britnie">
 </figure>
-<div class="is-3">
+<div>
 <h2 class="title is-3 has-text-info">
 Britnie Miller
 </h2>
