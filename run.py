@@ -30,7 +30,7 @@ blog = engine.build_collection(
         content_path='content',
         routes=['/blog'],
         template='blog.html',
-        archive=True,
+        paginate=True,
         name='blog',
         feeds=True,
         )
@@ -48,7 +48,7 @@ def index():
     headers = {'Authorization': f'Token {api_key}'}
     params = {'type': 'regular'}
     url = "https://api.buttondown.email/v1/subscribers"
-    r = requests.get(url, headers=headers, params=params, verify=False)
+    r = requests.get(url, headers=headers, params=params)
 
     if r.status_code == 200:
         results = r.json()['count']
