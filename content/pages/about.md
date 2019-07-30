@@ -12,9 +12,10 @@ Jay Miller
 A US Marine Veteran, Jay has been training tech folks all over the world.
 </p>
 </div>
+</div>J
 
 <div class="tile box">
-<h2 class="title is-5">
+<h2 class="title is-3 is-info">
 Britnie Miller
 </h2>
 <div>
