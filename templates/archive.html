@@ -2,11 +2,10 @@
 {% block container %}
 			<h2 class="title is-2 has-text-info">Blog</h2>
         {% if post_list %}
-    <div class="tile is-ancestor">
         <h2 class="subtitle is-5">There are {{post_list|length}} Posts</h2>
-				<div class="tile"> 
+    <div class="tile is-ancestor">
         {% for post in post_list %}
-	<div class="level-item is-2 box">
+	<div class="tile is-2 box">
 			<a href="{{post.url}}"><h2 class="subtitle is-4 has-text-info has-text-weight-semibold">{{post.title}}</h2></a>
 		<small class="has-text-light-gray">{{post.date_published}}</small>
 		<div>
