@@ -6,7 +6,7 @@
         <h2 class="subtitle is-5">There are {{post_list|length}} Posts</h2>
 				<div class="tile is-ancestor">
         {% for post in post_list %}
-	<div class="tile is-3">
+	<div class="tile is-3 box">
 			<a href="{{post.url}}"><h2 class="subtitle is-4 has-text-info has-text-weight-semibold">{{post.title}}</h2></a>
 		<small class="has-text-light-gray">{{post.date_published}}</small>
 		<div>
