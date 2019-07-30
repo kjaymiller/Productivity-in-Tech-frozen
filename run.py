@@ -7,7 +7,7 @@ from pages.links import Link
 
 HEADER_LINKS = (
     Link(name='Blog', url='/blog/blog_0.html'),
-    Link(name='Newsletter', url='newsletter'),
+    Link(name='Newsletter', url='/newsletter'),
     Link(name='Productivity in Tech Podcast',
         url='https://productivityintech.transistor.fm'),
     Link(name='PIT Membership', url='/memberships'),
