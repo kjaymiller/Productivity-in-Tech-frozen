@@ -5,14 +5,12 @@
 {% endblock %}
 {% block content %} 
 {% include 'design_assets/title.html' %}
-    <article>
-        <small class="text-secondary">{{author}} - <span
-               class="text-primary">{{date_published}}</span></small>
-        <div class="py-2">
+    <article class="section">
+        <div class="container">
             {{markup}} 
         </div>
     </article>
     <section class="section">
-      <a href="./blog_0.html" class="text-primary"><-- Back to Blogs</a>
+      <a href="./blog_0.html" class="text-primary">Back to Blogs</a>
     </section>
 {% endblock %}
