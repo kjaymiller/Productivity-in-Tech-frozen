@@ -16,14 +16,16 @@
 
     {% include 'header.html' %}
 
-    <section>
+    <section class="section">
     {% include 'addons/promo.html' %}
     </section>
 
+    <section class="section">
     {% block content %} {% endblock %}
     <div class="container is-fluid-mobile-only">
       {% block container %} {% endblock %}
     </div>
+    </section>
 
     <section class="section">
     {% block content_2 %} {% endblock %}
