@@ -13,6 +13,11 @@
 			{% endif %}
 			<div class="tile is-parent">
 	<article class="tile is-child box">
+    {% if post.image %}
+    <figure class="image is-128x128">
+      <img src="{{post.image}}">
+    </figure>
+    {% endif %}
 			<a href="{{post.url}}"><h2 class="subtitle is-4 has-text-info has-text-weight-semibold">{{post.title}}</h2></a>
 
 		<small class="has-text-light-gray">{{post.date_published}}</small>
