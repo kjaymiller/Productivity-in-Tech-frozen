@@ -23,93 +23,86 @@
     
 
 
-      <nav class="container is-centered" role="navigation" aria-label="main navigation">
-    <div class="level">
-      <div class="level-item">
+    <nav class="container is-centered" role="navigation" aria-label="main navigation">
+  <div class="level">
+    <div class="level-item">
       <a class="navbar-item" href="/">
-          <img class="image" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3-circle-square.png">
+        <img class="image" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3-circle-square.png">
       </a>
-      <a class="subtitle navbar-item" href="/">
-          Productivity in Tech
+      <a class="subtitle navbar-item" href="/" data-target="headerMenu" aria-label="menu" aria-expanded="false">
+        Productivity in Tech
       </a>
     </div>
-    <div class="level-item has-text-centered">
-      <a role="button" class="navbar-burger" data-target="headerMenu" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+  </div>
+  <div class="navbar-menu" id="headerMenu">
+    <div class="navbar-start level">
+      
+      
+          <a class="navbar-item is-text-primary" href="/blog/blog_0.html">
+            Blog
+          </a>
+          
+
+          
+      
+          <a class="navbar-item is-text-primary" href="/newsletter">
+            Newsletter
+          </a>
+          
+
+          
+      
+          <a class="navbar-item is-text-primary" href="https://productivityintech.transistor.fm">
+            Productivity in Tech Podcast
+          </a>
+          
+
+          
+      
+          <a class="navbar-item is-text-primary" href="/memberships">
+            PIT Membership
+          </a>
+          
+
+          
+      
+          <a class="navbar-item is-text-primary" href="/services/editing">
+            Editing Services
+          </a>
+          
+
+          
       </div>
     </div>
-      <div class="navbar-menu" id="headerMenu">
-        <div class="navbar-start">
-          
-          
-              <a class="navbar-item is-text-primary" href="/blog/blog_0.html">
-                Blog
-              </a>
-              
-
-              
-          
-              <a class="navbar-item is-text-primary" href="/newsletter">
-                Newsletter
-              </a>
-              
-
-              
-          
-              <a class="navbar-item is-text-primary" href="https://productivityintech.transistor.fm">
-                Productivity in Tech Podcast
-              </a>
-              
-
-              
-          
-              <a class="navbar-item is-text-primary" href="/memberships">
-                PIT Membership
-              </a>
-              
-
-              
-          
-              <a class="navbar-item is-text-primary" href="/services/editing">
-                Editing Services
-              </a>
-              
-
-              
-          </div>
-        </div>
-      </div>
-  </nav>
-  <script>
+  </div>
+</nav>
+<script>
   document.addEventListener('DOMContentLoaded', () => {
 
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
 
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
 
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
 
+        });
       });
-    });
-  }
+    }
 
-});
-  </script>
+  });
+</script>
 
     <section>
     
