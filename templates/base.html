@@ -10,6 +10,7 @@
   {% endblock %}
   </style>
   <body>
+    <section>
     {% block add_ons %}{% endblock %}
 
 
@@ -34,5 +35,6 @@
     {% include 'footer.html' %}
     {% block body_javascript %}{% endblock %}
     {% block analytics %}{% endblock %}
+    </section>
   </body>
 </html>
