@@ -1,0 +1,20 @@
+<section class="hero is-small is-info is-bold">
+  <div class="hero-body level">
+    {% if image %}
+    <div class="level-item has-text-centered">
+    <figure class="image">
+      <img src="{{image}}">
+    </figure>
+    </div>
+    {% endif %}
+    <div class="level-item">
+    <h1 class="title is-2">{{title}}</h1>
+    <h2>{{subtitle}}</h2>
+  </div>
+  </div>
+  <div class="hero-footer">
+    <div class="container has-text-right">
+      <p>{{date_published}}</p>
+    </div>
+  </div>
+  </section>

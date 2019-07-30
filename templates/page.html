@@ -4,11 +4,8 @@
 <link href="/static/css/pages.css" rel="stylesheet">
 {% endblock %}
 {% block container %}
-		<div class=hero is-small is-info is-bold">
-		<h1 class="title is-2 has-text-info">{{title}}</h1>
-      {{subtitle}}
-      </div>
-	<div class="py-2">
+{% include 'design_assets/title.html' %}
+      <section class="section">
 		{{markup}}
-	</div>
-{% endblock %}
+	</section>
+  {% endblock %}

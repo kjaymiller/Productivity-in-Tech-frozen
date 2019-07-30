@@ -4,21 +4,13 @@
 <link rel="stylesheet" type="text/css" href="/static/css/blog.css">
 {% endblock %}
 {% block content %} 
-<div class="container">
-    <article>
-        <div class="row">
-            {% if image %}
-            <img src="{{image}}" class="featured_image">
-            {% endif %}
-            <h1 class="title has-text-info">{{title}}</h1>
-        </div>
-        <small class="text-secondary">{{author}} - <span
-               class="text-primary">{{date_published}}</span></small>
-        <div class="py-2">
+{% include 'design_assets/title.html' %}
+    <article class="section">
+        <div class="container">
             {{markup}} 
         </div>
     </article>
-
-    <a href="./blog_0.html" class="text-primary"><-- Back to Blogs</a>
-</div>
+    <section class="section">
+      <a href="./blog_0.html" class="text-primary">Back to Blogs</a>
+    </section>
 {% endblock %}

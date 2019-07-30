@@ -33,6 +33,7 @@ blog = engine.build_collection(
         template='blog.html',
         paginate=True,
         name='blog',
+        show_dates=True,
         feeds=True,
         )
 
