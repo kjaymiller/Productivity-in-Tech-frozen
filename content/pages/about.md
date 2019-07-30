@@ -1,13 +1,23 @@
 title: The PIT Team
 slug: about
 
-## Jay Miller
-#### Chief Multi-Potentialite
+<div class="level">
+<h2 class="title is-5">
+Jay Miller
+</h2>
 
+<h3 class="subtitle is-4">Chief Multi-Potentialite</h3>
+<p>
 A US Marine Veteran, Jay has been training tech folks all over the world.
+</p>
 
 
-## Britnie Miller
-#### Chief Administrative Queen 👸🏼
-
+<h2 class="title is-5">
+Britnie Miller
+</h2>
+<h3 class="subtitle is-4">
+Chief Administrative Queen 👸🏼
+</h3>
+<p>
 Britnie is passionate about keeping things in order (including her Sims).
+</p>
