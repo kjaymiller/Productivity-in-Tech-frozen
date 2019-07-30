@@ -4,13 +4,17 @@ date: March 15, 2019 09:32
 
 ![](https://kjaymiller.s3-us-west-2.amazonaws.com/images/pit-ac4g.jpg)
 
-## Productivity in Tech is serious about _#diversityinTech_.
+
+##Productivity in Tech is serious about _#diversityinTech_.
+
 
 In Celebration of _#InternationalWomensMonth_, PIT is going to be donating $10 for each new member we get to [App Camp 4 Girls](https://appcamp4girls.com) in the month of March.
 
 App Camp for Girls is a one-week summer day program where girls, transgender & gender non-conforming youth not just learn about development in swift, but also make a full blown app. 
 
-## Sign up to be a member today to gain perks and to celebrate a great cause! 
+
+##Sign up to be a member today to gain perks and to celebrate a great cause! 
+
 
 (And to be more productive....)
 
