@@ -9,25 +9,18 @@
 	{% if pubdate %}
 	<pubDate>{{pubDate}}</pubDate>
 	{% endif %}
-
 	{% if tags %}
 		{% for tag in tags %}
 			<category>{{tag}}</category>
 		{% endfor %}
 	{% endif %}
-
 	{% if copyright %}
-		<copyright>{{copyright}}</copyright>
+		<copyright>Copyright ©️ {{copyright}}</copyright>
 	{% endif %}
-
 	{% if docs %}
 		<docs>{{docs}}</docs>
 	{% endif %}
-
-	{% if generator %}
-		<generator>{{Generator}}</generator>
-	{% endif %}
-
+	{% if generator %}<generator>{{generator}}</generator>{% endif %}
 	{% if image %}
 		<image>
 			<link>{{url}}</link>
@@ -44,25 +37,12 @@
 			{% endif %}
 		</image>
 	{% endif %}
-
-	{% if language %}
-		<language>{{language}}</language>
-	{% endif %}
-
+	{% if language %}<language>{{language}}</language>{% endif %}
 	{% if author %}
 		<webMaster>{{author.email}} ({{author.name}})</webMaster>
 	{% endif %}
-
-	{% if rating %}
-		<rating>{{rating}}</rating>
-	{% endif %}
-
-	{% if skipDays %}
-	<skipDays>{{skipDays}}</skipDays>
-	{% endif %}
-
-	{% for item in items %}
-	{{item}}
-	{% endfor %}
+	{% if rating %}<rating>{{rating}}</rating>{% endif %}
+	{% if skipDays %}<skipDays>{{skipDays}}</skipDays>{% endif %}
+	{% for item in items %}{% include 'feeds/rss/blog_item.rss' %}{% endfor %}
 </channel>
 </rss>
