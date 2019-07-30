@@ -26,6 +26,7 @@ A US Marine Veteran, Jay has been training tech folks all over the world.
 </div>
 </div>
 </div>
+</div>
 
 <div class="level-item">
 <div class="columns box">
@@ -48,6 +49,7 @@ Chief Administrative Queen 👸🏼
 <p>
 Britnie is passionate about keeping things in order (including her Sims).
 </p>
+</div>
 </div>
 </div>
 </div>
