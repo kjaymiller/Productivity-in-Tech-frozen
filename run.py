@@ -6,6 +6,7 @@ from pages.links import Link
 
 
 HEADER_LINKS = (
+    Link(name='Home', url='/'),
     Link(name='Blog', url='/blog/blog_0.html'),
     Link(name='Newsletter', url='/newsletter'),
     Link(name='Productivity in Tech Podcast',
