@@ -14,11 +14,9 @@
 			<div class="tile is-parent">
 	<article class="tile is-child box">
     {% if post.image %}
-    <div class="level">
-    <figure class="level-item image is-centered is-128x128">
-      <img src="{{post.image}}">
+    <figure class="level image is-128x128">
+      <img class="level-item" src="{{post.image}}">
     </figure>
-    </div>
     {% endif %}
 			<a href="{{post.url}}"><h2 class="subtitle is-4 has-text-info has-text-weight-semibold">{{post.title}}</h2></a>
 
