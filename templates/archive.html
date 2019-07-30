@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block container %}
-  <div class="container">
 			<h2 class="title is-1 has-text-info">Blog</h2>
         {% if post_list %}
         <h2 class="subtitle is-5">There are {{post_list|length}} Posts</h2>
@@ -35,5 +34,4 @@
         {% endif %}
     </div>
 </div>
-        </div>
 {% endblock %}
