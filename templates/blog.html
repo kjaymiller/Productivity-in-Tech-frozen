@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Blog Post{% endblock %}
+{% block title %}{{title}}{% endblock %}
 {% block head %}
 <link rel="stylesheet" type="text/css" href="/static/css/blog.css">
 {% endblock %}
@@ -10,7 +10,7 @@
             {% if image %}
             <img src="{{image}}" class="featured_image">
             {% endif %}
-            <h1 class="text-primary">{{title}}</h1>
+            <h1 class="title is-2 has-text-info">{{title}}</h1>
         </div>
         <small class="text-secondary">{{author}} - <span
                class="text-primary">{{date_published}}</span></small>
