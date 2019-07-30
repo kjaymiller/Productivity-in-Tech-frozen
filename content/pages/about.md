@@ -2,7 +2,7 @@ title: The PIT Team
 slug: about
 
 <section class="columns">
-	<div class="column columns box is-4">
+	<div class="column columns box is-6">
 
 			<div class="column is-3">
 				<figure class="is-child image is-128x128">
@@ -20,9 +20,7 @@ slug: about
 			</div>
 		</div>
 
-	</div>
-
-	<div class="column columns box is-5">
+	<div class="column columns box is-6">
 
 			<div class="column is-3">
 				<figure class="is-child image is-128x128">
@@ -40,5 +38,4 @@ slug: about
 
 			<p>Britnie is passionate about keeping things in order (including her Sims).</p>
 		</div>
-	</div>
 	</section>
