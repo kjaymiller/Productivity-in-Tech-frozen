@@ -20,12 +20,14 @@
       </a>
     {% endif %}
 
-		<small class="has-text-light-gray">{{post.date_published}}</small>
 		<div>
       <p>
         	{{post.summary}}
       </p>
 		</div>
+    <footer>
+		{{post.date_published}}
+    </footer>
 	</article>
 			</div>
         {% endfor %}
