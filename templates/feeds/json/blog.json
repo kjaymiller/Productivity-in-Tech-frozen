@@ -1,0 +1,32 @@
+import json
+
+def generate_from_metadata(config=config, pages=None, filename, **kwargs):
+        pages = pages or self.pages
+        feed_data = {
+                'title': kwargs.get('title', config['SITE_TITLE']),
+                'home_page_url': kwargs.get('home_page_url',
+                    config['SITE_URL']),
+                'feed_url': kwargs.get('feed_url'),
+                'version': kwargs.get('version', 'https://jsonfeed.org.version/1'),
+                'icon': kwargs.get('icon', config['ICON']),
+                'description': kwargs.get('description',
+                config['SITE_SUBTITLE']),
+                'user_comment': kwargs.get('user_comment'),
+                'next_url': kwargs.get('next_url', ), # needs pagination
+                'favicon': kwargs.get('favicon', config['FAVICON']),
+                'author': kwargs.get('author',{
+                        'name': config['AUTHOR'],
+                        'avatar': config['AUTHOR_IMAGE'],
+                        'url': config['AUTHOR_URL'],
+                        }),
+                'expired': kwargs.get('expired'),
+                'hubs': kwargs.get('hubs'),
+                }
+
+        filled_feed_data = {x:y for x,y in feed_data.items() if y}
+
+        feed_items = []
+
+        filled_feed_data['items'] = [self.item_values(feed_item,
+            time_format=rfc3339) for feed_item in pages]
+        return json.dump(filled_feed_data, )

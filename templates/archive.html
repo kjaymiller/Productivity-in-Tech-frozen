@@ -1,25 +1,33 @@
 {% extends 'base.html' %}
 {% block container %}
-<div class="container">
-    <div class="jumbotron border-bottom bg-transparent">
-        <h2 class="display-4 text-primary">Blog</h2>
-        <h3 class="font-italic text-secondary">Productivity Musings, Automations, and Reviews</h3>
-    </div>
-    <div >
-
+<div class="level">
+  <div>
+			<h2 class="title is-1 has-text-info">Blog</h2>
         {% if post_list %}
-        <h2 class="subtitle is-3">There are {{post_list|length}} Posts</h2>
-        {% for post in post_list %}
-	<div class="card my-2 px-3">
-		<div class="card-title">
-            <a href="./{{post.id}}.html"><h2>{{post.title}}</h2></a>
-		</br>
-		<small class="text-primary">{{post.date_published}}</small>
-		</div>
-		<div class="card-body">
+        <h2 class="subtitle is-5">There are {{post_list|length}} Posts</h2>
+        </div>
+</div>
+    <div class="tile is-ancestor">
+        {% for index, post in post_list %}
+				{% if index % 3 == 0 %}
+				</div>
+				<div class='tile is-ancestor'>
+			{% endif %}
+			<div class="tile is-parent">
+	<article class="tile is-child box">
+			<a href="{{post.url}}"><h1 class="subtitle is-5 has-text-info has-text-weight-semibold">{{post.title}}</h2></a>
+    {% if post.image %}
+    <figure class="image">
+      <img class="level-item" src="{{post.image}}">
+    </figure>
+    {% endif %}
+
+		<small class="has-text-light-gray">{{post.date_published}}</small>
+		<div>
         	{{post.summary}}
 		</div>
-	</div>
+	</article>
+			</div>
         {% endfor %}
         {% else %}
         <h2 class="subtitle is-3">Sorry, No Posts Have Been Loaded Yet</h2>

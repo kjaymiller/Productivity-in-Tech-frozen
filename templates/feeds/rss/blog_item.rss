@@ -1,0 +1,35 @@
+<item>
+{% if item.title %}
+	<title>{{item.title}}</title>
+{% endif %}
+
+{% if item.author %}
+	<author>({{author['email']}} {{author['name']}})</author>
+{% endif %}
+
+<description><![CDATA[{{item.description}}]]></description>
+<link>{{item.url}}</link>
+<guid>{{item.url}}</guid>
+
+{% if item.pubDate %}
+	<pubDate>{{item.pubDate}}</pubDate>
+{% endif %}
+
+{% if item.tags %}
+	{% for tag in item.tags %}
+		<category>{{tag}}</category>
+	{% endfor %}
+{% endif %}
+
+{% if item.comments %}
+	<comments>{{comments}}</comments>
+{% endif %}
+
+{% if item.attachments %}
+		<enclosure
+			length="{{item.attachments[0].enclosure}}"
+			type="{{item.attachments[0].mimetype}}"
+			url="{{item.attachments[0].url}}" />
+{% endif %}
+</item>
+

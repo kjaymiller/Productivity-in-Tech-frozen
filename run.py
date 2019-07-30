@@ -1,54 +1,54 @@
 import os
 import json
 import requests
-from pages.page import Page
-from pages.blog import BlogPost
 from pages.engine import Engine
-from links import Link
+from pages.links import Link
 
 
-engine = Engine()
+HEADER_LINKS = (
+    Link(name='Blog', url='/blog/blog_0.html'),
+    Link(name='Newsletter', url='/newsletter'),
+    Link(name='Productivity in Tech Podcast',
+        url='https://productivityintech.transistor.fm'),
+    Link(name='PIT Membership', url='/memberships'),
+    Link(name="Editing Services", url='/services/editing'),
+# Link(name="Consulting", url="/consulting.html"),
+# Link(name="Courses", url="/dev-podcaster-course")
+    )
+
+engine = Engine(config='config.yaml', HEADER_LINKS=HEADER_LINKS)
 
 # Add Collections
-pages = engine.Collection(
-        Page,
+pages = engine.build_collection(
+        name='pages',
         content_path='content/pages',
-        routes=['./'],
-        template='page.html')
+        routes=['/'],
+        template='page.html',
+        )
 
-blog = engine.Collection(
-        BlogPost,
+blog = engine.build_collection(
         content_path='content',
         routes=['/blog'],
         template='blog.html',
-        archive=True,
+        paginate=True,
         name='blog',
+        feeds=True,
         )
 
-services = engine.Collection(
-        Page,
+services = engine.build_collection(
         routes=['./','/services'],
+        name='services',
         content_path='content/services',
         template='page.html',
         )
 
-# Build Static Pages
-@engine.build(
-        Page,
-        template='coaching/coaching_feedback.html',
-        routes='/coaching_feedback',
-        )
-def coaching_feedback():
-    return {}
-
-
-@engine.build(Page, template='index.html', routes='/index')
+@engine.build(template='index.html', routes='/index')
 def index():
     api_key = os.environ['BUTTONDOWN_API_KEY']
     headers = {'Authorization': f'Token {api_key}'}
     params = {'type': 'regular'}
     url = "https://api.buttondown.email/v1/subscribers"
-    r = requests.get(url, headers=headers, params=params, verify=False)
+    r = requests.get(url, verify=False, headers=headers, params=params)
 
     if r.status_code == 200:
         results = r.json()['count']
@@ -57,7 +57,7 @@ def index():
     return {'buttondown_count': results}
 
 # TODO Things like this should be a separate page
-@engine.build(Page, template='index.html', routes='/dotnetcore')
+@engine.build(template='index.html', routes='/dotnetcore')
 def index_dnetcore():
     index_content = index()
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
@@ -65,14 +65,14 @@ def index_dnetcore():
     return index_content
 
 # TODO Things like this should be a separate page
-@engine.build(Page, template='index.html', routes='/developer-on-fire')
+@engine.build(template='index.html', routes='/developer-on-fire')
 def index_dev_on_fire():
     index_content = index()
     index_content['promo'] = 'Dave Rael trusts PIT to make him sound great!'
     index_content['promo_image'] = 'https://s3-us-west-2.amazonaws.com/kjaymiller/images/developeronfire.png'
     return index_content
 
-@engine.build(Page, template='contact.html', routes='/contact')
+@engine.build(template='contact.html', routes='/contact')
 def contact_page():
     return {}
 
