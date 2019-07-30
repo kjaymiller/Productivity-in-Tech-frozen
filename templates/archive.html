@@ -15,12 +15,12 @@
 			{% endif %}
 			<div class="tile is-parent">
 	<article class="tile is-child box">
+			<a href="{{post.url}}"><h1 class="subtitle is-5 has-text-info has-text-weight-semibold">{{post.title}}</h2></a>
     {% if post.image %}
     <figure class="image">
       <img class="level-item" src="{{post.image}}">
     </figure>
     {% endif %}
-			<a href="{{post.url}}"><h2 class="subtitle is-4 has-text-info has-text-weight-semibold">{{post.title}}</h2></a>
 
 		<small class="has-text-light-gray">{{post.date_published}}</small>
 		<div>
