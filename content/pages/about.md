@@ -1,8 +1,8 @@
 title: The PIT Team
 slug: about
 
-<section class="level">
-	<div class="level-item">
+<section class="columns">
+	<div class="column is-5">
 		<div class="columns box">
 			<div class="column is-3">
 				<figure class="is-child image is-128x128">
@@ -24,7 +24,7 @@ slug: about
 		</div>
 	</div>
 
-	<div class="level-item">
+	<div class="column is-5">
 		<div class="columns box">
 			<div class="column is-3">
 				<figure class="is-child image is-128x128">
