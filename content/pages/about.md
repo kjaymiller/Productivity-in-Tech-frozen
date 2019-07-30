@@ -1,7 +1,7 @@
 title: The PIT Team
 slug: about
 
-<section class="columns">
+<section class="columns is-4">
 	<div class="column is-5">
 		<div class="columns box">
 			<div class="column is-3">
