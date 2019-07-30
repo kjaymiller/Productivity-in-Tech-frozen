@@ -3,12 +3,12 @@ slug: about
 
 <section class="level">
 
-<div class="level-item box">
-<figure class="is-child image is-128x128">
+<div class="level-item">
+<div class="columns box">
+<figure class="column is-3 is-child image is-128x128">
     <img class="is-rounded" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/kjaymiller_profile_photo.JPG" alt="Jay">
 </figure>
 
-<div class="columns">
 <div class="column is-8">
 <div>
 <h2 class="title is-3 has-text-info">
@@ -25,11 +25,11 @@ A US Marine Veteran, Jay has been training tech folks all over the world.
 </div>
 </div>
 
-<div class="level-item box">
-<figure class="is-child image is-128x128">
+<div class="level-item">
+<div class="columns box">
+<figure class="column is-3 is-child image is-128x128">
 <img class="is-rounded" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/britnie_profile_photo_edit.png" alt="Britnie">
 </figure>
-<div class="columns">
 <div class="column is-8">
 <div>
 <h2 class="title is-3 has-text-info">
