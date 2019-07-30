@@ -4,7 +4,7 @@
       <a class="navbar-item" href="/">
         <img class="image" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/pit-v3-circle-square.png">
       </a>
-      <a role="button" class="subtitle is-mobile navbar-item" data-target="headerMenu" aria-label="menu" aria-expanded="false">
+      <a role="button" class="subtitle is-mobile navbar-item dropMenu" data-target="headerMenu" aria-label="menu" aria-expanded="false">
         {{SITE_TITLE}}
       </a>
     </div>
@@ -34,7 +34,8 @@
   document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    const $navbarBurgers =
+      Array.prototype.slice.call(document.querySelectorAll('.dropMenu'), 0);
 
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
