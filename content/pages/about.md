@@ -2,7 +2,7 @@ title: The PIT Team
 slug: about
 
 <section class="level">
-	<div class="column columns box is-6">
+	<div>
 
 			<div>
 				<figure class="is-child image is-128x128">
