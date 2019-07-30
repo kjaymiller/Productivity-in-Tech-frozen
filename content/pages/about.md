@@ -1,5 +1,6 @@
 title: The PIT Team
 slug: about
+date_published: 30 Jul 2019 6:30AM
 
 <section class="level">
 <div class="level-item is-5 is-parent box">
