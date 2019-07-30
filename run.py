@@ -48,7 +48,7 @@ def index():
     headers = {'Authorization': f'Token {api_key}'}
     params = {'type': 'regular'}
     url = "https://api.buttondown.email/v1/subscribers"
-    r = requests.get(url, headers=headers, params=params)
+    r = requests.get(url, verify=False, headers=headers, params=params)
 
     if r.status_code == 200:
         results = r.json()['count']
