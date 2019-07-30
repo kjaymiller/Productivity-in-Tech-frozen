@@ -14,7 +14,6 @@ v = {editable = true,version = "*"}
 pytest-mock = "*"
 
 [packages]
-arrow = "*"
 certifi = "*"
 click = "*"
 itsdangerous = "==1.1.0"
@@ -32,7 +31,5 @@ pillow = "*"
 requests = "*"
 pyyaml = "*"
 maya = "*"
-legit = "*"
-shlex = "*"
 
 [requires]
