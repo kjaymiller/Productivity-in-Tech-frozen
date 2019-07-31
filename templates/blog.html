@@ -6,9 +6,19 @@
 {% block content %} 
     <article class="section">
         <div class="container">
+    <div class="columns">
+    {% if image %}
+    <div class="column is-4">
+    <figure class="image">
+      <img src="{{image}}">
+    </figure>
+    </div>
+    {% endif %}
+    <div class="column">
         {% include 'design_assets/title.html' %}
             {{markup}} 
         </div>
+    </div>
     </article>
     <section class="section">
       <a href="./blog_0.html" class="text-primary">Back to Blogs</a>
