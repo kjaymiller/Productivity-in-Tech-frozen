@@ -28,4 +28,3 @@ def add_route(
             route.joinpath(content.id)
 
         return Route(content_path=route, content=content)
-
