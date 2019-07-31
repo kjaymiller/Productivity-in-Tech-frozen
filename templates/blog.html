@@ -3,9 +3,7 @@
 {% block head %}
 <link rel="stylesheet" type="text/css" href="/static/css/blog.css">
 {% endblock %}
-{% block content %} 
-    <article class="section">
-        <div class="container">
+{% block container %} 
     <div class="columns">
     {% if image %}
     <div class="column is-4">
@@ -14,6 +12,7 @@
     </figure>
     </div>
     {% endif %}
+    <article class="section">
     <div class="column">
         {% include 'design_assets/title.html' %}
             {{markup}} 
