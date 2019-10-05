@@ -1,12 +1,14 @@
 [[source]]
 name = "pypi"
 url = "https://pypi.org/simple"
-verify_ssl = false
+
+[[source]]
+name = "pypi - test"
+url = "https://test.pypi.org/simple"
 
 [[source]]
 name = "pythonhosted"
 url = "https://files.pythonhosted.org"
-verify_ssl = false
 
 [dev-packages]
 pytest = "*"
@@ -31,5 +33,9 @@ requests = "*"
 pyyaml = "*"
 maya = "*"
 markdown2 = "*"
+render-engine = {path = "./../render_engine/dist/render_engine-2019.10.dev5.tar.gz"}
 
 [requires]
+
+[pipenv]
+allow_prereleases = true

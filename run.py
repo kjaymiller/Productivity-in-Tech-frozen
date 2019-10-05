@@ -1,8 +1,8 @@
 import os
 import json
 import requests
-from pages.engine import Engine
-from pages.links import Link
+from render_engine import Engine
+from render_engine.links import Link
 
 
 HEADER_LINKS = (
@@ -17,49 +17,45 @@ HEADER_LINKS = (
 # Link(name="Courses", url="/dev-podcaster-course")
     )
 
-engine = Engine(config='config.yaml', HEADER_LINKS=HEADER_LINKS)
+engine = Engine(
+            HEADER_LINKS=HEADER_LINKS,
+            )
 
 # Add Collections
-pages = engine.build_collection(
-        name='pages',
+pages = engine.collection(
+        '/pages',
         content_path='content/pages',
-        routes=['/'],
         template='page.html',
         )
 
-blog = engine.build_collection(
+blog = engine.collection(
+        '/blog',
         content_path='content',
-        routes=['/blog'],
         template='blog.html',
-        paginate=True,
-        name='blog',
-        show_dates=True,
-        feeds=True,
         )
 
-services = engine.build_collection(
-        routes=['./','/services'],
-        name='services',
-        content_path='content/services',
+services = engine.collection(
+        '/',
+        '/services',
+        content_path='services',
         template='page.html',
         )
 
-@engine.build(template='index.html', routes='/index')
+@engine.route('/index', template='index.html')
 def index():
     api_key = os.environ['BUTTONDOWN_API_KEY']
     headers = {'Authorization': f'Token {api_key}'}
     params = {'type': 'regular'}
     url = "https://api.buttondown.email/v1/subscribers"
-    r = requests.get(url, verify=False, headers=headers, params=params)
+    r = requests.get(url, headers=headers, params=params)
 
     if r.status_code == 200:
         results = r.json()['count']
 
-#    return {}
     return {'buttondown_count': results}
 
 # TODO Things like this should be a separate page
-@engine.build(template='index.html', routes='/dotnetcore')
+@engine.route('/dotnetcore', template='index.html')
 def index_dnetcore():
     index_content = index()
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
@@ -67,18 +63,13 @@ def index_dnetcore():
     return index_content
 
 # TODO Things like this should be a separate page
-@engine.build(template='index.html', routes='/developer-on-fire')
+@engine.route('/developer-on-fire', template='index.html')
 def index_dev_on_fire():
     index_content = index()
     index_content['promo'] = 'Dave Rael trusts PIT to make him sound great!'
     index_content['promo_image'] = 'https://s3-us-west-2.amazonaws.com/kjaymiller/images/developeronfire.png'
     return index_content
 
-@engine.build(template='contact.html', routes='/contact')
+@engine.route('/contact', template='contact.html')
 def contact_page():
     return {}
-
-if __name__ == "__main__":
-    # This will all become render_engine.run()
-    # Overwrite Existing Tree then generate a new tree.
-    engine.run()
