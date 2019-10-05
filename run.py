@@ -56,7 +56,7 @@ def index():
 
 # TODO Things like this should be a separate page
 @engine.route('/dotnetcore', template='index.html')
-def index_dnetcore():
+def index_dotnetcore():
     index_content = index()
     index_content['promo'] = 'Join Jamie and many others in the PIT Family!'
     index_content['promo_image'] = 'https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg'
@@ -69,7 +69,3 @@ def index_dev_on_fire():
     index_content['promo'] = 'Dave Rael trusts PIT to make him sound great!'
     index_content['promo_image'] = 'https://s3-us-west-2.amazonaws.com/kjaymiller/images/developeronfire.png'
     return index_content
-
-@engine.route('/contact', template='contact.html')
-def contact_page():
-    return {}
