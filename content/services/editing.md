@@ -1,4 +1,5 @@
 Title: Offloading a Bit of the Editing can Help you be (More) Productive
+slug: editing
 
 <h2 class="subtitle is-3 has-text-info">
 Podcast & Video Production Services

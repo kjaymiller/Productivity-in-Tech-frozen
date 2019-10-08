@@ -1,3 +1,4 @@
+slug: coaching
 title: PIT Coaching and Speaking Services
 subtitle: Need Help Getting Productive?
 

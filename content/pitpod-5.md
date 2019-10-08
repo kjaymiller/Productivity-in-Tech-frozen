@@ -1,3 +1,4 @@
+slug: pitpodcast-john-knox-2-2019
 title: [Podcast] What Companies AND Candidates can do Better in the Hiring Process with John Knox
 image: https://kjaymiller.s3-us-west-2.amazonaws.com/images/pit-podcast.png
 url: https://productivityintech.transistor.fm/episodes/what-companies-and-candidates-can-do-better-in-the-hiring-process-with-john-knox
