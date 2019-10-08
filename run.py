@@ -6,7 +6,7 @@ from render_engine.links import Link
 
 HEADER_LINKS = (
     Link(name='Home', url='/'),
-    Link(name='Blog', url='/blog/blog_0.html'),
+    Link(name='Blog', url='/blog/blog.html'),
     Link(name='Newsletter', url='/newsletter'),
     Link(name='Productivity in Tech Podcast',
         url='https://productivityintech.transistor.fm'),
@@ -30,6 +30,8 @@ blog = engine.collection(
         '/blog',
         content_path='content',
         template='blog.html',
+        index_name='blog',
+        index_template='archive.html',
         )
 
 services = engine.collection(

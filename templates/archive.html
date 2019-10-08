@@ -1,17 +1,12 @@
 {% extends 'base.html' %}
 {% block container %}
 			<h2 class="title is-1 has-text-info">Blog</h2>
-        {% if post_list %}
-        <h2 class="subtitle is-5">There are {{post_list|length}} Posts</h2>
-    <div class="tile is-ancestor">
-        {% for index, post in post_list %}
-				{% if index % 3 == 0 %}
-				</div>
-				<div class='tile is-ancestor'>
-			{% endif %}
+        {% if pages %}
+        <h2 class="subtitle is-5">There are {{pages|length}} Posts</h2>
+        {% for post in pages %}
 			<div class="tile is-parent">
 	<article class="tile is-child box">
-			<a href="{{post.url}}"><p class="subtitle is-3 has-text-info
+			<a href="{{post.slug}}"><p class="subtitle is-3 has-text-info
         has-text-weight-semibold">{{post.title}}</p>
     {% if post.image %}
     <figure class="image">
@@ -22,11 +17,9 @@
 
 		<div class="section">
       <p>
-        	{{post.summary}}
       </p>
 		</div>
     <footer class="footer has-text-right">
-		{{post.date_published}}
     </footer>
 	</article>
 			</div>
