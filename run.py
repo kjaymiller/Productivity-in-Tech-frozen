@@ -1,8 +1,9 @@
-import os
-import requests
 from render_engine import Engine
 from render_engine.links import Link
 
+import logging
+import os
+import requests
 
 HEADER_LINKS = (
     Link(name='Home', url='/'),

@@ -31,6 +31,6 @@ requests = "*"
 pyyaml = "*"
 maya = "*"
 markdown2 = "*"
-render-engine = {path = "./../render_engine/dist/render_engine-2019.10.8.dev10.tar.gz"}
+render-engine = {path = "./../render_engine/dist/render_engine-2019.10.9.dev2.tar.gz"}
 
 [requires]
