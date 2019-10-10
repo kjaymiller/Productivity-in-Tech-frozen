@@ -17,7 +17,9 @@ HEADER_LINKS = (
 # Link(name="Courses", url="/dev-podcaster-course")
     )
 
-engine = Engine(config='config.yaml', HEADER_LINKS=HEADER_LINKS)
+SITE = {'TITLE': 'Productivity in Tech'}
+
+engine = Engine(config='config.yaml', HEADER_LINKS=HEADER_LINKS, SITE=SITE)
 
 # Add Collections
 pages = engine.collection(
