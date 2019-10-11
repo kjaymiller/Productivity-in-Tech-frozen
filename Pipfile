@@ -14,23 +14,6 @@ v = {editable = true,version = "*"}
 pytest-mock = "*"
 
 [packages]
-certifi = "*"
-click = "*"
-itsdangerous = "==1.1.0"
-jinja2 = "*"
-markupsafe = "*"
-pipenv = "*"
-python-dateutil = "*"
-six = "*"
-virtualenv = "*"
-virtualenv-clone = "*"
-werkzeug = "*"
-pathlib = "*"
-pillow = "*"
-requests = "*"
-pyyaml = "*"
-maya = "*"
-markdown2 = "*"
-render-engine = {path = "./../render_engine/dist/render_engine-2019.10.9.dev2.tar.gz"}
+render-engine = {path = "./../render_engine/dist/render_engine-2019.10.10.dev1.tar.gz"}
 
 [requires]
