@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d321d865f95fad1bea728c97045d64aece8191c9d639999907bedd21598f9504"
+            "sha256": "18d9165a558c3d47cb777879472f38ca833580c7d4aaa98687199915a0867b85"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -20,7 +20,7 @@
     },
     "default": {
         "render-engine": {
-            "path": "./../render_engine/dist/render_engine-2019.10.10.dev1.tar.gz"
+            "path": "./../render_engine/dist/render_engine-2019.10.11.dev1.tar.gz"
         }
     },
     "develop": {
