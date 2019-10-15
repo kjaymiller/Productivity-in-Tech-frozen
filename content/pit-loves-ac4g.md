@@ -1,6 +1,7 @@
 Title: PIT is Giving all of its New Memberships in March to AppCamp4Girls
 slug: pit-loves-ac4g
 date: March 15, 2019 09:32
+image: https://kjaymiller.s3-us-west-2.amazonaws.com/images/pit-ac4g.jpg
 
 
 ## Productivity in Tech is serious about _#diversityinTech_
