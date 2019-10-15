@@ -2,6 +2,7 @@ title: Being a Multipotentialite is a Lot Like Surfing
 slug: multipotentialite-surfing
 date: July 02, 2019 22:24
 featured_image: https://s3-us-west-2.amazonaws.com/kjaymiller/images/stock-images/action-beach-blurry-2397612.jpg
+image: https://s3-us-west-2.amazonaws.com/kjaymiller/images/action-athlete-beach-1654498.jpg
 
  The thing about being a multi-potentialite that is so much fun is that everything comes in waves. It's like surfing. 
 
