@@ -1,20 +1,11 @@
-[[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-verify_ssl = false
-
-[[source]]
-name = "pythonhosted"
-url = "https://files.pythonhosted.org"
-verify_ssl = false
-
 [dev-packages]
 pytest = "*"
 v = {editable = true,version = "*"}
 pytest-mock = "*"
 
 [packages]
-render-engine = {path = "./../render_engine/dist/render_engine-2019.10.14.dev2.tar.gz"}
+requests = "*"
+render-engine = {path = "./../render_engine/dist/render_engine-2019.10.15.dev1.tar.gz"}
 
 [requires]
 

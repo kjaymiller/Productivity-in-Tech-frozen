@@ -27,6 +27,7 @@ pages = engine.collection(
         '/pages',
         content_path='content/pages',
         template='page.html',
+        name="Pages",
         )
 
 blog = engine.collection(
@@ -34,7 +35,7 @@ blog = engine.collection(
         content_path='content',
         template='blog.html',
         collection_object=Blog,
-        index_name='blog',
+        name="Blog",
         index_template='archive.html',
         )
 
@@ -43,6 +44,7 @@ services = engine.collection(
         '/services',
         content_path='content/services',
         template='page.html',
+        name='Services',
         )
 
 @engine.route( '/index', template='index.html')
