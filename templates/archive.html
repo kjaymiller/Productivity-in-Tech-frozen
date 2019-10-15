@@ -17,19 +17,17 @@
 		</div>
     {% endif %}
 		<div class="column">
+			<div class="container">
 			<a href="{{post.slug}}"><p class="subtitle is-3 has-text-info
         has-text-weight-semibold">{{post.title}}</p>
       </a>
-		<div class="column">
-
-		<div class="section">
-      <p>
-      </p>
 		</div>
     <footer class="footer has-text-right">
+			<strong>Date:</strong> {{post.date_created}}
     </footer>
+		</div>
 	</article>
-			</div>
+		</div>
         {% endfor %}
         {% else %}
         <h2 class="subtitle is-3">Sorry, No Posts Have Been Loaded Yet</h2>
