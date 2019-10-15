@@ -1,4 +1,4 @@
-from render_engine import Engine
+from render_engine import Engine, Blog
 from render_engine.links import Link
 
 import logging
@@ -33,6 +33,7 @@ blog = engine.collection(
         '/blog',
         content_path='content',
         template='blog.html',
+        collection_object=Blog,
         index_name='blog',
         index_template='archive.html',
         )
