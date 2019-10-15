@@ -1,7 +1,7 @@
 title: Thinking about the move from Side Quest to Main Quest with Al Rodriguez
 slug: pitpodcast-alrodriguez
 summary: Al has been working on his side hustle on and off for the last 6 years. I sit down with Al and try to dissect some of the things keeping him at his 9-5 and what we can do to transform our side quest into a main quest.
-date_published: 2019-07-30 6:30
+date: 2019-07-30 6:30
 image: https://s3-us-west-2.amazonaws.com/kjaymiller/images/Guest%20Profile%20Photos/alrodriguez.png
 
 <iframe src='https://share.transistor.fm/e/6e1b2263' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>
