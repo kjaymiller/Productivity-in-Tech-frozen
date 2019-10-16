@@ -19,7 +19,12 @@ HEADER_LINKS = (
 
 SITE = {'TITLE': 'Productivity in Tech'}
 
-engine = Engine(config='config.yaml', HEADER_LINKS=HEADER_LINKS, SITE=SITE)
+engine = Engine(
+        config='config.yaml',
+        HEADER_LINKS=HEADER_LINKS,
+        SITE=SITE,
+        strict=True,
+        )
 
 # Add Collections
 pages = engine.collection(
