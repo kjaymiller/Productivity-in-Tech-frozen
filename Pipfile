@@ -5,7 +5,7 @@ pytest-mock = "*"
 
 [packages]
 requests = "*"
-render-engine = {path = "./../render_engine/dist/render_engine-2019.10.15.dev1.tar.gz"}
+render-engine = {path = "./../render_engine/dist/render_engine-2019.10.16.dev1.tar.gz"}
 
 [requires]
 
