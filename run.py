@@ -1,9 +1,7 @@
-from render_engine import Site, Collection, Page
+from render_engine import Site, Collection
 from render_engine.links import Link
 
-import logging
 import os
-import requests
 
 HEADER_LINKS = (
     Link(name='Home', url='/'),
@@ -17,23 +15,24 @@ HEADER_LINKS = (
 # Link(name="Courses", url="/dev-podcaster-course")
     )
 
-class site(Site):
-    Title = 'Productivity in Tech'
-    HEADER_LINKS = HEADER_LINKS
+site = Site()
+site.Title = 'Productivity in Tech'
+site.HEADER_LINKS = HEADER_LINKS
 
 
 # Add Collections
+
 @site.register_collection
 class Pages(Collection):
     routes = ['/', '/pages']
     content_path='content/pages'
-    template='page.html'
+    template = 'page.html'
 
 
 @site.register_collection
 class Blog(Collection):
+    template = 'blog.html'
     content_path='content',
-    template='blog.html',
 
 
 @site.register_collection
@@ -41,22 +40,5 @@ class Services(Collection):
     routes = ['/', '/services']
     content_path = 'content/services'
     template = 'page.html'
-
-
-def get_subscriber_count():
-    api_key = os.environ['BUTTONDOWN_API_KEY']
-    headers = {'Authorization': f'Token {api_key}'}
-    params = {'type': 'regular'}
-    url = "https://api.buttondown.email/v1/subscribers"
-    r = requests.get(url, verify=False, headers=headers, params=params)
-
-    if r.status_code == 200:
-        results = r.json()['count']
-
-@site.route( '/contact', template='contact.html')
-def contact_page():
-    return {}
-
-from .views.index import *
 
 site.render()
