@@ -13,6 +13,6 @@ HEADER_LINKS = (
 # Link(name="Courses", url="/dev-podcaster-course")
     )
 
-site = Site()
+site = Site(strict=True)
 site.SITE_TITLE = 'Productivity in Tech'
 site.HEADER_LINKS = HEADER_LINKS

@@ -1,5 +1,6 @@
 from Site import site
 from render_engine.collection import Collection
+from render_engine.blog import Blog
 
 
 @site.register_collection
@@ -10,8 +11,7 @@ class Pages(Collection):
 
 
 @site.register_collection
-class Blog(Collection):
-    archive = True
+class Blog(Blog):
     routes = ["", "blog"]
     template = "blog.html"
     content_path = "content"
