@@ -4,7 +4,7 @@ v = {editable = true,version = "*"}
 pytest-mock = "*"
 
 [packages]
-render-engine = {path = "./../render_engine/dist/render_engine-2019.10.21.dev1.tar.gz"}
+render-engine = "*"
 
 [requires]
 python = "3.8"
