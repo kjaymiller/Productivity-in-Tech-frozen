@@ -46,7 +46,7 @@ class Index:
     index_content = {}
 
 @site.register_route
-class BaseIndex(Page, Index):
+class BaseIndex(Index, Page):
     slug = 'index.html'
 
 @site.register_route
