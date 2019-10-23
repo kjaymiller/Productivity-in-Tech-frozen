@@ -16,9 +16,8 @@ HEADER_LINKS = (
     )
 
 site = Site()
-site.Title = 'Productivity in Tech'
+site.SITE_TITLE = 'Productivity in Tech'
 site.HEADER_LINKS = HEADER_LINKS
-
 
 # Add Collections
 
@@ -42,19 +41,25 @@ class Services(Collection):
     content_path = 'content/services'
     template = 'page.html'
 
-@site.register_route
-class Index(Page):
+class Index:
     template = 'index.html'
+    index_content = {}
 
 @site.register_route
-class IndexDNetCore(Index):
+class BaseIndex(Page, Index):
+    slug = 'index.html'
+
+@site.register_route
+class IndexDNetCore(Index, Page):
+    slug = 'dotnetcore'
     index_content = {
             'promo': 'Join Jamie and many others in the PIT Family!',
             'promo_image': 'https://dotnetcore.show/content/images/2018/08/jamie-taylor-logo-podcast.svg',
             }
 
 @site.register_route
-class IndexDevOnFire(Index):
+class IndexDevOnFire(Index, Page):
+    slug = 'devonfire'
     index_content = {
             'promo': 'Dave Rael trusts PIT to make him sound great!',
             'promo_image': 'https://s3-us-west-2.amazonaws.com/kjaymiller/images/developeronfire.png',
@@ -63,6 +68,6 @@ class IndexDevOnFire(Index):
 @site.register_route
 class ContactPage(Page):
     slug='contact'
-    template='contact'
+    template='contact.html'
 
 site.render()
