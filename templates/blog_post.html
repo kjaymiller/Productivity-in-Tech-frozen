@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/static/css/blog.css">
+{% endblock %}
+{% block container %} 
+    <div class="columns">
+    {% if image %}
+    <div class="column is-4">
+    <figure class="image">
+      <img style="max-width: 350px;" src="{{image}}">
+    </figure>
+    </div>
+    {% endif %}
+    <div class="column is-7">
+        {% include 'design_assets/blog_title.html' %}
+    <article class="section">
+            {{content}} 
+    </article>
+    </div>
+        </div>
+    <section class="section">
+      <a href="./blog.html" class="text-primary">Back to Blogs</a>
+    </section>
+{% endblock %}

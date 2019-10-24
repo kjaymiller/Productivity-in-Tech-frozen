@@ -3,11 +3,14 @@ pytest = "*"
 v = {editable = true,version = "*"}
 pytest-mock = "*"
 
-[packages]
-render-engine = "==2019.10.23.dev2"
+[prod] # [packages]
+render-engine = "~=2019.10.23.dev2"
 
 [requires]
 python = "3.8"
 
 [pipenv]
 allow_prereleases = true
+
+[packages]
+render-engine = {path = "./../render_engine/dist/render_engine-2019.10.24.dev1.tar.gz"}
