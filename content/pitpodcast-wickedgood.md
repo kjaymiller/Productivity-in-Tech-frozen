@@ -10,7 +10,7 @@ Steve has been podcasting for several years, but he decided to shudder his most 
   
 Now he uses his data architect skills to inform the community he has created around Hearthstone and in his podcast, OffCurve.   
   
-Links:  
+Link:
 [Follow Steve on Twitter](https://twitter.com/wickedgood)  
 [OffCurve.com](https://offcurve.com)  
   
