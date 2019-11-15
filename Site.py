@@ -13,6 +13,12 @@ HEADER_LINKS = (
 # Link(name="Courses", url="/dev-podcaster-course")
     )
 
-site = Site(strict=True)
-site.SITE_TITLE = 'Productivity in Tech'
-site.HEADER_LINKS = HEADER_LINKS
+class site(Site):
+    SITE_TITLE = 'Productivity in Tech'
+    HEADER_LINKS = HEADER_LINKS
+
+site = site(strict=True)
+
+if __name__ == "__site__":
+    from views.index import *
+    from views.collections import *
