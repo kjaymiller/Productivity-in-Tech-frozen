@@ -1,3 +1,4 @@
+import logging
 from render_engine import Site
 from render_engine.links import Link
 
@@ -20,6 +21,7 @@ class site(Site):
 
 if __name__ == "__main__":
     site = site(strict=True)
+    logging.warning(site.engines['default_engine'].environment.globals)
     from views.index import *
     from views.collections import *
     site.render()
