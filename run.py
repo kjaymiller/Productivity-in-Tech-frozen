@@ -9,7 +9,8 @@ HEADER_LINKS = (
     Link(name='Productivity in Tech Podcast',
         url='https://productivityintech.transistor.fm'),
     Link(name='PIT Membership', url='/memberships'),
-    Link(name="Editing Services", url='/services/editing'),
+    Link(name="Services", url='/services/editing'),
+    Link(name="Tools", url='/tools'),
 # Link(name="Consulting", url="/consulting.html"),
 # Link(name="Courses", url="/dev-podcaster-course")
     )
