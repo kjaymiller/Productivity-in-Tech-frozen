@@ -15,14 +15,15 @@ HEADER_LINKS = (
 # Link(name="Courses", url="/dev-podcaster-course")
     )
 
-class site(Site):
-    SITE_TITLE = 'Productivity in Tech'
-    SITE_LINK = 'https://productivityintech.com'
-    HEADER_LINKS = HEADER_LINKS
 
 if __name__ == "__main__":
-    site = site(strict=True)
-    logging.warning(site.engines['default_engine'].environment.globals)
+    mysite = Site(strict=True)
+    mysite.SITE_TITLE = 'Productivity in Tech'
+    mysite.SITE_LINK = 'https://productivityintech.com'
+    mysite.HEADER_LINKS = HEADER_LINKS
+
+
     from views.index import *
     from views.collections import *
-    site.render()
+
+    mysite.render()
