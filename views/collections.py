@@ -11,13 +11,6 @@ class Pages(Collection):
 
 
 @site.register_collection
-class Blog(Blog):
-    routes = ["", "blog"]
-    template = "blog.html"
-    content_path = "content"
-
-
-@site.register_collection
 class Services(Collection):
     routes = ["", "/services"]
     content_path = "content/services"

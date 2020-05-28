@@ -21,5 +21,6 @@ mysite.HEADER_LINKS = HEADER_LINKS
 
 
 from views.index import *
+from views.collections import *
 
 mysite.render()
