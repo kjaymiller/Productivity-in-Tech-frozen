@@ -11,21 +11,10 @@
   </div>
   <div class="navbar-menu level" id="headerMenu">
       {% for link in HEADER_LINKS %}
-      {% if link.links %}
-      {{link}}
-      <div class="navbar-item level-item">
-        <a class="navbar-link" href="{{link.href}}" role="button" aria-haspopup="true" aria-expanded="false" >
+      <div class="level-item">
+        <a class="navbar-item" href="{{link.url}}" role="button" aria-haspopup="true" aria-expanded="false" >
           {{link.name}}
         </a>
-          {% for l in link.links %}
-          {{l.name}}
-          {% endfor %}
-          {% else %}
-          <a class="navbar-item is-text-primary" href="{{link.url}}">
-            {{link.name}}
-          </a>
-          {% endif %}
-
           {% endfor %}
       </div>
     </div>
