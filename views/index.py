@@ -6,7 +6,6 @@ class Index:
     template = "index.html"
     index_content = {}
 
-
 @site.register_route
 class BaseIndex(Index, Page):
     slug = "index.html"
