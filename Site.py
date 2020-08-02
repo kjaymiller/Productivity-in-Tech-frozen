@@ -17,7 +17,7 @@ class site(Site):
     SITE_TITLE = 'Productivity in Tech'
     HEADER_LINKS = HEADER_LINKS
 
-site = site(strict=True)
+site = site()
 
 if __name__ == "__site__":
     from views.index import *

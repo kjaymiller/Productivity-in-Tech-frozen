@@ -29,7 +29,7 @@ Jay takes podcasting seriously and it shows. He does good work with audio editin
 
 <section class="section">
 <h2 class="subtitle is-4 has-text-info">
-  No matter what you need done to your audio and video, trust us!
+  No matter what you need done to your audio and video, trust I got you covered!
 </p>
 
 <p>

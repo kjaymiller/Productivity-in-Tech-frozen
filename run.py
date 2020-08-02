@@ -14,7 +14,7 @@ HEADER_LINKS = (
     )
 
 
-mysite = Site(strict=True)
+mysite = Site()
 mysite.SITE_TITLE = 'Productivity in Tech'
 mysite.SITE_URL = 'https://productivityintech.com'
 mysite.HEADER_LINKS = HEADER_LINKS
