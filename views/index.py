@@ -8,7 +8,7 @@ class Index:
 
 @site.register_route
 class BaseIndex(Index, Page):
-    slug = "index.html"
+    slug = "index"
 
 
 @site.register_route
