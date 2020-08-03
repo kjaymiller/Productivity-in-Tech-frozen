@@ -1,5 +1,6 @@
-title: Video & Course Content
+title: Video & Course Editing
 subtitle: Create Content that Inspires Future Developers
+slug: video
 
 No matter what you are trying to teach, having **concise, accessible, and content rich presentations** can help your courses stand out amongst the rest.
 
