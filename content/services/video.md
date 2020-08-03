@@ -13,13 +13,13 @@ While you are discussing amazing topics of information, I will ensure that you a
 ## Course Editing Includes
 
 ### Audio Optimization
-<div classs="columns">
-<div class="column is-4 box">
-	<p>Your audio processed and equalized with professional studio-quailty resources.</p>
-</div>
-<div class="column is-4">
-	<img alt="waveforms" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/waveforms.jpg">
-</div>
+<div class="columns">
+	<div class="column is-half box">
+		<p>Your audio processed and equalized with professional studio-quailty resources.</p>
+	</div>
+	<div class="column is-half">
+		<img alt="waveforms" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/waveforms.jpg">
+	</div>
 </div>
 
 ### Video Editing and Markup
