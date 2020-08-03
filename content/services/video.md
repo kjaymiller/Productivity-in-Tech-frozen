@@ -14,6 +14,7 @@ While you are discussing amazing topics of information, I will ensure that you a
 ## Course Editing Includes
 
 ### Audio Optimization
+![waveforms](https://s3-us-west-2.amazonaws.com/kjaymiller/images/waveforms.jpg)
 Your audio processed and equalized with professional studio-quailty resources.
 
 ### Video Editing and Markup
