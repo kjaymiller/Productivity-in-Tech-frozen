@@ -14,8 +14,13 @@ While you are discussing amazing topics of information, I will ensure that you a
 ## Course Editing Includes
 
 ### Audio Optimization
-![waveforms](https://s3-us-west-2.amazonaws.com/kjaymiller/images/waveforms.jpg)
-Your audio processed and equalized with professional studio-quailty resources.
+<div classs="columns">
+<div class="column box">
+	<p>Your audio processed and equalized with professional studio-quailty resources.</p>
+</div>
+<div class="column">
+	<img alt="waveforms" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/waveforms.jpg">
+</div>
 
 ### Video Editing and Markup
 You can focus on presenting the best information and give us the content you would like to represent it. We will make sure that your audio and video matchup and work to put the visual focus on the content you are discussing.
