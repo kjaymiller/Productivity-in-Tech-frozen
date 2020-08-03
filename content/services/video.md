@@ -5,16 +5,16 @@ slug: video
 No matter what you are trying to teach, having **concise, accessible, and content rich presentations** can help your courses stand out amongst the rest.
 
 
-## Present your Best Side
+# Present your Best Side
 **Courses are about 15% the content and 85% the Presentor and the Presentation**
 
 While you are discussing amazing topics of information, I will ensure that you are presenting the information is digestible chunks.
 
-## Course Editing Includes
+# Course Editing Includes
 
 <div class="columns">
 	<div class="column is-half box">
-		<h1>Audio Optimization</h1>
+		<h2>Audio Optimization</h2>
 		<p>Your audio processed and equalized with professional studio-quailty resources.</p>
 	</div>
 	<div class="column is-half">
