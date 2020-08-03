@@ -10,16 +10,16 @@ No matter what you are trying to teach, having **concise, accessible, and conten
 
 While you are discussing amazing topics of information, I will ensure that you are presenting the information is digestible chunks.
 
-
 ## Course Editing Includes
 
 ### Audio Optimization
 <div classs="columns">
-<div class="column is-one-half box">
+<div class="column is-4 box">
 	<p>Your audio processed and equalized with professional studio-quailty resources.</p>
 </div>
-<div class="column is-one-half">
+<div class="column is-4">
 	<img alt="waveforms" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/waveforms.jpg">
+</div>
 </div>
 
 ### Video Editing and Markup
