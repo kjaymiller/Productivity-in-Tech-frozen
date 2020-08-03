@@ -12,8 +12,8 @@ While you are discussing amazing topics of information, I will ensure that you a
 
 # Course Editing Includes
 
-<div class="columns">
-	<div class="column is-half box">
+<div class="columns mt-4">
+	<div class="column is-half">
 		<h2>Audio Optimization</h2>
 		<p>Your audio processed and equalized with professional studio-quailty resources.</p>
 	</div>
