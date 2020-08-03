@@ -15,10 +15,10 @@ While you are discussing amazing topics of information, I will ensure that you a
 
 ### Audio Optimization
 <div classs="columns">
-<div class="column box">
+<div class="column is-one-half box">
 	<p>Your audio processed and equalized with professional studio-quailty resources.</p>
 </div>
-<div class="column">
+<div class="column is-one-half">
 	<img alt="waveforms" src="https://s3-us-west-2.amazonaws.com/kjaymiller/images/waveforms.jpg">
 </div>
 
