@@ -14,4 +14,4 @@ class Pages(Collection):
 class Services(Collection):
     routes = ["", "/services"]
     content_path = "content/services"
-    template = "page.html"
+    template = "services.html"
