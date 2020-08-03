@@ -12,9 +12,9 @@ While you are discussing amazing topics of information, I will ensure that you a
 
 ## Course Editing Includes
 
-### Audio Optimization
 <div class="columns">
 	<div class="column is-half box">
+		<h1>Audio Optimization</h1>
 		<p>Your audio processed and equalized with professional studio-quailty resources.</p>
 	</div>
 	<div class="column is-half">
